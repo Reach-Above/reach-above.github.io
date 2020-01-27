@@ -3,6 +3,7 @@
 <body>
 <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v1.0.0/mapbox-gl.js'></script>
 <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v1.0.0/mapbox-gl.css' rel='stylesheet' />
+<script src="https://api.mapbox.com/mapbox.js/plugins/arc.js/v0.1.0/arc.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 	
   <style>
@@ -281,6 +282,7 @@
      <button type="button" class="legend active" id="STORM">Storm Water</button>
      <button type="button" class="legend" id="AJAXOP" ><span class="dot legendDot fill-BiotechOther"></span>Ajax official Plan</button>
      <button type="button" class="legend" id="TREATY" ><span class="dot legendDot fill-BiotechOther"></span>Treaties</button>
+	 <button type="button" class="legend" id="AERIAL" ><span class="dot legendDot fill-BiotechOther"></span>Aerial</button>
    </div>
   </div>
 </div>
@@ -308,8 +310,8 @@ var routes = { "type": "FeatureCollection",
 { "type": "Feature", "properties": { "ORG":	"Toronto"	,	"id":1	}, "geometry": { "type": "LineString", "coordinates": [ [	-79.6108178	,	43.6757322	], [	-77.845104	,	21.424704	] ] } }	]}
 
 
-var routesNA = { "type": "FeatureCollection",													
-"name": "Airports_Destinations_NA",													
+var AERIAL = { "type": "FeatureCollection",													
+"name": "AERIAL",													
 "features": [													
 { "type": "Feature", "properties": { "ORG":	"Hamilton"	,	"id":2	}, "geometry": { "type": "LineString", "coordinates": [ [	-79.9272586	,	43.1612284	], [	-68.363235	,	18.563039	] ] } }	]}
 ;
@@ -333,6 +335,10 @@ $("#mapreset").appendTo(".mapboxgl-ctrl-group");
 	map.addSource('TREATY', {
         type: 'vector',
         url: 'mapbox://reachabove.a74mxvjf'
+	    });
+	map.addSource('AERIAL', {
+        'type': 'geojson',
+        'data': AERIAL
 	    });
 
     
@@ -415,6 +421,18 @@ $("#mapreset").appendTo(".mapboxgl-ctrl-group");
 			}	
 	});
 	
+	map.addLayer({
+        "id": 'AERIAL',
+        "type": 'line',
+        "source": 'AERIAL',
+        "layout": {
+            
+        },
+        "paint": {
+			
+                }
+			
+    });
 		
 
  $("#map-about").focusin( function() {map.scrollZoom.enable();})
@@ -426,7 +444,7 @@ $("#mapreset").appendTo(".mapboxgl-ctrl-group");
 
 //make layer visible and update legend
 $("#AJAXOP").click(function() {
-	checkVisibility('AJAXOP','TREATY','STORM');
+	checkVisibility('AJAXOP','TREATY','STORM', 'AERIAL');
 	map.flyTo({
 			center: [-79.031, 43.868],
 			zoom: 11,
@@ -434,7 +452,7 @@ $("#AJAXOP").click(function() {
 			speed:0.4
 			});
 
-
+	map.setLayoutProperty('mapbox-satellite', 'visibility', 'none');
 	//map.setPaintProperty('ne-10m-admin-1-ontario-lakes', 'fill-color', '#ededed');
     //map.setLayoutProperty('TREATYL', 'visibility', 'none');
 	
@@ -442,7 +460,7 @@ $("#AJAXOP").click(function() {
 
 
 $("#STORM").click(function() {
-	checkVisibility('STORM','TREATY', 'AJAXOP');
+	checkVisibility('STORM','TREATY', 'AJAXOP', 'AERIAL');
 		map.flyTo({
 			center: [-79.031, 43.868],
 			zoom: 12,
@@ -450,13 +468,13 @@ $("#STORM").click(function() {
 			screenSpeed:0.4
 			});
 			
-
+	map.setLayoutProperty('mapbox-satellite', 'visibility', 'none');
 	//map.setPaintProperty('ne-10m-admin-1-ontario-lakes', 'fill-color', '#6e6e6e');
 
 });
 
 $("#TREATY").click(function() {
-	checkVisibility('TREATY','STORM', 'AJAXOP');
+	checkVisibility('TREATY','STORM', 'AJAXOP', 'AERIAL');
 	map.flyTo({
 			center: [-78.710, 43.360],
 			zoom: 6,
@@ -464,10 +482,19 @@ $("#TREATY").click(function() {
 			screenSpeed:0.4
 			});
 	
-
+	map.setLayoutProperty('mapbox-satellite', 'visibility', 'none');
 	//map.setPaintProperty('ne-10m-admin-1-ontario-lakes', 'fill-color', '#6e6e6e');
-
-
+});
+$("#AERIAL").click(function() {
+	checkVisibility('AERIAL', 'TREATY','STORM', 'AJAXOP' );
+	map.flyTo({
+			center: [-79.031, 43.82],
+			zoom: 12,
+			pitch:0,
+			speed:0.4
+			});	
+	
+	map.setLayoutProperty('mapbox-satellite', 'visibility', 'visible');
 });
 
 
@@ -488,7 +515,7 @@ new mapboxgl.Popup()
 });
 
 //function to change which layer is visible
-function checkVisibility(clickedLayer, other1, other2) {
+function checkVisibility(clickedLayer, other1, other2, other3) {
 
 	map.setLayoutProperty(clickedLayer, 'visibility', 'visible');
 			
@@ -496,10 +523,13 @@ function checkVisibility(clickedLayer, other1, other2) {
 	
 	map.setLayoutProperty(other2, 'visibility', 'none');
 	
+	map.setLayoutProperty(other3, 'visibility', 'none');
+	
 
 	$('#' + clickedLayer).addClass("active");
 	$('#' + other1).removeClass("active");
 	$('#' + other2).removeClass("active");
+	$('#' + other3).removeClass("active");
 
 	
 	
@@ -532,5 +562,6 @@ function renderReset() {
 };
 
   </script>
+
 	</body>	
 </html>
