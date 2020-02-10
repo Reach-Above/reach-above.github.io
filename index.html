@@ -283,6 +283,10 @@
      <button type="button" class="legend" id="AJAXOP" ><span class="dot legendDot fill-BiotechOther"></span>Ajax official Plan</button>
      <button type="button" class="legend" id="TREATY" ><span class="dot legendDot fill-BiotechOther"></span>Treaties</button>
 	 <button type="button" class="legend" id="AERIAL" ><span class="dot legendDot fill-BiotechOther"></span>Aerial</button>
+	 <button type="button" class="legend" id="Secondary" ><span class="dot legendDot fill-BiotechOther"></span>Secondary</button>
+	 <button type="button" class="legend" id="Tertiary" ><span class="dot legendDot fill-BiotechOther"></span>Tertiary</button>
+	 <button type="button" class="legend" id="Quaternary" ><span class="dot legendDot fill-BiotechOther"></span>Quaternary</button>
+	 <button type="button" class="legend" id="Greenbelt" ><span class="dot legendDot fill-BiotechOther"></span>Greenbelt</button>
    </div>
   </div>
 </div>
@@ -340,7 +344,23 @@ $("#mapreset").appendTo(".mapboxgl-ctrl-group");
         'type': 'geojson',
         'data': AERIAL
 	    });
-
+	map.addSource('Quaternary', {
+        type: 'vector',
+        url: 'mapbox://reachabove.0xsb7v12'
+	    });
+	map.addSource('Tertiary', {
+        type: 'vector',
+        url: 'mapbox://reachabove.1kx5bgli'
+	    });	
+	map.addSource('Secondary', {
+        type: 'vector',
+        url: 'mapbox://reachabove.34t172ni'
+	    });	
+		
+		map.addSource('Greenbelt', {
+        type: 'vector',
+        url: 'mapbox://reachabove.ajwp2r5b'
+	    });		
     
     // map.setLayoutProperty('water', 'visibility', 'visible');
 
@@ -417,7 +437,7 @@ $("#mapreset").appendTo(".mapboxgl-ctrl-group");
 		'paint': {
 			'fill-color': "hsla(37, 77%, 63%, 0.53)",
             'fill-opacity': 0.4,
-			'fill-outline-color': "hsl(16, 25%, 30%)"
+			'fill-outline-color': "#000000"
 			}	
 	});
 	
@@ -433,6 +453,70 @@ $("#mapreset").appendTo(".mapboxgl-ctrl-group");
                 }
 			
     });
+	
+	map.addLayer({
+        'id': 'Secondary',
+        'type': 'fill',
+        'source': 'Secondary',
+		'source-layer': "Watershed_Secondary-5ng07c",
+        'layout': {
+                "visibility": "none"
+			},
+        'paint': {
+            'fill-color': "#fdc086",
+            'fill-opacity': 0.8,
+			'fill-outline-color': "#000000"
+						
+		}
+ });  
+ 
+  map.addLayer({
+        'id': 'Tertiary',
+        'type': 'fill',
+        'source': 'Tertiary',
+		'source-layer': "Watershed_Tertiary-c05yty",
+        'layout': {
+                "visibility": "none"
+			},
+        'paint': {
+            'fill-color': "#beaed4",
+            'fill-opacity': 0.8,
+			'fill-outline-color': "#000000"
+						
+		}
+ });  
+ 
+  map.addLayer({
+        'id': 'Quaternary',
+        'type': 'fill',
+        'source': 'Quaternary',
+		'source-layer': "Watershed_Quaternary-bqfg56",
+        'layout': {
+                "visibility": "none"
+			},
+        'paint': {
+            'fill-color': "#7fc97f",
+            'fill-opacity': 0.8,
+			'fill-outline-color': "#000000"
+						
+		}
+ });  
+ 
+ map.addLayer({
+        'id': 'Greenbelt',
+        'type': 'fill',
+        'source': 'Greenbelt',
+		'source-layer': "Greenbelt-c2q33w",
+        'layout': {
+                "visibility": "none"
+			},
+        'paint': {
+            'fill-color': "#7fc97f",
+            'fill-opacity': 0.8,
+			'fill-outline-color': "#2ca25f"
+						
+		}
+ });
 		
 
  $("#map-about").focusin( function() {map.scrollZoom.enable();})
@@ -444,7 +528,7 @@ $("#mapreset").appendTo(".mapboxgl-ctrl-group");
 
 //make layer visible and update legend
 $("#AJAXOP").click(function() {
-	checkVisibility('AJAXOP','TREATY','STORM', 'AERIAL');
+	checkVisibility('AJAXOP','TREATY','STORM', 'AERIAL', 'Secondary','Tertiary','Quaternary', 'Greenbelt');
 	map.flyTo({
 			center: [-79.031, 43.868],
 			zoom: 11,
@@ -460,7 +544,7 @@ $("#AJAXOP").click(function() {
 
 
 $("#STORM").click(function() {
-	checkVisibility('STORM','TREATY', 'AJAXOP', 'AERIAL');
+	checkVisibility('STORM','TREATY', 'AJAXOP', 'AERIAL', 'Secondary','Tertiary','Quaternary', 'Greenbelt');
 		map.flyTo({
 			center: [-79.031, 43.868],
 			zoom: 12,
@@ -474,7 +558,7 @@ $("#STORM").click(function() {
 });
 
 $("#TREATY").click(function() {
-	checkVisibility('TREATY','STORM', 'AJAXOP', 'AERIAL');
+	checkVisibility('TREATY','STORM', 'AJAXOP', 'AERIAL','Secondary','Tertiary','Quaternary', 'Greenbelt' );
 	map.flyTo({
 			center: [-78.710, 43.360],
 			zoom: 6,
@@ -485,8 +569,11 @@ $("#TREATY").click(function() {
 	map.setLayoutProperty('mapbox-satellite', 'visibility', 'none');
 	//map.setPaintProperty('ne-10m-admin-1-ontario-lakes', 'fill-color', '#6e6e6e');
 });
+
+ 
+
 $("#AERIAL").click(function() {
-	checkVisibility('AERIAL', 'TREATY','STORM', 'AJAXOP' );
+	checkVisibility('AERIAL', 'TREATY','STORM', 'AJAXOP', 'Secondary','Tertiary','Quaternary', 'Greenbelt' );
 	map.flyTo({
 			center: [-79.031, 43.82],
 			zoom: 12,
@@ -497,9 +584,55 @@ $("#AERIAL").click(function() {
 	map.setLayoutProperty('mapbox-satellite', 'visibility', 'visible');
 });
 
+$("#Secondary").click(function() {
+	checkVisibility('Secondary','AJAXOP','TREATY','STORM', 'AERIAL', 'Tertiary','Quaternary', 'Greenbelt' );
+	map.flyTo({
+			center: [-79.031, 43.868],
+			zoom: 7,
+			pitch:0,
+			speed:0.4
+			});
+
+	map.setLayoutProperty('mapbox-satellite', 'visibility', 'none');
+});	
+$("#Tertiary").click(function() {
+	checkVisibility('Tertiary','AJAXOP','TREATY','STORM', 'AERIAL','Secondary', 'Quaternary', 'Greenbelt');
+	map.flyTo({
+			center: [-79.031, 43.868],
+			zoom: 8,
+			pitch:0,
+			speed:0.4
+			});
+
+	map.setLayoutProperty('mapbox-satellite', 'visibility', 'none');
+});
+$("#Quaternary").click(function() {
+	checkVisibility('Quaternary','AJAXOP','TREATY','STORM', 'AERIAL','Secondary','Tertiary', 'Greenbelt');
+	map.flyTo({
+			center: [-79.031, 43.868],
+			zoom: 9,
+			pitch:0,
+			speed:0.4
+			});
+
+	map.setLayoutProperty('mapbox-satellite', 'visibility', 'none');	
+});
+
+$("#Greenbelt").click(function() {
+	checkVisibility('Greenbelt','Quaternary','AJAXOP','TREATY','STORM', 'AERIAL','Secondary','Tertiary');
+	map.flyTo({
+			center: [-79.031, 43.868],
+			zoom: 9,
+			pitch:0,
+			speed:0.4
+			});
+
+	map.setLayoutProperty('mapbox-satellite', 'visibility', 'none');	
+});
 
 // When a click event occurs on a feature in the states layer, open a popup at the
 // location of the click, with description HTML from its properties.
+
 map.on('click', 'AJAXOP', function(e) {
 new mapboxgl.Popup()
 .setLngLat(e.lngLat)
@@ -514,8 +647,23 @@ new mapboxgl.Popup()
 .addTo(map);
 });
 
+map.on('click', 'Secondary', function(e) {
+new mapboxgl.Popup()
+.setLngLat(e.lngLat)
+.setHTML(e.features[0].properties.OFFICIAL_N)
+.addTo(map);
+});
+
+map.on('click', 'Tertiary', function(e) {
+new mapboxgl.Popup()
+.setLngLat(e.lngLat)
+.setHTML(e.features[0].properties.OFFICIAL_N)
+.addTo(map);
+});
+
+
 //function to change which layer is visible
-function checkVisibility(clickedLayer, other1, other2, other3) {
+function checkVisibility(clickedLayer, other1, other2, other3, other4, other5, other6, other7) {
 
 	map.setLayoutProperty(clickedLayer, 'visibility', 'visible');
 			
@@ -525,13 +673,23 @@ function checkVisibility(clickedLayer, other1, other2, other3) {
 	
 	map.setLayoutProperty(other3, 'visibility', 'none');
 	
+	map.setLayoutProperty(other4, 'visibility', 'none');
+	
+	map.setLayoutProperty(other5, 'visibility', 'none');
+	
+	map.setLayoutProperty(other6, 'visibility', 'none');
+	
+	map.setLayoutProperty(other7, 'visibility', 'none');
+	
 
 	$('#' + clickedLayer).addClass("active");
 	$('#' + other1).removeClass("active");
 	$('#' + other2).removeClass("active");
 	$('#' + other3).removeClass("active");
-
-	
+	$('#' + other4).removeClass("active");
+	$('#' + other5).removeClass("active");
+	$('#' + other6).removeClass("active");
+	$('#' + other7).removeClass("active");
 	
 };
 
@@ -551,7 +709,12 @@ map.getCanvas().style.cursor = 'pointer';
 });
  
 // Change it back to a pointer when it leaves.
-map.on('mouseleave', 'TREATY', function() {
+map.on('mouseleave', 'Secondary', function() {
+map.getCanvas().style.cursor = '';
+});
+
+// Change it back to a pointer when it leaves.
+map.on('mouseleave', 'Tertiary', function() {
 map.getCanvas().style.cursor = '';
 });
 
