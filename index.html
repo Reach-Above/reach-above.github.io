@@ -1,730 +1,185 @@
 <!DOCTYPE html>
 <html>
+
+<meta charset="utf-8" />
+<meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no" />
+<script src="https://api.mapbox.com/mapbox-gl-js/v1.8.1/mapbox-gl.js"></script>
+<link href="https://api.mapbox.com/mapbox-gl-js/v1.8.1/mapbox-gl.css" rel="stylesheet" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="https://fonts.googleapis.com/css?family=Ubuntu"></script>
+
 <body>
-<script src='https://api.tiles.mapbox.com/mapbox-gl-js/v1.0.0/mapbox-gl.js'></script>
-<link href='https://api.tiles.mapbox.com/mapbox-gl-js/v1.0.0/mapbox-gl.css' rel='stylesheet' />
-<script src="https://api.mapbox.com/mapbox.js/plugins/arc.js/v0.1.0/arc.js"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-	
-  <style>
   
-	#mapcontainer {
-		position:relative;
-		height:80vh;
-		border:1px solid #6e6e6e;					  
-	}
 
-	.map-center-container, #map-legend{
-		width: 90%;
-		margin: 0px auto;
-	}
 
-	.mapboxgl-ctrl-attrib .mapbox-improve-map {
-		display: none !important;
-	}  
-	  
-	 #map-about {
-		position:absolute;
-		right:0;
-		top:0;
-		bottom:0;
-		width: 100%;
-		font-family: open sans;
-	}
+<style>
 
-	#belowMap.row {
-		padding: 0px;
-		background-color: #6e6e6e;
-		margin-top: 0
-	}
 
-	#navcontainer {
-		margin: 0;
-		text-transform: capitalize;
-		display: flex;
-		flex-direction: row;
-	}
-	ul#navlist {
-		width: auto;
-		text-align: left;
-	}
-
-	button.mapboxgl-ctrl-icon:focus {
-		background-color:#dedede;
-	}	
-	.legend:hover, .legend:focus{
-		background: #5c5c5c;
-		-webkit-transition-duration: 0.2s;
-		transition-duration: 0.2s;
-	}
-	#map-legend {
-		padding: 0px;
-		border: 1px solid #6e6e6e;
-		border-top: 0px;
-		box-sizing: unset;
-	}
-	.legend{
-		font-size: 1em;
-		z-index: 1;
-		color: #ededed;
-		display: inline-block;
-		cursor: pointer;
-		padding: 1em 1.3em;
-		box-sizing: border-box;
-		border: none;
-		text-align: center;
-		outline:none;
-		background: #6e6e6e;
-		border-right: 1px solid black;
-	}
-	.heading {
-		background: #fff;
-		border-bottom: 1px solid #eee;
-		min-height: 60px;
-		line-height: 60px;
-		padding: 0 10px;
-	}	
-	#mapabout.button {
-		background-color: rgba(230,231,232,0.8);
-		border-radius: 8px;
-		border-style: solid;
-		border-width: 2px;
-		border-color: rgba(65,64,66,0.8);
-		font-family: "Arial";
-		font-weight: bold;
-		color: rgba(65,64,66,0.95);
-		width: 100%;
-		height: 100%;
-		text-align: center;
-		line-height: 36px;
-	}
-	#mapabout.button:hover {
-		background-color: rgba(65,64,66,0.8);
-		border-color: rgba(230,231,232,0.8);
-		color: rgba(230,231,232,0.95);
-		cursor: pointer;
-	}
-	.active {
-		background-color: rgba(65,64,66,0.8);
-		color: rgba(230,231,232,0.95);
-		cursor: pointer;
-	} 
-	 /* Marker tweaks */
-	  
-	.mapboxgl-popup-close-button {
-		font-size: 2em;
-		color: initial;
-	}
-	  
-	.mapboxgl-popup-anchor-bottom .mapboxgl-popup-tip {
-	    margin-bottom: 1.5em;
-	}
-
-	.mapboxgl-popup-content {
-		z-index: 2;
-		color:black;
-		font-weight: 100;
-		border-radius: 1em;
-		box-sizing: border-box;
-		padding: 1em;
-		background-color: #fff;
-		border: 1px solid #5d5d5d;
-		font: 400 15px/22px 'Source Sans Pro', 'Helvetica Neue', Sans-serif;
+html, body, #hero {
+  font-family: 'Ubuntu', sans-serif;
+  position: relative;
+  height: 100%;
+  width: 100%;
+  min-height: 100%;
+  min-width: 100%;
+  margin: 0;
+  padding: 0;
+  z-index: -1;
 }
 
-	.mapboxgl-popup {
-	  padding-bottom: 10px;
-	  padding-top: 10px;
-	  max-width: 400px;
-	}
+header {
+  top:1%;
+  color: #000;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  text-align: center;
+  background: #fff;
+  opacity: 1;
+}
 
-	.mapboxgl-popup-content-wrapper {
-	  padding: 1%;
-	}
-	  
-	  .mapboxgl-popup-content h3 {
-	    background: #91c949;
-	    color: #fff;
-	    margin: 0;
-	    display: block;
-	    padding: 10px;
-	    border-radius: 3px 3px 0 0;
-	    font-weight: 700;
-	    margin-top: -15px;
-	  }
-
-
-
-	  
-	  .mapboxgl-popup-content h4 {
-	    margin: 0;
-	    display: block;
-	    padding: 10px;
-	    font-weight: 400;
-	    margin: 0;
-	  }
-	  
-	  .mapboxgl-popup-content div {
-	    padding: 10px;
-	  }
-	  
-	  .mapboxgl-container .leaflet-marker-icon {
-	    cursor: pointer;
-	  }
-
-		#mapabout button.mapboxgl-ctrl-icon:focus {
-		background-color:#dedede;
-	}
-	a.skip-map{
-		color: #ededed;
-		background-color: #000;
-		-moz-transition: height .5s;
-		-ms-transition: height .5s;
-		-o-transition: height .5s;
-		-webkit-transition: height .5s;
-		transition: height .5s;
-		height: 0;
-		font-size: 1.2em;
-		text-align: center;
-		position:absolute;
-		overflow: hidden;
-		z-index: 999;
-		margin: 0 35%;
-		border-radius: 0 0 15px 15px;
-		width: 30%;
-		min-width: 160px;
-		border-bottom: none !important;
-	}
-	a.skip-map:focus {
-		height: 25px;
-	}
-
-	a.company-title intro {
-		font-weight: 700;
-		font-size: 1.5em;
-		margin-bottom: 0.25em;
-		margin-right: 0.5em;
-	}
-
-	@media (max-width: 533px) {
-		a.skip-map{
-			margin: 0 calc( 50% - 80px);
-		}
-	}
-
-	@media (max-width: 650px) {
-		#title{
-			display: none;
-		}
-
-		##map-about {
-			height: 40vh;
-		}
-
-		.map-center-container{
-			width: 90%;
-		    margin: 0px auto;
-		}
-
-		#navcontainer {
-		    flex-direction: column;
-		}
-		.legend {
-		    border-bottom: 1px solid black;
-		}
-	}			
-	.mapboxgl-popup {
-	max-width: 400px;
-	font: 12px/20px 'Helvetica Neue', Arial, Helvetica, sans-serif;
-	}
-		
-	@-webkit-keyframes checked-anim {
-		100% {
-			width: 100%;
-		}
-	}
-	@-webkit-keyframes not-checked-anim {
-		0% {
-			width: 3000px;
-			height: 3000px;
-		}
-	}
+h3 {
+  font-weight: 400;
+}
+h4 {
+  font-weight: 300;
+}
+#hero { background: no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+    }
+#overlay { 
+  -o-animation: colorcycle 20s infinite;
+  -moz-animation: colorcycle20s infinite;
+  -webkit-animation: colorcycle 20s infinite;
+  animation: colorcycle 20s infinite; 
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+  filter: alpha(opacity=50);
+  -moz-opacity: 0.5;
+  -khtml-opacity: 0.5;
+  opacity: 1;
+}
 
 
-	@keyframes checked-anim {
-		100% {
-			width: 100%;
-		}
-	}
-	@keyframes not-checked-anim {
-		0% {
-			width: 3000px;
-			height: 3000px;
-		}
-	}
+@-o-keyframes colorcycle {
+  0%   {background: #a24de3;}
+  25%  {background: #00aeff;}
+  50%  {background: #f45a4a;}
+  75%  {background: #4fd1cd;}
+  100% {background: #a24de3;}
+}
 
-  </style>
+@-moz-keyframes colorcycle {
+  0%   {background: #a24de3;}
+  25%  {background: #00aeff;}
+  50%  {background: #f45a4a;}
+  75%  {background: #4fd1cd;}
+  100% {background: #a24de3;}
+}
+
+@-webkit-keyframes colorcycle {
+  0%   {background: #a24de3;}
+  25%  {background: #00aeff;}
+  50%  {background: #f45a4a;}
+  75%  {background: #4fd1cd;}
+  100% {background: #a24de3;}
+}
+
+@keyframes colorcycle {
+  0%   {background: #a24de3;}
+  25%  {background: #00aeff;}
+  50%  {background: #f45a4a;}
+  75%  {background: #4fd1cd;}
+  100% {background: #a24de3;}
+}
 
 
+ main {
+  padding: 0vh 0 50vh;
+  position: relative;
+  overflow: hidden;
+ }
 
+ #map { position: absolute; top: 0; bottom: 0; width: 100%}
 
-<div id= "mapcontainer" class="map-center-container">
-<a class="skip-map" href="#who-we-are">Skip This Map</a>
+footer {
+  bottom: 0%;
+  padding-top: 10%;
+  padding-bottom: 1%;
+  background: #fff;
+  opacity: 1;
+  text-align: center;
+  position: relative;
+}
 
-<div id='map-about' class='mapboxgl-map'> 
- <div class="mapboxgl-control-container"> 
- </div>
-</div>
-</div>
-<div class="article" id="map-legend">
-<div class="row noMargin" id="belowMap">
-<div id="navcontainer">
-     <button type="button" class="legend active" id="STORM">Storm Water</button>
-     <button type="button" class="legend" id="AJAXOP" ><span class="dot legendDot fill-BiotechOther"></span>Ajax official Plan</button>
-     <button type="button" class="legend" id="TREATY" ><span class="dot legendDot fill-BiotechOther"></span>Treaties</button>
-	 <button type="button" class="legend" id="AERIAL" ><span class="dot legendDot fill-BiotechOther"></span>Aerial</button>
-	 <button type="button" class="legend" id="Secondary" ><span class="dot legendDot fill-BiotechOther"></span>Secondary</button>
-	 <button type="button" class="legend" id="Tertiary" ><span class="dot legendDot fill-BiotechOther"></span>Tertiary</button>
-	 <button type="button" class="legend" id="Quaternary" ><span class="dot legendDot fill-BiotechOther"></span>Quaternary</button>
-	 <button type="button" class="legend" id="Greenbelt" ><span class="dot legendDot fill-BiotechOther"></span>Greenbelt</button>
-   </div>
+/* Style all font awesome icons */
+.fa {
+  padding: 5px;
+  font-size: 10px;
+  width: 10px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+}
+
+/* Add a hover effect if you want */
+.fa:hover {
+  opacity: 0.7;
+}
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+</style>
+ <div id="hero">
+    <div id="overlay">
+      <header>
+        <h1>Reach Above</h1>
+        <h3>Custom Maps</h3>
+        <h4>Print, Digital, Interactive</h4>
+        <h4><b>Serving</b> Clarington, Prince Edward County & the Globe</h4>
+      </header>
+      <main>
+        <div id="map"></div>
+      </main>
+     
+      <footer>
+	  <h4>Always happy to chat about maps, discuss ideas and explore! Direct message over Twitter<h4/>
+          <a href="http://reachabove.ca">ReachAbove</a>
+       <a href="https://twitter.com/reach_above" class="fa fa-twitter"></a>
+      </footer>  
+    </div>
   </div>
-</div>
+
 <script>
-mapboxgl.accessToken = 'pk.eyJ1IjoicmVhY2hhYm92ZSIsImEiOiJjazVtaGt1bnkwenUzM2RuNWswdmZnNTM5In0._APZqavtype3IHdsZus8wQ';
+mapboxgl.accessToken = 'pk.eyJ1IjoicmVhY2hhYm92ZSIsImEiOiJjazBkcm1wazUwYWNmM2xxZXhhNW1sc2hmIn0.ybV26N8Bl8WyZejLHvwiCw';
 
- // This adds the map to your page
-  var map = new mapboxgl.Map({
-    attributionControl: false,
-    container: 'map-about', 
-    style: 'mapbox://styles/reachabove/ck5mishhp0iue1ipl6spq11fp', 
-    center: [-79.029, 43.831], 
-    zoom: 11,
-	minZoom:4,
-    maxZoom:20
-  });
+var map = new mapboxgl.Map({
+        attributionControl: false,
+        container: 'map',
+        zoom: 2,
+        center: [-79, 44],
+        style: 'mapbox://styles/reachabove/ck7gdlgg60mf21iqlbkmol5ox'
+    }).addControl(new mapboxgl.AttributionControl({
+        compact: true
+    }));
+map.scrollZoom.disable();
 
-map.addControl(new mapboxgl.AttributionControl({compact: true,  customAttribution:"<a href=http://www12.statcan.gc.ca/census-recensement/index-eng.cfm target=_blank> Statistics Canada </a> <a href=https://www.census.gov/geo/maps-data/data/tiger.html target=_blank> | U.S. Census Bureau </a>"}));  
-  
-var ontarioBounds =[[-95.5, 41.3], [-72.2, 50.5]];
-
-var routes = { "type": "FeatureCollection",													
-"name": "Airports_Destinations",													
-"features": [													
-{ "type": "Feature", "properties": { "ORG":	"Toronto"	,	"id":1	}, "geometry": { "type": "LineString", "coordinates": [ [	-79.6108178	,	43.6757322	], [	-77.845104	,	21.424704	] ] } }	]}
-
-
-var AERIAL = { "type": "FeatureCollection",													
-"name": "AERIAL",													
-"features": [													
-{ "type": "Feature", "properties": { "ORG":	"Hamilton"	,	"id":2	}, "geometry": { "type": "LineString", "coordinates": [ [	-79.9272586	,	43.1612284	], [	-68.363235	,	18.563039	] ] } }	]}
-;
-
-//Add the zoom in/zoom out buttons on the top right corner
-map.addControl(new mapboxgl.NavigationControl());
-
-$("#mapreset").appendTo(".mapboxgl-ctrl-group");
-
-
-// This adds the data to the map
-  map.on('load', function (e) {
-    map.addSource('AJAXOP', {
-        type: 'vector',
-	    url: 'mapbox://reachabove.36ofe336',
-		});
-	map.addSource('STORM', {
-        type: 'vector',
-        url: 'mapbox://reachabove.03kev07v'
-	    });
-	map.addSource('TREATY', {
-        type: 'vector',
-        url: 'mapbox://reachabove.a74mxvjf'
-	    });
-	map.addSource('AERIAL', {
-        'type': 'geojson',
-        'data': AERIAL
-	    });
-	map.addSource('Quaternary', {
-        type: 'vector',
-        url: 'mapbox://reachabove.0xsb7v12'
-	    });
-	map.addSource('Tertiary', {
-        type: 'vector',
-        url: 'mapbox://reachabove.1kx5bgli'
-	    });	
-	map.addSource('Secondary', {
-        type: 'vector',
-        url: 'mapbox://reachabove.34t172ni'
-	    });	
+map.on('load', function() {
+	setInterval(function() {	
 		
-		map.addSource('Greenbelt', {
-        type: 'vector',
-        url: 'mapbox://reachabove.ajwp2r5b'
-	    });		
-    
-    // map.setLayoutProperty('water', 'visibility', 'visible');
-
-  	 map.addLayer({
-       "id": "AJAXOP",
-        "type": "fill",
-        "source": "AJAXOP",
-		"source-layer": "Ajax_Official_Plan-1uozx3",
-		'layout': {
-			"visibility": "none"
-		},
-             'paint': {
-              'fill-color': [
-  "match",
-  ["get", "OP_DESIG"],
-  [
-    "Neighbourhood Centre",
-    "General Employment",
-    "Village Regional Centre",
-    "Uptown Regional Centre",
-    "Prestige Employment",
-    "Downtown Regional Centre",
-    "Midtown Corridor",
-    "Mixed Commercial Corridor"
-  ],
-  "hsla(18, 79%, 58%, 0.5)",
-  [
-    "Lake Ontario Nearshore",
-    "Open Space",
-    "Environmental Protection"
-  ],
-  "hsla(115, 52%, 46%, 0.5)",
-  ["Rural Area"],
-  "hsla(0, 4%, 64%, 0.5)",
-  [
-    "Low Density Residential",
-    "Medium Density Residential",
-    "High Density Residential"
-  ],
-  "hsla(204, 78%, 61%, 0.63)",
-  "hsla(0, 0%, 85%, 0.63)"
-]
-        }
-   }); 
-
-    
-
-    map.addLayer({
-        'id': 'STORM',
-        'type': 'fill',
-        'source': 'STORM',
-		'source-layer': "Storm_Water-bvcrxt",
-        'layout': {
-                "visibility": "none"
-			},
-        'paint': {
-            'fill-color': "hsl(200, 65%, 41%)",
-            'fill-opacity': 0.8,
-			'fill-outline-color': "#6a8ca0"
-						
-		}
- });  
-  
-
-	map.addLayer({
-		'id': 'TREATY',
-		'type': 'fill',
-		'source': 'TREATY',
-		'source-layer': 'TreatiesMorrisMap-a3k5nq',
-		'maxzoom': 7,
-		'layout': {
-			'visibility': 'none',
-		}	,
-		'paint': {
-			'fill-color': "hsla(37, 77%, 63%, 0.53)",
-            'fill-opacity': 0.4,
-			'fill-outline-color': "#000000"
-			}	
-	});
-	
-	map.addLayer({
-        "id": 'AERIAL',
-        "type": 'line',
-        "source": 'AERIAL',
-        "layout": {
-            
-        },
-        "paint": {
-			
-                }
-			
-    });
-	
-	map.addLayer({
-        'id': 'Secondary',
-        'type': 'fill',
-        'source': 'Secondary',
-		'source-layer': "Watershed_Secondary-5ng07c",
-        'layout': {
-                "visibility": "none"
-			},
-        'paint': {
-            'fill-color': "#fdc086",
-            'fill-opacity': 0.8,
-			'fill-outline-color': "#000000"
-						
-		}
- });  
- 
-  map.addLayer({
-        'id': 'Tertiary',
-        'type': 'fill',
-        'source': 'Tertiary',
-		'source-layer': "Watershed_Tertiary-c05yty",
-        'layout': {
-                "visibility": "none"
-			},
-        'paint': {
-            'fill-color': "#beaed4",
-            'fill-opacity': 0.8,
-			'fill-outline-color': "#000000"
-						
-		}
- });  
- 
-  map.addLayer({
-        'id': 'Quaternary',
-        'type': 'fill',
-        'source': 'Quaternary',
-		'source-layer': "Watershed_Quaternary-bqfg56",
-        'layout': {
-                "visibility": "none"
-			},
-        'paint': {
-            'fill-color': "#7fc97f",
-            'fill-opacity': 0.8,
-			'fill-outline-color': "#000000"
-						
-		}
- });  
- 
- map.addLayer({
-        'id': 'Greenbelt',
-        'type': 'fill',
-        'source': 'Greenbelt',
-		'source-layer': "Greenbelt-c2q33w",
-        'layout': {
-                "visibility": "none"
-			},
-        'paint': {
-            'fill-color': "#7fc97f",
-            'fill-opacity': 0.5,
-			'fill-outline-color': "#2ca25f"
-						
-		}
- });
-		
-
- $("#map-about").focusin( function() {map.scrollZoom.enable();})
-		.focusout( function() {map.scrollZoom.disable();})
-		.mouseleave( function () {$(this).focusout();})
-		.click( function () {$(this).focusin();});
-	
-});
-
-//make layer visible and update legend
-$("#AJAXOP").click(function() {
-	checkVisibility('AJAXOP','TREATY','STORM', 'AERIAL', 'Secondary','Tertiary','Quaternary', 'Greenbelt');
-	map.flyTo({
-			center: [-79.031, 43.868],
-			zoom: 11,
-			pitch:0,
-			speed:0.4
-			});
-
-	map.setLayoutProperty('mapbox-satellite', 'visibility', 'none');
-	//map.setPaintProperty('ne-10m-admin-1-ontario-lakes', 'fill-color', '#ededed');
-    //map.setLayoutProperty('TREATYL', 'visibility', 'none');
-	
- });
-
-
-$("#STORM").click(function() {
-	checkVisibility('STORM','TREATY', 'AJAXOP', 'AERIAL', 'Secondary','Tertiary','Quaternary', 'Greenbelt');
 		map.flyTo({
-			center: [-79.031, 43.868],
-			zoom: 12,
-			pitch:0,
-			screenSpeed:0.4
-			});
-			
-	map.setLayoutProperty('mapbox-satellite', 'visibility', 'none');
-	//map.setPaintProperty('ne-10m-admin-1-ontario-lakes', 'fill-color', '#6e6e6e');
-
-});
-
-$("#TREATY").click(function() {
-	checkVisibility('TREATY','STORM', 'AJAXOP', 'AERIAL','Secondary','Tertiary','Quaternary', 'Greenbelt' );
-	map.flyTo({
-			center: [-78.710, 43.360],
-			zoom: 6,
-			pitch:20,
-			screenSpeed:0.4
-			});
-	
-	map.setLayoutProperty('mapbox-satellite', 'visibility', 'none');
-	//map.setPaintProperty('ne-10m-admin-1-ontario-lakes', 'fill-color', '#6e6e6e');
-});
-
- 
-
-$("#AERIAL").click(function() {
-	checkVisibility('AERIAL', 'TREATY','STORM', 'AJAXOP', 'Secondary','Tertiary','Quaternary', 'Greenbelt' );
-	map.flyTo({
-			center: [-79.031, 43.82],
-			zoom: 12,
-			pitch:0,
-			speed:0.4
-			});	
-	
-	map.setLayoutProperty('mapbox-satellite', 'visibility', 'visible');
-});
-
-$("#Secondary").click(function() {
-	checkVisibility('Secondary','AJAXOP','TREATY','STORM', 'AERIAL', 'Tertiary','Quaternary', 'Greenbelt' );
-	map.flyTo({
-			center: [-79.031, 43.868],
-			zoom: 7,
-			pitch:0,
-			speed:0.4
-			});
-
-	map.setLayoutProperty('mapbox-satellite', 'visibility', 'none');
-});	
-$("#Tertiary").click(function() {
-	checkVisibility('Tertiary','AJAXOP','TREATY','STORM', 'AERIAL','Secondary', 'Quaternary', 'Greenbelt');
-	map.flyTo({
-			center: [-79.031, 43.868],
-			zoom: 8,
-			pitch:0,
-			speed:0.4
-			});
-
-	map.setLayoutProperty('mapbox-satellite', 'visibility', 'none');
-});
-$("#Quaternary").click(function() {
-	checkVisibility('Quaternary','AJAXOP','TREATY','STORM', 'AERIAL','Secondary','Tertiary', 'Greenbelt');
-	map.flyTo({
-			center: [-79.031, 43.868],
-			zoom: 9,
-			pitch:0,
-			speed:0.4
-			});
-
-	map.setLayoutProperty('mapbox-satellite', 'visibility', 'none');	
-});
-
-$("#Greenbelt").click(function() {
-	checkVisibility('Greenbelt','Quaternary','AJAXOP','TREATY','STORM', 'AERIAL','Secondary','Tertiary');
-	map.flyTo({
-			center: [-79.031, 43.868],
-			zoom: 9,
-			pitch:0,
-			speed:0.4
-			});
-
-	map.setLayoutProperty('mapbox-satellite', 'visibility', 'none');	
-});
-
-// When a click event occurs on a feature in the states layer, open a popup at the
-// location of the click, with description HTML from its properties.
-
-map.on('click', 'AJAXOP', function(e) {
-new mapboxgl.Popup()
-.setLngLat(e.lngLat)
-.setHTML(e.features[0].properties.OP_DESIG)
-.addTo(map);
-});
-	
-map.on('click', 'TREATY', function(e) {
-new mapboxgl.Popup()
-.setLngLat(e.lngLat)
-.setHTML(e.features[0].properties.MORRIS_NAM)
-.addTo(map);
-});
-
-map.on('click', 'Secondary', function(e) {
-new mapboxgl.Popup()
-.setLngLat(e.lngLat)
-.setHTML(e.features[0].properties.OFFICIAL_N)
-.addTo(map);
-});
-
-map.on('click', 'Tertiary', function(e) {
-new mapboxgl.Popup()
-.setLngLat(e.lngLat)
-.setHTML(e.features[0].properties.OFFICIAL_N)
-.addTo(map);
-});
-
-
-//function to change which layer is visible
-function checkVisibility(clickedLayer, other1, other2, other3, other4, other5, other6, other7) {
-
-	map.setLayoutProperty(clickedLayer, 'visibility', 'visible');
-			
-	map.setLayoutProperty(other1, 'visibility', 'none');
-	
-	map.setLayoutProperty(other2, 'visibility', 'none');
-	
-	map.setLayoutProperty(other3, 'visibility', 'none');
-	
-	map.setLayoutProperty(other4, 'visibility', 'none');
-	
-	map.setLayoutProperty(other5, 'visibility', 'none');
-	
-	map.setLayoutProperty(other6, 'visibility', 'none');
-	
-	map.setLayoutProperty(other7, 'visibility', 'none');
-	
-
-	$('#' + clickedLayer).addClass("active");
-	$('#' + other1).removeClass("active");
-	$('#' + other2).removeClass("active");
-	$('#' + other3).removeClass("active");
-	$('#' + other4).removeClass("active");
-	$('#' + other5).removeClass("active");
-	$('#' + other6).removeClass("active");
-	$('#' + other7).removeClass("active");
-	
-};
-
-// Change the cursor to a pointer when the mouse is over the states layer.
-map.on('mouseenter', 'AJAXOP', function() {
-map.getCanvas().style.cursor = 'pointer';
-});
- 
-// Change it back to a pointer when it leaves.
-map.on('mouseleave', 'AJAXOP', function() {
-map.getCanvas().style.cursor = '';
-});
-
-// Change the cursor to a pointer when the mouse is over the states layer.
-map.on('mouseenter', 'TREATY', function() {
-map.getCanvas().style.cursor = 'pointer';
-});
- 
-// Change it back to a pointer when it leaves.
-map.on('mouseleave', 'Secondary', function() {
-map.getCanvas().style.cursor = '';
-});
-
-// Change it back to a pointer when it leaves.
-map.on('mouseleave', 'Tertiary', function() {
-map.getCanvas().style.cursor = '';
-});
-
- 
-//Zooms back to show all of Ontario the data
-function renderReset() {
-	map.fitBounds(ontarioBounds, {padding: 0, offset: [0, 0], pitch:56, duration: 1500});
-};
-
-  </script>
-
-	</body>	
+            center: [
+                -79 + (Math.random() - 0.5) * 80,
+                44 + (Math.random() - 0.5) * 80
+            ],
+            speed: 0.1,
+            essential: true // this animation is considered essential with respect to prefers-reduced-motion
+        });
+		},8000);
+		});
+</script>
+</body>
 </html>
