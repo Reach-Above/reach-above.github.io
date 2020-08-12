@@ -71,13 +71,22 @@ body {
 <!-- Photo Grid -->
 <div class="row"> 
   <div class="column">
-    <img src="/w3images/wedding.jpg" style="width:100%">
-    <img src="/w3images/rocks.jpg" style="width:100%">
-    <img src="/w3images/falls2.jpg" style="width:100%">
-    <img src="/w3images/paris.jpg" style="width:100%">
-    <img src="/w3images/nature.jpg" style="width:100%">
-    <img src="/w3images/mist.jpg" style="width:100%">
-    <img src="/w3images/paris.jpg" style="width:100%">
+    <img src="/images/1.jpg" style="width:100%">
+    <img src="/images/2.jpg" style="width:100%">
+    <img src="/images/3.jpg" style="width:100%">
+    <img src="/images/4.jpg" style="width:100%">
+    <img src="/images/5.jpg" style="width:100%">
+    <img src="/images/6.jpg" style="width:100%">
+    <img src="/images/7.jpg" style="width:100%">
+    <img src="/images/8.jpg" style="width:100%">
+    <img src="/images/9.jpg" style="width:100%">
+    <img src="/images/10.jpg" style="width:100%">
+    <img src="/images/11.jpg" style="width:100%">
+    <img src="/images/12.jpg" style="width:100%">
+    <img src="/images/13.jpg" style="width:100%">
+    <img src="/images/14.jpg" style="width:100%">
+    <img src="/images/15.jpg" style="width:100%">
+    <img src="/images/16.jpg" style="width:100%">
   </div>
   <div class="column">
     <img src="/w3images/underwater.jpg" style="width:100%">
