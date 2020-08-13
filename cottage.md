@@ -69,6 +69,9 @@ body {
     <img src="/images/16.jpg" style="width:100%">
   </div>
 </div>
+header {
+  display: none;
+}
 
 <script>
 // Get the elements with class="column"
