@@ -37,9 +37,16 @@ body {
 }
 
 </style>
-</head>Subtitle</p>
-  
-</div>
+</head>
+<body
+
+<!-- Header -->
+<div class="header" id="myHeader">
+  <h1>Cottage Pictures</h1>
+  <p>Connect with us for more detials</p>
+ 
+</div>  
+
 
 <!-- Photo Grid -->
 <div class="row"> 
