@@ -38,7 +38,7 @@ body {
 
 </style>
 </head>
-<body
+<body>
 
 <!-- Header -->
 <div class="header" id="myHeader">
