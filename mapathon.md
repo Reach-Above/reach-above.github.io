@@ -49,9 +49,9 @@
         }   
         
         .px-3 {
-             margin-right: 0px !important;
-             margin-left: 0px !important;
-        }   
+             padding-right: 0px !important;
+             padding-left: 0px !important;
+        }
         
         .centered {
             width: 50vw;
