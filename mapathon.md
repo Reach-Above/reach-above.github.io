@@ -94,7 +94,7 @@
 
 <div id="map"></div>
 <div id="story"></div>
-<script = "config.js">
+<script>
 var config = {
     style: 'mapbox://styles/branigan/ck21y6cbi05cv1cn3gvbvykyd',
     accessToken: 'pk.eyJ1IjoibWJ4c29sdXRpb25zIiwiYSI6ImNrMm01aG9hdTBlZGwzbXQ1ZXVrNHNmejAifQ.QHQA0N6XPWddCXtvoODHZg',
