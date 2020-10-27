@@ -127,7 +127,7 @@ var config = {
             id: 'phl',
             title: 'Lockdown opportunity',
             image: '',
-            description: 'With sports, schools and indoor public activites being cancelled we had more opportunities to get ouside and explore our community',
+            description: 'With sports, schools and indoor public activites cancelled we had more opportunities to get ouside and explore our community. Here is a story of where we rode our bikes and hiked',
             location: {
                 center: [-79.012, 43.992],
                 zoom: 9.45,
@@ -157,14 +157,14 @@ var config = {
         },
         {
             id: 'bike-lanes',
-            title: 'Bike Lanes',
+            title: 'Our Local Rides',
             image: '',
-            description: 'Philadelphia has XX miles of bike lanes, XX miles of which are protected. Drivers are getting more used to sharing the road, but ride defensively.',
+            description: 'Almost everyday we got outside and rode our bikes. The darker the line colour the further the ride',
             location: {
-                center: [-75.13901, 39.97085],
-                zoom: 11.62,
-                pitch: 55.50,
-                bearing: -7.20
+                center: [-78.696, 43.919],
+                zoom: 13.25,
+                pitch: 0.00,
+                bearing: 0.00
             },
             onChapterEnter: [
                 {
