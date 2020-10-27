@@ -202,7 +202,7 @@ var config = {
             id: 'belmont',
             title: 'We went exploring all sorts of places',
             image: '',
-            description: 'Our school - St. Joseph's',
+            description: 'Our school - St. Joseph',
             location: {
                 center: [-78.675, 43.904],
                 zoom: 16.73,
