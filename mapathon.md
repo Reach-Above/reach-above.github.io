@@ -127,7 +127,7 @@ var config = {
             id: 'phl',
             title: 'Outdoor Opportunity',
             image: '',
-            description: 'With sports, schools and indoor public activites cancelled we had more opportunities to get ouside and explore our community. Here is a story of where we rode our bikes and hiked',
+            description: 'With school, sports and indoor activites cancelled we had more opportunities to get ouside and explore our community. Here is a story of where we rode our bikes and hiked',
             location: {
                 center: [-79.012, 43.992],
                 zoom: 9.45,
@@ -176,86 +176,86 @@ var config = {
         },
         {
             id: 'indego',
-            title: 'Indego Bike Share',
+            title: 'We rode in all sorts of weather. Rain, Snow, Cold and Hot',
             image: '',
-            description: 'Indego has been operating in Philadelphia since 20XX. The system initally was focused on Center City, but has expanded service to neighboring areas to support equitable mobility options to the city\'s residents.',
+            description: 'Here is a picture mid-ride in a snow storm. The coldest temperature was and the warmest',
             location: {
-                center: [-75.16468, 39.94503],
-                zoom: 13.15,
-                pitch: 60.00,
+                center: [-78.674, 43.926],
+                zoom: 16.69,
+                pitch: 32.00,
                 bearing: -16.80
             },
             onChapterEnter: [
                 {
-                    layer: 'indego-stations',
-                    opacity: 0.8
+                    layer: 'strava-1',
+                    opacity: 1
                 }
             ],
             onChapterExit: [
                 {
-                    layer: 'indego-stations',
-                    opacity: 0
+                    layer: 'strava-1',
+                    opacity: 1
                 }
             ]
         },
         {
             id: 'belmont',
-            title: 'Belmont Plateau Trails',
+            title: 'We went exploring all sorts of places',
             image: '',
-            description: 'A short ride along the Schuylkill River Trail from the Art Museum, Belmont is a twisty, log-ridden rollercoaster of a trail network. It is easy to get turned around, the underbrush is at times impenetrable, and short steep sections come out of nowhere. In other words, it\'s really fun',
+            description: 'Our school - St. Joseph's',
             location: {
-                center: [-75.20325, 39.99574],
-                zoom: 14.99,
-                pitch: 44.00,
-                bearing: -40.00
+                center: [-78.675, 43.904],
+                zoom: 16.73,
+                pitch: 60.00,
+                bearing: 0.00
             },
             onChapterEnter: [
                 {
-                    layer: 'belmont',
+                    layer: 'strava-1',
                     opacity: 1
-                }
+                },
             ],
             onChapterExit: [
                 {
-                    layer: 'belmont',
-                    opacity: 0
+                    layer: 'strava-1',
+                    opacity: 1
                 }
             ]
         },
         {
             id: 'wiss',
-            title: 'Wissahickon Park Trails',
+            title: 'The Jury Lands',
             image: '',
-            description: 'This steep, rocky gorge can be surprisingly technical. Follow the orange and yellow trails to repeatedly climb and descend through the schist hillsides (careful of the cliffs), or stick to the gravel Forbidden Drive for a relaxing ride along the creek. You\'ll forget you\'re in a city.',
+            description: 'This place has lots of abandoned buildings',
             location: {
-                center: [-75.21223, 40.05028],
-                zoom: 13.08,
-                pitch: 47.50,
-                bearing: 32.80
+                center: [-78.668, 43.927],
+                zoom: 16.60,
+                pitch: 0.00,
+                bearing: 0.00
             },
             onChapterEnter: [
                 {
-                    layer: 'wissahickon',
+                    layer: 'strava-1',
                     opacity: 1
                 }
             ],
             onChapterExit: [
                 {
-                    layer: 'wissahickon',
-                    opacity: 0
+                    layer: 'strava-1',
+                    opacity: 1
                 }
             ]
         },
         {
             id: 'pennypack',
-            title: 'Pennypack Park Trails',
+            title: 'Evan's Daycare farwell',
             image: '',
-            description: 'Pennypack is a great introduction trail system. Not too steep and not too technical, the beautiful wooded park also provides a great escape from urban life. The south side trails are originally bridle trails, so be nice to equestrians and dismount when you approach them.',
+            description: 'Instead of a drive-by, we did a ride-by, to say farewell to Evan's teachers as he is off to J.K. ',
             location: {
-                center: [-75.05685, 40.06839],
-                zoom: 13.73,
-                pitch: 43.50,
-                bearing: 96.80
+                center: [-78.697, 43.905],
+                zoom: 15.97,
+                pitch: 26.50,
+                bearing: 0.00
             },
             onChapterEnter: [
                 {
