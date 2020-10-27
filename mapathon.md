@@ -45,8 +45,14 @@
         .container-lg {
              max-width: 100vw !important;
              margin-right: auto;
-              margin-left: auto;
+             margin-left: auto;
         }   
+        
+        .px-3 {
+             margin-right: 0px !important;
+             margin-left: 0px !important;
+        }   
+        
         .centered {
             width: 50vw;
             margin: 0 auto;
