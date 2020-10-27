@@ -17,8 +17,8 @@
         }
         #map {
             top:0; 
-            height: 100vh;
-            width:100vw;
+            height: 100%;
+            width:100%;
             position: fixed;
             z-index: -5;
         }
