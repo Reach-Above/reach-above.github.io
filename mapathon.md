@@ -139,10 +139,18 @@ var config = {
                     layer: 'strava-1',
                     opacity: 0
                 }
+                 {
+                    layer: 'strava-2',
+                    opacity: 0
+                }
             ],
             onChapterExit: [
                 {
                     layer: 'strava-1',
+                    opacity: 0
+                };
+                 {
+                    layer: 'strava-2',
                     opacity: 0
                 }
             ]
