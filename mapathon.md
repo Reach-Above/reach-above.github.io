@@ -52,6 +52,9 @@
              padding-right: 0px !important;
              padding-left: 0px !important;
         }
+        .markdown-body h2 h1 {
+        border-bottom: 0px !important;
+        }
         
         .centered {
             width: 50vw;
