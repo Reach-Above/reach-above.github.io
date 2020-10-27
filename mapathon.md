@@ -120,14 +120,14 @@ var config = {
     alignment: 'left',
     title: 'Staying Active during the Pandemic',
     subtitle: 'Local Adventures of Sam & Evan (6 & 4 years old)',
-    byline: '',
+    byline: 'by Connor Houston MEDJCT',
     footer: 'Footer',
     chapters: [
         {
             id: 'phl',
-            title: 'March 2020 - start of the lockdown',
+            title: 'Lockdown opportunity',
             image: '',
-            description: 'Getting around Philadelphia on two wheels is fast, fun, and cheap. As a typical East Coast large city, the urban core is dense, so there is a lot within reach of a 15 minute ride... even mountain bike trails. Paired with the public transit infrastructure, cycling can be more efficient and much less expensive than driving (and parking) a car.',
+            description: 'With sports, schools and indoor public activites being cancelled we had more opportunities to get ouside and explore our community',
             location: {
                 center: [-79.012, 43.992],
                 zoom: 9.45,
