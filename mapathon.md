@@ -119,13 +119,13 @@ var config = {
     theme: 'dark',
     alignment: 'left',
     title: 'Staying Active during the Pandemic',
-    subtitle: 'Local Adventures of Sam & Evan (6 & 4 year olds)',
+    subtitle: 'Local Adventures of Sam & Evan (6 & 4 years old)',
     byline: '',
     footer: 'Footer',
     chapters: [
         {
             id: 'phl',
-            title: 'Philadelphia Bicycle Infrastructure',
+            title: 'March 2020 - start of the lockdown',
             image: '',
             description: 'Getting around Philadelphia on two wheels is fast, fun, and cheap. As a typical East Coast large city, the urban core is dense, so there is a lot within reach of a 15 minute ride... even mountain bike trails. Paired with the public transit infrastructure, cycling can be more efficient and much less expensive than driving (and parking) a car.',
             location: {
@@ -136,7 +136,7 @@ var config = {
             },
             onChapterEnter: [
                 {
-                    layer: 'phl-city-limits',
+                    layer: 'strava-1',
                     opacity: .45
                 }
             ],
