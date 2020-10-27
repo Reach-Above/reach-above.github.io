@@ -125,7 +125,7 @@ var config = {
     chapters: [
         {
             id: 'phl',
-            title: 'Lockdown opportunity',
+            title: 'Oopportunity',
             image: '',
             description: 'With sports, schools and indoor public activites cancelled we had more opportunities to get ouside and explore our community. Here is a story of where we rode our bikes and hiked',
             location: {
@@ -168,7 +168,7 @@ var config = {
             },
             onChapterEnter: [
                 {
-                    layer: 'phl-bike-network',
+                    layer: 'strava-1',
                     opacity: 1
                 }
             ],
