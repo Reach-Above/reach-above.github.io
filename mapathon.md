@@ -52,7 +52,11 @@
              padding-right: 0px !important;
              padding-left: 0px !important;
         }
-        .markdown-body h2 h1 {
+        .markdown-body h2 {
+        border-bottom: 0px !important;
+        }
+        
+         .markdown-body h1 {
         border-bottom: 0px !important;
         }
         
