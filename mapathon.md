@@ -283,14 +283,14 @@ var config = {
             },
             onChapterEnter: [
                 {
-                    layer: 'pennypack',
+                    layer: 'strava-1',
                     opacity: 1
                 }
             ],
             onChapterExit: [
                 {
-                    layer: 'pennypack',
-                    opacity: 0
+                    layer: 'strava-1',
+                    opacity: 1
                 }
             ]
         }
