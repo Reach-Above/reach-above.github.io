@@ -95,7 +95,7 @@
 
 <div id="map"></div>
 <div id="story"></div>
-<script src="./config.js"></script>
+<script src="https://Reach-Above/reach-above.github.io/master/config.js"></script>
 <script>
 var layerTypes = {
     'fill': ['fill-opacity'],
