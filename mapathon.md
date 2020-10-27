@@ -113,14 +113,14 @@
 <div id="story"></div>
 <script>
 var config = {
-    style: 'mapbox://styles/branigan/ck21y6cbi05cv1cn3gvbvykyd',
-    accessToken: 'pk.eyJ1IjoibWJ4c29sdXRpb25zIiwiYSI6ImNrMm01aG9hdTBlZGwzbXQ1ZXVrNHNmejAifQ.QHQA0N6XPWddCXtvoODHZg',
+    style: 'mapbox://styles/reachabove/ckgqu406e4rc119o31llg01wk',
+    accessToken: 'pk.eyJ1IjoicmVhY2hhYm92ZSIsImEiOiJjazBkcm1wazUwYWNmM2xxZXhhNW1sc2hmIn0.ybV26N8Bl8WyZejLHvwiCw',
     showMarkers: false,
     theme: 'dark',
     alignment: 'left',
     title: 'Staying Active during the Pandemic',
-    subtitle: 'Local Adventures of Sam & Evan (4-6)',
-    byline: 'By Line',
+    subtitle: 'Local Adventures of Sam & Evan (6 & 4 year olds)',
+    byline: '',
     footer: 'Footer',
     chapters: [
         {
