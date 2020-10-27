@@ -42,6 +42,11 @@
             padding-bottom: 10vh;
             z-index: 100;
         }
+        .container-lg {
+             max-width: 100vw !important;
+             margin-right: auto;
+              margin-left: auto;
+        }   
         .centered {
             width: 50vw;
             margin: 0 auto;
