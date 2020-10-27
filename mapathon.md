@@ -246,6 +246,30 @@ var config = {
                 }
             ]
         },
+            {
+            id: 'Dirt Jumps',
+            title: 'The Jackman Rd Dirt Jumps',
+            image: '',
+            description: 'We love going to this place. You can tell by all the lines overlapping, representing each one of our trips there',
+            location: {
+                center: [-78.702, 43.920],
+                zoom: 15.54,
+                pitch: 0.00,
+                bearing: 0.00
+            },
+            onChapterEnter: [
+                {
+                    layer: 'strava-1',
+                    opacity: 1
+                }
+            ],
+            onChapterExit: [
+                {
+                    layer: 'strava-1',
+                    opacity: 1
+                }
+            ]
+        },
         {
             id: 'pennypack',
             title: 'Evan's Daycare farwell',
