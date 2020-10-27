@@ -1,13 +1,13 @@
 var config = {
-    style: 'mapbox://styles/branigan/cjzsvonse027m1co4nkxp13b3',
+    style: 'mapbox://styles/branigan/ck21y6cbi05cv1cn3gvbvykyd',
     accessToken: 'pk.eyJ1IjoibWJ4c29sdXRpb25zIiwiYSI6ImNrMm01aG9hdTBlZGwzbXQ1ZXVrNHNmejAifQ.QHQA0N6XPWddCXtvoODHZg',
     showMarkers: false,
-    theme: 'light',
-    alignment: 'right',
-    title: '',
-    subtitle: '',
-    byline: '',
-    footer: '',
+    theme: 'dark',
+    alignment: 'left',
+    title: 'Staying Active during the Pandemic',
+    subtitle: 'Local Adventures of Sam & Evan (4-6)',
+    byline: 'By Line',
+    footer: 'Footer',
     chapters: [
         {
             id: 'phl',
