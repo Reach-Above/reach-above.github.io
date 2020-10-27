@@ -272,7 +272,7 @@ var config = {
         },
         {
             id: 'pennypack',
-            title: 'Evan's Daycare farwell',
+            title: 'Evan Daycare farwell',
             image: '',
             description: 'Instead of a drive-by, we did a ride-by, to say farewell to Evan teachers as he is off to J.K. ',
             location: {
