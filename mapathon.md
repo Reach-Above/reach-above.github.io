@@ -137,21 +137,21 @@ var config = {
             onChapterEnter: [
                 {
                     layer: 'strava-1',
-                    opacity: 0
+                    opacity: 1
                 },
                  {
                     layer: 'strava-2',
-                    opacity: 0
+                    opacity: 1
                 }
             ],
             onChapterExit: [
                 {
                     layer: 'strava-1',
-                    opacity: 0
+                    opacity: 1
                 },
                  {
                     layer: 'strava-2',
-                    opacity: 0
+                    opacity: 1
                 }
             ]
         },
