@@ -126,7 +126,7 @@ var config = {
         {
             id: 'phl',
             title: 'Outdoor Opportunity',
-            image: './mapathon/BP_Evan1.png',
+            image: './mapathon/S_E_D.jpg',
             description: 'With school, sports and indoor activites cancelled we had more opportunities to get ouside and explore our community. Here is a story of where we rode our bikes and hiked',
             location: {
                 center: [-79.012, 43.992],
@@ -177,7 +177,7 @@ var config = {
         {
             id: 'indego',
             title: 'We rode in all sorts of weather. Rain, Snow, Cold and Hot',
-            image: '',
+            image: './mapathon/S_E.jpg',
             description: 'Here is a picture mid-ride in a snow storm. The coldest temperature was and the warmest',
             location: {
                 center: [-78.674, 43.926],
@@ -273,7 +273,7 @@ var config = {
         {
             id: 'pennypack',
             title: 'Evan Daycare farwell',
-            image: '',
+            image: './mapathon/S_E_climb.jpg',
             description: 'Instead of a drive-by, we did a ride-by, to say farewell to Evan teachers as he is off to J.K. ',
             location: {
                 center: [-78.697, 43.905],
