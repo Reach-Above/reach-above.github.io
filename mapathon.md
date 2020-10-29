@@ -126,7 +126,7 @@ var config = {
         {
             id: 'phl',
             title: 'Outdoor Opportunity',
-            image: '',
+            image: '<img src="/images/8.jpg">',
             description: 'With school, sports and indoor activites cancelled we had more opportunities to get ouside and explore our community. Here is a story of where we rode our bikes and hiked',
             location: {
                 center: [-79.012, 43.992],
