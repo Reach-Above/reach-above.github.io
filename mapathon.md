@@ -211,14 +211,14 @@ var config = {
             },
             onChapterEnter: [
                 {
-                    layer: 'strava-1',
+                    layer: 'buildings',
                     opacity: 1
                 },
             ],
             onChapterExit: [
                 {
-                    layer: 'strava-1',
-                    opacity: 1
+                    layer: 'buildings',
+                    opacity: 0
                 }
             ]
         },
