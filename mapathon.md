@@ -201,7 +201,7 @@ var config = {
         {
             id: 'belmont',
             title: 'We went exploring all sorts of places',
-            image: './mapathon/Skids.gif',
+            image: './mapathon/Skid.gif',
             description: 'Our school - St. Joseph',
             location: {
                 center: [-78.675, 43.904],
