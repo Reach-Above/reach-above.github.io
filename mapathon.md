@@ -201,7 +201,7 @@ var config = {
         {
             id: 'belmont',
             title: 'We went exploring all sorts of places',
-            video: './mapathon/VID_20200816_150928.mp4',
+            image: './mapathon/skids.gif',
             description: 'Our school - St. Joseph',
             location: {
                 center: [-78.675, 43.904],
@@ -373,12 +373,7 @@ config.chapters.forEach((record, idx) => {
         chapter.appendChild(image);
     }
     
-    if (record.video) {
-        var video = new <Video>();  
-        video.src = record.video;  
-        chapter.appendChild(video);
-    }
-    
+       
     if (record.description) {
         var story = document.createElement('p');
         story.innerHTML = record.description;
