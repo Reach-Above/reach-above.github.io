@@ -374,7 +374,7 @@ config.chapters.forEach((record, idx) => {
     }
     
     if (record.video) {
-        var video = new Image();  
+        var video = new VIDEO();  
         video.src = record.video;  
         chapter.appendChild(video);
     }
