@@ -274,7 +274,7 @@ var config = {
             id: 'Uxbridge Bike Park',
             title: 'Uxbridge Bike Park',
             image: './mapathon/BP_Evan.gif',
-            description: 'Even there's no GPS tracks here, but we love riding the pump track in Uxbridge.',
+            description: 'Even there is no GPS tracks here, but we love riding the pump track in Uxbridge.',
             location: {
                 center: [-78.702, 43.920],
                 zoom: 15.54,
