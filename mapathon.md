@@ -249,8 +249,32 @@ var config = {
             {
             id: 'Dirt Jumps',
             title: 'The Jackman Rd Dirt Jumps',
-            image: '',
+            image: './mapathon/Jackman.gif',
             description: 'We love going to this place. You can tell by all the lines overlapping, representing each one of our trips there',
+            location: {
+                center: [-78.702, 43.920],
+                zoom: 15.54,
+                pitch: 0.00,
+                bearing: 0.00
+            },
+            onChapterEnter: [
+                {
+                    layer: 'strava-1',
+                    opacity: 1
+                }
+            ],
+            onChapterExit: [
+                {
+                    layer: 'strava-1',
+                    opacity: 1
+                }
+            ]
+        },
+    {
+            id: 'Uxbridge Bike Park',
+            title: 'Uxbridge Bike Park',
+            image: './mapathon/BP_Evan.gif',
+            description: 'Even there's no GPS tracks here, but we love riding the pump track in Uxbridge.',
             location: {
                 center: [-78.702, 43.920],
                 zoom: 15.54,
