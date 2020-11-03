@@ -218,14 +218,38 @@ var config = {
             onChapterExit: [
                 {
                     layer: 'buildings',
-                    opacity: 0
+                    opacity: 0.8
+                }
+            ]
+        },
+    {
+            id: 'Daycare',
+            title: 'And to Evans Daycare',
+            image: '',
+            description: 'Instead of a drive-by, we did a ride-by, to say farewell to Evan teachers as he is off to J.K. ',
+            location: {
+                center: [-78.697, 43.905],
+                zoom: 15.97,
+                pitch: 26.50,
+                bearing: 0.00
+            },
+            onChapterEnter: [
+                {
+                    layer: 'buildings',
+                    opacity: 0.8
+                }
+            ],
+            onChapterExit: [
+                {
+                    layer: 'buildings',
+                    opacity: 0.8
                 }
             ]
         },
         {
             id: 'Jury',
-            title: 'Over the bridge to the Jury Lands',
-            image: './mapathon/skids.gif',
+            title: 'We discovered some of Bowmanvilles Histoy - Over the bridge to the Jury Lands',
+            image: './mapathon/Skids.gif',
             description: 'During the years 1941 to 1945 the property was used as a German prisoner-of-war camp. The camp was used primarily for German officers, with over 800 prisoners occupying the camp at times. Read more at <a href="https://www.jurylandsfoundation.com">Jury Land Foundation</a>',
             location: {
                 center: [-78.668, 43.927],
@@ -235,22 +259,20 @@ var config = {
             },
             onChapterEnter: [
                 {
-                    layer: 'strava-1',
-                    opacity: 1
+                   
                 }
             ],
             onChapterExit: [
                 {
-                    layer: 'strava-1',
-                    opacity: 1
+                    
                 }
             ]
         },
             {
             id: 'Dirt Jumps',
-            title: 'The Jackman Rd Dirt Jumps',
+            title: 'We loved going to the Jackman Rd Dirt Jumps',
             image: './mapathon/Jackman.gif',
-            description: 'We love going to this place. You can tell by all the lines overlapping, representing each one of our trips there',
+            description: 'We went here a lot you can tell by all the lines overlapping near the river and all the lines with the trips to this excellent area.',
             location: {
                 center: [-78.702, 43.920],
                 zoom: 15.54,
@@ -270,16 +292,41 @@ var config = {
                 }
             ]
         },
+                   {
+            id: 'Creeks',
+            title: 'We travelled along the paved and gravel paths parallel to Bowmanville Creek and Soper Creek',
+            image: './mapathon/Hill.gif',
+            description: 'Lots of work is going into connecting these two trails together and to the waterfront trail. Thank you <a href="https://www.jurylandsfoundation.com">https://valleys2000.ca/ </a>',
+            location: {
+                center: [-78.67612, 43.90130],
+                zoom: 15.29,
+                pitch: 60.00,
+                bearing: -14.40
+            },
+            onChapterEnter: [
+                {
+                    layer: 'strava-1',
+                    opacity: 1
+                }
+            ],
+            onChapterExit: [
+                {
+                    layer: 'strava-1',
+                    opacity: 1
+                }
+            ]
+        },
+        
     {
             id: 'Uxbridge Bike Park',
-            title: 'Uxbridge Bike Park',
+            title: 'We go all the way to the Uxbridge Bike Park',
             image: './mapathon/BP_Evan.gif',
-            description: 'Even there is no GPS tracks here, but we love riding the pump track in Uxbridge.',
+            description: 'There are no GPS tracks here, but we love riding the pump track in Uxbridge.',
             location: {
-                center: [-78.702, 43.920],
-                zoom: 15.54,
-                pitch: 0.00,
-                bearing: 0.00
+                center: [-79.12689, 44.12463 ],
+                zoom: 17.35,
+                pitch: 60.00,
+                bearing: 76.80
             },
             onChapterEnter: [
                 {
@@ -295,9 +342,9 @@ var config = {
             ]
         },
         {
-            id: 'pennypack',
-            title: 'Evan Daycare farwell',
-            image: './mapathon/S_E_climb.jpg',
+            id: 'Stats',
+            title: 'How active have we been so far?',
+            image: './mapathon/Evan_Balance.gif',
             description: 'Instead of a drive-by, we did a ride-by, to say farewell to Evan teachers as he is off to J.K. ',
             location: {
                 center: [-78.697, 43.905],
