@@ -156,7 +156,7 @@ var config = {
             ]
         },
         {
-            id: 'bike-lanes',
+            id: 'local',
             title: 'Our Local Rides',
             image: '',
             description: 'Almost everyday we got outside and rode our bikes. The darker the line colour the further the ride',
@@ -199,9 +199,9 @@ var config = {
             ]
         },
         {
-            id: 'belmont',
-            title: 'We went exploring all sorts of places',
-            image: './mapathon/Skid.gif',
+            id: 'Joseph',
+            title: 'We went exploring all sorts of places. We went to our school',
+            image: '',
             description: 'Our school - St. Joseph',
             location: {
                 center: [-78.675, 43.904],
@@ -223,10 +223,10 @@ var config = {
             ]
         },
         {
-            id: 'wiss',
-            title: 'The Jury Lands',
-            image: '',
-            description: 'This place has lots of abandoned buildings',
+            id: 'Jury',
+            title: 'Over the bridge to the Jury Lands',
+            image: './mapathon/skids.gif',
+            description: 'During the years 1941 to 1945 the property was used as a German prisoner-of-war camp. The camp was used primarily for German officers, with over 800 prisoners occupying the camp at times. Read more at <a href="https://www.jurylandsfoundation.com">Jury Land Foundation</a>',
             location: {
                 center: [-78.668, 43.927],
                 zoom: 16.60,
