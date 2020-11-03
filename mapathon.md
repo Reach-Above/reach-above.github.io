@@ -259,12 +259,14 @@ var config = {
             },
             onChapterEnter: [
                 {
-                   
+                   layer: 'buildings',
+                    opacity: 0.0
                 }
             ],
             onChapterExit: [
                 {
-                    
+                    layer: 'buildings',
+                    opacity: 0.0
                 }
             ]
         },
@@ -298,7 +300,7 @@ var config = {
             image: './mapathon/Hill.gif',
             description: 'Lots of work is going into connecting these two trails together and to the waterfront trail. Thank you <a href="https://www.jurylandsfoundation.com">https://valleys2000.ca/ </a>',
             location: {
-                center: [-78.67612, 43.90130],
+                center: [-78.68035, 43.89894],
                 zoom: 15.29,
                 pitch: 60.00,
                 bearing: -14.40
@@ -323,7 +325,7 @@ var config = {
             image: './mapathon/BP_Evan.gif',
             description: 'There are no GPS tracks here, but we love riding the pump track in Uxbridge.',
             location: {
-                center: [-79.12689, 44.12463 ],
+                center: [-79.12760,44.12560],
                 zoom: 17.35,
                 pitch: 60.00,
                 bearing: 76.80
@@ -345,7 +347,7 @@ var config = {
             id: 'Stats',
             title: 'How active have we been so far?',
             image: './mapathon/Evan_Balance.gif',
-            description: 'Instead of a drive-by, we did a ride-by, to say farewell to Evan teachers as he is off to J.K. ',
+            description: 'Total KM Travveled, Average Trip Length, Temperature, Wind, etc...',
             location: {
                 center: [-78.697, 43.905],
                 zoom: 15.97,
