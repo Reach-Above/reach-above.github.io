@@ -120,11 +120,11 @@ var config = {
     alignment: 'left',
     title: 'Staying Active during the Pandemic',
     subtitle: 'Local Adventures of Sam & Evan (6 & 4 years old)',
-    byline: 'by Connor Houston MEDJCT',
+    byline: 'by Houston Family',
     footer: 'Footer',
     chapters: [
         {
-            id: 'phl',
+            id: 'Opportunity',
             title: 'Outdoor Opportunity',
             image: './mapathon/S_E_D.jpg',
             description: 'With school, sports and indoor activites cancelled we had more opportunities to get ouside and explore our community. Here is a story of where we rode our bikes and hiked',
@@ -159,7 +159,7 @@ var config = {
             id: 'local',
             title: 'Our Local Rides',
             image: '',
-            description: 'Almost everyday we got outside and rode our bikes. The darker the line colour the further the ride',
+            description: 'Almost everyday we got outside and rode our bikes. The darker and wider the line colour the further the ride',
             location: {
                 center: [-78.696, 43.919],
                 zoom: 13.25,
@@ -178,7 +178,7 @@ var config = {
             id: 'Weather',
             title: 'We rode in all sorts of weather. Rain, Snow, Cold and Hot',
             image: './mapathon/S_E.jpg',
-            description: 'Here is a picture mid-ride in a snow storm. The coldest temperature was and the warmest',
+            description: 'Here is a picture mid-ride in a snow storm.',
             location: {
                 center: [-78.674, 43.926],
                 zoom: 16.69,
@@ -202,7 +202,7 @@ var config = {
             id: 'Joseph',
             title: 'We went exploring all sorts of places. We went to our school',
             image: '',
-            description: 'Our school - St. Joseph',
+            description: '<a href="https://http://stjosephbowmanville.pvnccdsb.on.ca/">St. Joseph C.E.S. Bowmanville</a>',
             location: {
                 center: [-78.675, 43.904],
                 zoom: 16.73,
@@ -226,7 +226,7 @@ var config = {
             id: 'Daycare',
             title: 'And to Evans Daycare',
             image: '',
-            description: 'Instead of a drive-by, we did a ride-by, to say farewell to Evan teachers as he is off to J.K. ',
+            description: 'In June - Instead of a drive-by, we did a ride-by, to say farewell to Evan teachers as he is off to J.K. ',
             location: {
                 center: [-78.697, 43.905],
                 zoom: 15.97,
@@ -320,7 +320,7 @@ var config = {
         },
        {
             id: 'Orono',
-            title: 'Just a 10min drive from us is the Orono Crown Lands',
+            title: 'Just a 10 minute drive from us is the Orono Crown Lands',
             image: './mapathon/S_E4.jpg',
             description: 'We were lucky to have these trails available to us since March 2020. Thank you <a href="https://oronocrownlands.com/">Orono Crown Lands</a>',
             location: {
@@ -371,7 +371,7 @@ var config = {
             id: 'Durham Forest',
             title: 'Durham Forest has some of the best Mountain Biking Trails in Ontario',
             image: './mapathon/BP_Evan.gif',
-            description: 'There are no GPS tracks here, but we love riding the pump track in Uxbridge. Check out this fantastic organization building these wicked trails. <a    href="https://durhammountainbiking.ca/">DMBA</a>',
+            description: 'Check out this fantastic organization building these wicked trails. <a href="https://durhammountainbiking.ca/">DMBA</a>',
             location: {
                 center: [-79.07827, 44.04622],
                 zoom: 13.89,
@@ -395,7 +395,7 @@ var config = {
             id: 'Stats',
             title: 'How active have we been so far?',
             image: './mapathon/Evan_Balance.gif',
-            description: 'Total KM Travveled, Average Trip Length, Temperature, Wind, etc...',
+            description: 'Total KM Travveled, Average Trip Length, etc...',
             location: {
                 center: [-78.697, 43.905],
                 zoom: 15.97,
