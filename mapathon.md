@@ -334,10 +334,10 @@ var config = {
             image: './mapathon/S_E4.jpg',
             description: 'We were lucky to have these trails available to us since March 2020. Thank you <a href="https://oronocrownlands.com/">Orono Crown Lands</a>',
             location: {
-                center: [-78.64753, 43.97178],
-                zoom: 14.23,
+                center: [-78.61709, 43.96180],
+                zoom: 14.41,
                 pitch: 0.00,
-                bearing: 0.00
+                bearing: -10.48
             },
             onChapterEnter: [
                 {
