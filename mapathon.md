@@ -228,10 +228,10 @@ var config = {
             image: '',
             description: 'In June - Instead of a drive-by, we did a ride-by, to say farewell to Evan teachers as he is off to J.K. ',
             location: {
-                center: [-78.69290, 43.90337 ],
-                zoom: 16.85,
+                center: [-78.69797, 43.90722],
+                zoom: 16.08,
                 pitch: 60.00,
-                bearing: 36.00
+                bearing: 45.60
             },
             onChapterEnter: [
                 {
@@ -301,9 +301,9 @@ var config = {
             description: 'Lots of work is going into connecting these two trails together and to the waterfront trail. And protecting the Salmon. Thank you <a href="https://valleys2000.ca/">Valleys 2000</a>',
             location: {
                 center: [-78.68775, 43.90285],
-                zoom: 15.29,
+                zoom: 15.14,
                 pitch: 60.00,
-                bearing: -14.40
+                bearing: -44.55
             },
             onChapterEnter: [
                 {
@@ -345,7 +345,7 @@ var config = {
         
     {
             id: 'Uxbridge Bike Park',
-            title: 'We go all the way to the Uxbridge Bike Park',
+            title: 'We travel a bit further simetimes to the Uxbridge Rotary Bike Park',
             image: './mapathon/BP_Evan.gif',
             description: 'There are no GPS tracks here, but we love riding the pump track in Uxbridge.',
             location: {
@@ -370,7 +370,7 @@ var config = {
          {
             id: 'Durham Forest',
             title: 'Durham Forest has some of the best Mountain Biking Trails in Ontario',
-            image: './mapathon/BP_Evan.gif',
+            image: './mapathon/Double.gif',
             description: 'Check out this fantastic organization building these wicked trails. <a href="https://durhammountainbiking.ca/">DMBA</a>',
             location: {
                 center: [-79.10335, 44.05249],
@@ -589,7 +589,15 @@ map.on("load", function() {
 window.addEventListener('resize', scroller.resize);
 
 </script>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-RD6956Y706"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
 
+  gtag('config', 'G-RD6956Y706');
+</script>
 
 
 </body>
