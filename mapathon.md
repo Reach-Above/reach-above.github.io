@@ -379,7 +379,7 @@ var config = {
         },
          {
             id: 'Durham Forest',
-            title: 'Durham Forest has some of the best Mountain Biking Trails in Ontario',
+            title: 'Durham Forest has some of the best Mountain Biking in Ontario',
             image: './mapathon/Double.gif',
             description: 'Check out this fantastic organization building these wicked trails. <a href="https://durhammountainbiking.ca/">DMBA</a>',
             location: {
