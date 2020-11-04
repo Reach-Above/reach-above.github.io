@@ -175,7 +175,7 @@ var config = {
             onChapterExit: []
         },
         {
-            id: 'indego',
+            id: 'Weather',
             title: 'We rode in all sorts of weather. Rain, Snow, Cold and Hot',
             image: './mapathon/S_E.jpg',
             description: 'Here is a picture mid-ride in a snow storm. The coldest temperature was and the warmest',
@@ -252,7 +252,7 @@ var config = {
             image: './mapathon/Skids.gif',
             description: 'During the years 1941 to 1945 the property was used as a German prisoner-of-war camp. The camp was used primarily for German officers, with over 800 prisoners occupying the camp at times. Read more at <a href="https://www.jurylandsfoundation.com">Jury Land Foundation</a>',
             location: {
-                center: [-78.668, 43.927],
+                center: [-78.67188, 43.92698],
                 zoom: 16.60,
                 pitch: 0.00,
                 bearing: 0.00
@@ -300,7 +300,7 @@ var config = {
             image: './mapathon/Hill.gif',
             description: 'Lots of work is going into connecting these two trails together and to the waterfront trail. And protecting the Salmon! Thank you <a href="https://valleys2000.ca/">Valleys 2000</a>',
             location: {
-                center: [-78.68035, 43.89894],
+                center: [-78.68775, 43.90285],
                 zoom: 15.29,
                 pitch: 60.00,
                 bearing: -14.40
@@ -349,7 +349,7 @@ var config = {
             image: './mapathon/BP_Evan.gif',
             description: 'There are no GPS tracks here, but we love riding the pump track in Uxbridge.',
             location: {
-                center: [-79.12760,44.12560],
+                center: [-79.12760, 44.12560],
                 zoom: 17.35,
                 pitch: 60.00,
                 bearing: 76.80
