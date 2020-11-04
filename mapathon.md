@@ -298,12 +298,36 @@ var config = {
             id: 'Creeks',
             title: 'We travelled along the paved and gravel paths parallel to Bowmanville Creek and Soper Creek',
             image: './mapathon/Hill.gif',
-            description: 'Lots of work is going into connecting these two trails together and to the waterfront trail. Thank you <a href="https://www.jurylandsfoundation.com">https://valleys2000.ca/ </a>',
+            description: 'Lots of work is going into connecting these two trails together and to the waterfront trail. And protecting the Salmon! Thank you <a href="https://valleys2000.ca/">Valleys 2000</a>',
             location: {
                 center: [-78.68035, 43.89894],
                 zoom: 15.29,
                 pitch: 60.00,
                 bearing: -14.40
+            },
+            onChapterEnter: [
+                {
+                    layer: 'strava-1',
+                    opacity: 1
+                }
+            ],
+            onChapterExit: [
+                {
+                    layer: 'strava-1',
+                    opacity: 1
+                }
+            ]
+        },
+       {
+            id: 'Orno',
+            title: 'Just a 10min drive from us is the Orono Crown Lands',
+            image: './mapathon/S_E4.jpg',
+            description: 'We were lucky to have these trails available to us since March 2020. Thank you <a href="https://oronocrownlands.com/">Orno Crown Lands</a>',
+            location: {
+                center: [-78.64746, 43.96710],
+                zoom: 13.71,
+                pitch: 0.00,
+                bearing: 00.00
             },
             onChapterEnter: [
                 {
@@ -329,6 +353,30 @@ var config = {
                 zoom: 17.35,
                 pitch: 60.00,
                 bearing: 76.80
+            },
+            onChapterEnter: [
+                {
+                    layer: 'strava-1',
+                    opacity: 1
+                }
+            ],
+            onChapterExit: [
+                {
+                    layer: 'strava-1',
+                    opacity: 1
+                }
+            ]
+        },
+         {
+            id: 'Durham Forest',
+            title: 'Durham Forest has some of the best Mountain Biking Trails in Ontario',
+            image: './mapathon/BP_Evan.gif',
+            description: 'There are no GPS tracks here, but we love riding the pump track in Uxbridge. Check out this fantastic organization building these wicked trails. <a    href="https://durhammountainbiking.ca/">DMBA</a>',
+            location: {
+                center: [-79.07827, 44.04622],
+                zoom: 13.89,
+                pitch: 0.00,
+                bearing: 000.00
             },
             onChapterEnter: [
                 {
