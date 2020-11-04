@@ -171,8 +171,8 @@ var config = {
             image: '',
             description: 'Almost everyday we got outside and rode our bikes. The darker and wider the line colour the further the ride',
             location: {
-                center: [-78.696, 43.919],
-                zoom: 13.25,
+                center: [-78.70379, 43.91789],
+                zoom: 12.46,
                 pitch: 0.00,
                 bearing: 0.00
             },
@@ -191,7 +191,7 @@ var config = {
             description: 'Here is a picture mid-ride in a snow storm.',
             location: {
                 center: [-78.674, 43.926],
-                zoom: 16.69,
+                zoom: 17.20,
                 pitch: 32.00,
                 bearing: -16.80
             },
@@ -238,10 +238,10 @@ var config = {
             image: '',
             description: 'In June - Instead of a drive-by, we did a ride-by, to say farewell to Evan teachers as he is off to J.K. ',
             location: {
-                center: [-78.69797, 43.90722],
-                zoom: 16.08,
+                center: [-78.69655, 43.90521 ],
+                zoom: 17.02,
                 pitch: 60.00,
-                bearing: 45.60
+                bearing: 43.20
             },
             onChapterEnter: [
                 {
@@ -262,8 +262,8 @@ var config = {
             image: './mapathon/Skids.gif',
             description: 'During the years 1941 to 1945 the property was used as a German prisoner-of-war camp. The camp was used primarily for German officers, with over 800 prisoners occupying the camp at times. Read more at <a href="https://www.jurylandsfoundation.com">Jury Land Foundation</a>',
             location: {
-                center: [-78.67188, 43.92698],
-                zoom: 16.60,
+                center: [-78.66974, 43.92563],
+                zoom: 15.30,
                 pitch: 0.00,
                 bearing: 0.00
             },
@@ -310,10 +310,10 @@ var config = {
             image: './mapathon/Hill.gif',
             description: 'Lots of work is going into connecting these two trails together and to the waterfront trail. And protecting the Salmon. Thank you <a href="https://valleys2000.ca/">Valleys 2000</a>',
             location: {
-                center: [-78.68775, 43.90285],
-                zoom: 15.14,
+                center: [-78.68275, 43.90905],
+                zoom:  14.22,
                 pitch: 60.00,
-                bearing: -44.55
+                bearing: -32.80
             },
             onChapterEnter: [
                 {
