@@ -139,10 +139,10 @@ var config = {
             image: './mapathon/S_E_D.jpg',
             description: 'With school, sports and indoor activites cancelled we had more opportunities to get ouside and explore our community. Here is a story of where we rode our bikes and hiked',
             location: {
-                center: [-79.012, 43.992],
-                zoom: 9.45,
+                center: [-78.69037, 43.93645 ],
+                zoom: 11.74,
                 pitch: 0.00,
-                bearing: 0.00
+                bearing: -2.30
             },
             onChapterEnter: [
                 {
@@ -171,8 +171,8 @@ var config = {
             image: '',
             description: 'Almost everyday we got outside and rode our bikes. The darker and wider the line colour the further the ride',
             location: {
-                center: [-78.70379, 43.91789],
-                zoom: 12.46,
+                center: [-78.68791, 43.91651],
+                zoom: 13.06,
                 pitch: 0.00,
                 bearing: 0.00
             },
@@ -190,10 +190,10 @@ var config = {
             image: './mapathon/S_E.jpg',
             description: 'Here is a picture mid-ride in a snow storm.',
             location: {
-                center: [-78.674, 43.926],
-                zoom: 17.20,
-                pitch: 32.00,
-                bearing: -16.80
+                center: [-78.67219, 43.92559],
+                zoom: 17.08,
+                pitch: 60.00,
+                bearing: -8.00
             },
             onChapterEnter: [
                 {
@@ -310,10 +310,10 @@ var config = {
             image: './mapathon/Hill.gif',
             description: 'Lots of work is going into connecting these two trails together and to the waterfront trail. And protecting the Salmon. Thank you <a href="https://valleys2000.ca/">Valleys 2000</a>',
             location: {
-                center: [-78.68275, 43.90905],
-                zoom:  14.22,
+                center: [ -78.68791,43.90641],
+                zoom:  14.63,
                 pitch: 60.00,
-                bearing: -32.80
+                bearing:  -37.05
             },
             onChapterEnter: [
                 {
@@ -334,10 +334,10 @@ var config = {
             image: './mapathon/S_E4.jpg',
             description: 'We were lucky to have these trails available to us since March 2020. Thank you <a href="https://oronocrownlands.com/">Orono Crown Lands</a>',
             location: {
-                center: [-78.61709, 43.96180],
-                zoom: 14.41,
-                pitch: 0.00,
-                bearing: -10.48
+                center: [-78.62617, 43.97136 ],
+                zoom: 14.31,
+                pitch: 37.00,
+                bearing: -19.02
             },
             onChapterEnter: [
                 {
@@ -359,7 +359,7 @@ var config = {
             image: './mapathon/BP_Evan.gif',
             description: 'There are no GPS tracks here, but we love riding the pump track in Uxbridge.',
             location: {
-                center: [-79.12760, 44.12560],
+                center: [ -79.12724, 44.12500],
                 zoom: 17.35,
                 pitch: 60.00,
                 bearing: 76.80
@@ -383,8 +383,8 @@ var config = {
             image: './mapathon/Double.gif',
             description: 'Check out this fantastic organization building these wicked trails. <a href="https://durhammountainbiking.ca/">DMBA</a>',
             location: {
-                center: [-79.10335, 44.05249],
-                zoom: 14.00,
+                center: [-79.08406, 44.04963],
+                zoom: 14.65,
                 pitch: 0.00,
                 bearing: 0.00
             },
@@ -407,9 +407,9 @@ var config = {
             image: './mapathon/Evan_Balance.gif',
             description: 'Total KM Travveled, Average Trip Length, etc...',
             location: {
-                center: [ -79.06687, 43.99461],
-                zoom: 10.41,
-                pitch: 0.00,
+                center: [ -78.68438, 43.91550],
+                zoom: 13.17,
+                pitch: 60.00,
                 bearing: 0.00
             },
             onChapterEnter: [
