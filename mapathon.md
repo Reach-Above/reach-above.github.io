@@ -298,7 +298,7 @@ var config = {
             id: 'Creeks',
             title: 'We travelled along the paved and gravel paths parallel to Bowmanville Creek and Soper Creek',
             image: './mapathon/Hill.gif',
-            description: 'Lots of work is going into connecting these two trails together and to the waterfront trail. And protecting the Salmon! Thank you <a href="https://valleys2000.ca/">Valleys 2000</a>',
+            description: 'Lots of work is going into connecting these two trails together and to the waterfront trail. And protecting the Salmon. Thank you <a href="https://valleys2000.ca/">Valleys 2000</a>',
             location: {
                 center: [-78.68775, 43.90285],
                 zoom: 15.29,
@@ -319,10 +319,10 @@ var config = {
             ]
         },
        {
-            id: 'Orno',
+            id: 'Orono',
             title: 'Just a 10min drive from us is the Orono Crown Lands',
             image: './mapathon/S_E4.jpg',
-            description: 'We were lucky to have these trails available to us since March 2020. Thank you <a href="https://oronocrownlands.com/">Orno Crown Lands</a>',
+            description: 'We were lucky to have these trails available to us since March 2020. Thank you <a href="https://oronocrownlands.com/">Orono Crown Lands</a>',
             location: {
                 center: [-78.64746, 43.96710],
                 zoom: 13.71,
