@@ -228,10 +228,10 @@ var config = {
             image: '',
             description: 'In June - Instead of a drive-by, we did a ride-by, to say farewell to Evan teachers as he is off to J.K. ',
             location: {
-                center: [-78.697, 43.905],
-                zoom: 15.97,
-                pitch: 26.50,
-                bearing: 0.00
+                center: [-78.69290, 43.90337 ],
+                zoom: 16.85,
+                pitch: 60.00,
+                bearing: 36.00
             },
             onChapterEnter: [
                 {
@@ -324,8 +324,8 @@ var config = {
             image: './mapathon/S_E4.jpg',
             description: 'We were lucky to have these trails available to us since March 2020. Thank you <a href="https://oronocrownlands.com/">Orono Crown Lands</a>',
             location: {
-                center: [-78.64746, 43.96710],
-                zoom: 13.71,
+                center: [-78.64753, 43.97178],
+                zoom: 14.23,
                 pitch: 0.00,
                 bearing: 0.00
             },
@@ -373,8 +373,8 @@ var config = {
             image: './mapathon/BP_Evan.gif',
             description: 'Check out this fantastic organization building these wicked trails. <a href="https://durhammountainbiking.ca/">DMBA</a>',
             location: {
-                center: [-79.07827, 44.04622],
-                zoom: 13.89,
+                center: [-79.10335, 44.05249],
+                zoom: 14.00,
                 pitch: 0.00,
                 bearing: 0.00
             },
@@ -397,9 +397,9 @@ var config = {
             image: './mapathon/Evan_Balance.gif',
             description: 'Total KM Travveled, Average Trip Length, etc...',
             location: {
-                center: [-78.697, 43.905],
-                zoom: 15.97,
-                pitch: 26.50,
+                center: [ -79.06687, 43.99461],
+                zoom: 10.41,
+                pitch: 00.00,
                 bearing: 0.00
             },
             onChapterEnter: [
