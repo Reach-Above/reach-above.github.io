@@ -364,7 +364,7 @@ var config = {
             id: 'Stats',
             title: 'From March 2020 to October 2020 we have completed:',
             image: '',
-            description: '<p text-shadow: 2px 2px 5px red> 160 Activities </br>Travelled 800KM </br>Went up 5000M in Elevation</br>and hit a Max Speed of 28KPH</p> ',
+            description: '<p> 160 Activities </br>Travelled 800KM </br>Went up 5000M in Elevation</br>and had a Max Speed of 28KPH</p> ',
             location: {
                 center: [ -78.68438, 43.91550],
                 zoom: 13.17,
@@ -373,6 +373,20 @@ var config = {
             },
             onChapterEnter: [],
             onChapterExit: []
+        },
+        {
+            id: 'Closing',
+            title: 'We hope you have enjoyed our story and that you are staying safe healthy and active during this time as well ',
+            image: './mapathon/Collage.png',
+            description: '',
+            location: {
+                center: [ -78.68438, 43.91550],
+                zoom: 13.17,
+                pitch: 60.00,
+                bearing: 0.00
+            },
+             onChapterEnter: [],
+             onChapterExit: []
         }
     ]
 };
