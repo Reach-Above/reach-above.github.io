@@ -148,7 +148,7 @@ var config = {
     title: 'Staying Active during the Pandemic',
     subtitle: 'Local Adventures of Sam & Evan (6 & 4 years old)',
     byline: 'by Houston Family',
-    footer: 'Follow our biking adventures on <a href="https://www.instagram.com/reach.above/" class="fa fa-instagram"> <br> Follow along for maps and stuff <a href="https://twitter.com/reach_above" class="fa fa-twitter"></a> ',
+    footer: 'Follow our biking adventures on <a href="https://www.instagram.com/reach.above/" class="fa fa-instagram"></a> Follow along for maps and stuff <a href="https://twitter.com/reach_above" class="fa fa-twitter"></a> ',
     chapters: [
         {
             id: 'Opportunity',
