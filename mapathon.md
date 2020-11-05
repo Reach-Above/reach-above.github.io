@@ -156,7 +156,7 @@ var config = {
     title: 'Staying Active during the Pandemic',
     subtitle: 'Local Adventures of Sam & Evan (6 & 4 years old)',
     byline: 'by Houston Family',
-    footer: 'More on our biking adventures <a href="https://www.instagram.com/reach.above/" class="fa fa-instagram"></a> </br>Maps and Stuff <a href="https://twitter.com/reach_above" class="fa fa-twitter"></a></br>Special thanks to:</br>Mapbox Solutions Architecture and @lobenichou for the Scrollytelling Template | @John_M_Nelson for the Firefly ArcGIS Blog | @jonni_walker for the Glow Effect Blog',
+    footer: 'More on our biking adventures <a href="https://www.instagram.com/reach.above/" class="fa fa-instagram"></a> | Maps and Stuff <a href="https://twitter.com/reach_above" class="fa fa-twitter"></a></br>Special thanks to:</br>Mapbox Solutions Architecture and @lobenichou for the Scrollytelling Template | @John_M_Nelson for the Firefly ArcGIS Blog | @jonni_walker for the Glow Effect Blog',
     chapters: [
         {
             id: 'Opportunity',
