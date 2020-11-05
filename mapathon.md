@@ -55,23 +55,7 @@
             text-decoration: none;
             border-radius: 50%;
           }
-          .glow {
-          color: #fff;
-          text-align: center;
-          -webkit-animation: glow 1s ease-in-out infinite alternate;
-          -moz-animation: glow 1s ease-in-out infinite alternate;
-          animation: glow 1s ease-in-out infinite alternate;
-        }
-
-        @-webkit-keyframes glow {
-          from {
-            text-shadow: 0 0 0px #ff4a4a, 0 0 10px #ff4a4a, 0 0 10px #ff4a4a, 0 0 20px #ff4a4a, 0 0 30px #ff4a4a, 0 0 40px #ff4a4a, 0 0 50px #ff4a4a;
-          }
-
-          to {
-            text-shadow: 0 0 10px #ff4a4a, 0 0 20px #ff4a4a, 0 0 30px #ff4a4a, 0 0 40px #fff4a4, 0 0 50px #ff4a4a, 0 0 60px #ff4a4a;
-          }
-       }
+          
         #features {
             padding-top: 10vh;
             padding-bottom: 10vh;
@@ -378,9 +362,9 @@ var config = {
         },
          {
             id: 'Stats',
-            title: '',
+            title: 'From March 2020 to October 2020 we have completed:',
             image: '',
-            description: '<p From March 2020 to October 2020 we have done:</p><p class="glow"> 160 Activities </br>Travelled 800KM </br>Went up 5000M in Elevation</br>and hit a Max Speed of 28KPH</p> ',
+            description: '<p text-shadow: 2px 2px 5px red> 160 Activities </br>Travelled 800KM </br>Went up 5000M in Elevation</br>and hit a Max Speed of 28KPH</p> ',
             location: {
                 center: [ -78.68438, 43.91550],
                 zoom: 13.17,
