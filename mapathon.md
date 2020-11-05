@@ -146,7 +146,7 @@ var config = {
             id: 'Opportunity',
             title: 'Outdoor Opportunity',
             image: './mapathon/S_E_D.jpg',
-            description: 'With school, sports and indoor activites cancelled we had more opportunities to get ouside and explore our community. Here is a story of where we rode our bikes and hiked',
+            description: 'With school, sports and indoor activites cancelled we had more opportunities to get outside and explore our community. To do that we rode our bikes all around our community and nearby trails',
             location: {
                 center: [-78.69037, 43.93645 ],
                 zoom: 11.74,
@@ -178,7 +178,7 @@ var config = {
             id: 'local',
             title: 'Our Local Rides',
             image: '',
-            description: 'Almost everyday we got outside and rode our bikes. The darker and wider the line colour the further the ride',
+            description: 'Almost everyday we got outside and rode our bikes. The darker the red and wider the line the further the ride',
             location: {
                 center: [-78.68791, 43.91651],
                 zoom: 13.06,
@@ -187,6 +187,7 @@ var config = {
             },
             onChapterEnter: [],
             onChapterExit: []
+       
         },
         {
             id: 'Weather',
@@ -199,8 +200,26 @@ var config = {
                 pitch: 60.00,
                 bearing: -8.00
             },
-            onChapterEnter: [],
-            onChapterExit: []
+             onChapterEnter: [
+                {
+                    layer: 'strava-3l',
+                    opacity: 0.8
+                    layer: 'strava-2l',
+                    opacity: 0.6
+                    layer: 'strava-1l',
+                    opacity: 1
+                }
+            ],
+            onChapterExit: [
+                {
+                    layer: 'strava-3',
+                    opacity: 1
+                    layer: 'strava-2',
+                    opacity: 0.6
+                    layer: 'strava-1',
+                    opacity: 0.8
+                }
+            ]
             
         },
         {
@@ -267,7 +286,7 @@ var config = {
         },
             {
             id: 'Dirt Jumps',
-            title: 'We loved being Dare Devils at the Jackman Rd Dirt Jumps',
+            title: 'We loved being dare-devils at the Jackman Rd Dirt Jumps',
             image: './mapathon/Jackman.gif',
             description: 'We went here a lot you can tell by all the lines overlapping near the river and all the lines with the trips to this excellent area.',
             location: {
@@ -279,7 +298,7 @@ var config = {
              onChapterEnter: [],
              onChapterExit: []
         },
-                   {
+           {
             id: 'Creeks',
             title: 'We travelled along the paved and gravel paths. Our favourites run parallel to the Bowmanville Creek and the Soper Creek',
             image: './mapathon/Hill.gif',
@@ -291,8 +310,51 @@ var config = {
                 bearing:  -37.05
             },
              onChapterEnter: [],
-             onChapterExit: []
+             onChapterExit:  [
+                {
+                    layer: 'strava-3',
+                    opacity: 1
+                    layer: 'strava-2',
+                    opacity: 0.6
+                    layer: 'strava-1',
+                    opacity: 0.8
+                }
+            ]
         },
+        
+        {
+            id: 'Longest',
+            title: 'Our longest rides were 12KM here is what it looks like on the map.',
+            image: './mapathon/Hill.gif',
+            description: '',
+            location: {
+                center: [-78.68791, 43.91651],
+                zoom: 13.06,
+                pitch: 0.00,
+                bearing: 0.00
+            },
+             onChapterEnter: [
+                {
+                    layer: 'strava-3l',
+                    opacity: 0.8
+                    layer: 'strava-2l',
+                    opacity: 0.6
+                    layer: 'strava-1l',
+                    opacity: 1
+                }
+            ],
+             onChapterExit: [
+                {
+                    layer: 'strava-3l',
+                    opacity: 0
+                    layer: 'strava-2l',
+                    opacity: 0
+                    layer: 'strava-1l',
+                    opacity: 0
+                }
+            ]
+        },
+        
        {
             id: 'Orono',
             title: 'Just a 10 minute drive from us is the Orono Crown Lands',
@@ -306,16 +368,15 @@ var config = {
             },
             onChapterEnter: [
                 {
-                    layer: 'strava-1',
+                    layer: 'strava-3',
                     opacity: 1
-                }
-            ],
-            onChapterExit: [
-                {
+                    layer: 'strava-2',
+                    opacity: 0.6
                     layer: 'strava-1',
-                    opacity: 1
+                    opacity: 0.8
                 }
             ]
+            onChapterExit: []
         },
         
     {
