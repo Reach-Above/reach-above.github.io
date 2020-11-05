@@ -452,9 +452,9 @@ var config = {
         },
          {
             id: 'Stats',
-            title: '<h1 class="glow">GLOWING TEXT</h1>',
+            title: '',
             image: '',
-            description: '',
+            description: '<p class="glow">GLOWING TEXT</p>',
             location: {
                 center: [ -78.68438, 43.91550],
                 zoom: 13.17,
