@@ -56,7 +56,6 @@
             border-radius: 50%;
           }
           .glow {
-          font-size: 30px;
           color: #fff;
           text-align: center;
           -webkit-animation: glow 1s ease-in-out infinite alternate;
@@ -72,7 +71,7 @@
           to {
             text-shadow: 0 0 10px #ff4a4a, 0 0 20px #ff4a4a, 0 0 30px #ff4a4a, 0 0 40px #fff4a4, 0 0 50px #ff4a4a, 0 0 60px #ff4a4a;
           }
-       
+       }
         #features {
             padding-top: 10vh;
             padding-bottom: 10vh;
