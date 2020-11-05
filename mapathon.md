@@ -452,7 +452,7 @@ var config = {
         },
          {
             id: 'Stats',
-            title: '800 KM Travelled class="glow"',
+            title: '<p class="glow"> 800 KM Travelled </p>',
             image: '',
             description: '',
             location: {
