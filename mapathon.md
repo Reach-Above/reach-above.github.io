@@ -55,6 +55,23 @@
             text-decoration: none;
             border-radius: 50%;
           }
+          .glow {
+          font-size: 30px;
+          color: #fff;
+          text-align: center;
+          -webkit-animation: glow 1s ease-in-out infinite alternate;
+          -moz-animation: glow 1s ease-in-out infinite alternate;
+          animation: glow 1s ease-in-out infinite alternate;
+        }
+
+        @-webkit-keyframes glow {
+          from {
+            text-shadow: 0 0 0px #ff4a4a, 0 0 10px #ff4a4a, 0 0 10px #ff4a4a, 0 0 20px #ff4a4a, 0 0 30px #ff4a4a, 0 0 40px #ff4a4a, 0 0 50px #ff4a4a;
+          }
+
+          to {
+            text-shadow: 0 0 10px #ff4a4a, 0 0 20px #ff4a4a, 0 0 30px #ff4a4a, 0 0 40px #fff4a4, 0 0 50px #ff4a4a, 0 0 60px #ff4a4a;
+          }
        
         #features {
             padding-top: 10vh;
@@ -140,7 +157,7 @@ var config = {
     title: 'Staying Active during the Pandemic',
     subtitle: 'Local Adventures of Sam & Evan (6 & 4 years old)',
     byline: 'by Houston Family',
-    footer: 'Follow our biking adventures on<a href="https://www.instagram.com/reach.above/" class="fa fa-instagram"></a> </br>Follow along for maps and stuff<a href="https://twitter.com/reach_above" class="fa fa-twitter"></a> ',
+    footer: 'More on our biking adventures <a href="https://www.instagram.com/reach.above/" class="fa fa-instagram"></a> </br>Maps and Stuff <a href="https://twitter.com/reach_above" class="fa fa-twitter"></a></br>Special thanks to:</br>Mapbox Solutions Architecture and @lobenichou for the Scrollytelling Template | @John_M_Nelson for the Firefly ArcGIS Blog | @jonni_walker for the Glow Effect Blog',
     chapters: [
         {
             id: 'Opportunity',
@@ -411,10 +428,34 @@ var config = {
             ]
         },
         {
-            id: 'Stats',
+            id: 'Running',
             title: 'How active have we been so far?',
             image: './mapathon/Evan_Balance.gif',
             description: 'Total KM Travveled, Average Trip Length, etc...',
+            location: {
+                center: [ -78.68438, 43.91550],
+                zoom: 13.17,
+                pitch: 60.00,
+                bearing: 0.00
+            },
+            onChapterEnter: [
+                {
+                    layer: 'strava-1',
+                    opacity: 1
+                }
+            ],
+            onChapterExit: [
+                {
+                    layer: 'strava-1',
+                    opacity: 1
+                }
+            ]
+        },
+         {
+            id: 'Stats',
+            title: '800 KM Travelled class="glow"',
+            image: '',
+            description: '',
             location: {
                 center: [ -78.68438, 43.91550],
                 zoom: 13.17,
