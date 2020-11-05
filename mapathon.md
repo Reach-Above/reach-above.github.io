@@ -454,7 +454,7 @@ var config = {
             id: 'Stats',
             title: '',
             image: '',
-            description: '<p class="glow">GLOWING TEXT</p>',
+            description: '<p class="glow"> 160 Activities </br>800KM Travelled</br>5.3KM Average</br>5000 Elevation Gain</br>Max Speed 28KPH</p>',
             location: {
                 center: [ -78.68438, 43.91550],
                 zoom: 13.17,
