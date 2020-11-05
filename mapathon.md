@@ -283,7 +283,7 @@ var config = {
         },
             {
             id: 'Dirt Jumps',
-            title: 'We loved going to the Jackman Rd Dirt Jumps',
+            title: 'We loved being Dare Devils at the Jackman Rd Dirt Jumps',
             image: './mapathon/Jackman.gif',
             description: 'We went here a lot you can tell by all the lines overlapping near the river and all the lines with the trips to this excellent area.',
             location: {
@@ -297,7 +297,7 @@ var config = {
         },
                    {
             id: 'Creeks',
-            title: 'We travelled along the paved and gravel paths parallel to Bowmanville Creek and Soper Creek',
+            title: 'We travelled along the paved and gravel paths. Our favourites run parallel to the Bowmanville Creek and the Soper Creek',
             image: './mapathon/Hill.gif',
             description: 'Lots of work is going into connecting these two trails together and to the waterfront trail. And protecting the Salmon. Thank you <a href="https://valleys2000.ca/">Valleys 2000</a>',
             location: {
@@ -350,7 +350,7 @@ var config = {
         },
          {
             id: 'Durham Forest',
-            title: 'Durham Forest has some of the best Mountain Biking in Ontario',
+            title: 'But we have the most fun at Durham Forest. It has some of the best Mountain Biking in Ontario',
             image: './mapathon/Double.gif',
             description: 'Check out this fantastic organization building these wicked trails. <a href="https://durhammountainbiking.ca/">DMBA</a>',
             location: {
@@ -380,7 +380,7 @@ var config = {
             id: 'Stats',
             title: '',
             image: '',
-            description: 'From March 2020 to October 2020 we have done: <p class="glow"> 160 Activities </br>Travelled 800KM </br>Went up 5000M in Elevation</br>Max Speed 28KPH</p> ',
+            description: '<p From March 2020 to October 2020 we have done:</p><p class="glow"> 160 Activities </br>Travelled 800KM </br>Went up 5000M in Elevation</br>and hit a Max Speed of 28KPH</p> ',
             location: {
                 center: [ -78.68438, 43.91550],
                 zoom: 13.17,
