@@ -133,7 +133,7 @@
 <script>
 var config = {
     style: 'mapbox://styles/reachabove/ckgqu406e4rc119o31llg01wk',
-    accessToken: 'pk.eyJ1IjoicmVhY2hhYm92ZSIsImEiOiJjazBkcm1wazUwYWNmM2xxZXhhNW1sc2hmIn0.ybV26N8Bl8WyZejLHvwiCw',
+    accessToken: 'pk.eyJ1IjoicmVhY2hhYm92ZSIsImEiOiJjazA1ZnBuam8zbDBlM2htdnFzazc1bjI1In0.GlSlBxjbFhFjoassRsXKiA',
     showMarkers: false,
     theme: 'dark',
     alignment: 'left',
@@ -200,26 +200,9 @@ var config = {
                 pitch: 60.00,
                 bearing: -8.00
             },
-             onChapterEnter: [
-                {
-                    layer: 'strava-3l',
-                    opacity: 0.8
-                    layer: 'strava-2l',
-                    opacity: 0.6
-                    layer: 'strava-1l',
-                    opacity: 1
-                }
-            ],
-            onChapterExit: [
-                {
-                    layer: 'strava-3',
-                    opacity: 1
-                    layer: 'strava-2',
-                    opacity: 0.6
-                    layer: 'strava-1',
-                    opacity: 0.8
-                }
-            ]
+			
+            onChapterEnter: [],
+            onChapterExit: []
             
         },
         {
@@ -310,16 +293,7 @@ var config = {
                 bearing:  -37.05
             },
              onChapterEnter: [],
-             onChapterExit:  [
-                {
-                    layer: 'strava-3',
-                    opacity: 1
-                    layer: 'strava-2',
-                    opacity: 0.6
-                    layer: 'strava-1',
-                    opacity: 0.8
-                }
-            ]
+             onChapterExit: []
         },
         
         {
@@ -333,26 +307,8 @@ var config = {
                 pitch: 0.00,
                 bearing: 0.00
             },
-             onChapterEnter: [
-                {
-                    layer: 'strava-3l',
-                    opacity: 0.8
-                    layer: 'strava-2l',
-                    opacity: 0.6
-                    layer: 'strava-1l',
-                    opacity: 1
-                }
-            ],
-             onChapterExit: [
-                {
-                    layer: 'strava-3l',
-                    opacity: 0
-                    layer: 'strava-2l',
-                    opacity: 0
-                    layer: 'strava-1l',
-                    opacity: 0
-                }
-            ]
+             onChapterEnter: [],
+             onChapterExit: []
         },
         
        {
@@ -366,16 +322,7 @@ var config = {
                 pitch: 37.00,
                 bearing: -19.02
             },
-            onChapterEnter: [
-                {
-                    layer: 'strava-3',
-                    opacity: 1
-                    layer: 'strava-2',
-                    opacity: 0.6
-                    layer: 'strava-1',
-                    opacity: 0.8
-                }
-            ]
+            onChapterEnter: [],
             onChapterExit: []
         },
         
