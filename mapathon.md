@@ -299,7 +299,7 @@ var config = {
         {
             id: 'Longest',
             title: 'Our longest rides were 12KM here is what it looks like on the map.',
-            image: './mapathon/Hill.gif',
+            image: '',
             description: '',
             location: {
                 center: [-78.68791, 43.91651],
