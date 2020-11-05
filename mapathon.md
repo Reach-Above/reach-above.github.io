@@ -217,7 +217,7 @@ var config = {
             },
             onChapterEnter: [],
             onChapterExit: []
-            ]
+            
         },
         {
             id: 'Joseph',
