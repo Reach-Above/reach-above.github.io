@@ -155,7 +155,7 @@ var config = {
     alignment: 'left',
     title: 'Staying Active during the Pandemic',
     subtitle: 'Local Adventures of Sam & Evan (6 & 4 years old)',
-    byline: 'by Houston Family',
+    byline: 'by the Houston Family',
     footer: 'More on our biking adventures <a href="https://www.instagram.com/reach.above/" class="fa fa-instagram"></a> | Maps and Stuff <a href="https://twitter.com/reach_above" class="fa fa-twitter"></a></br>Special thanks to:</br>Mapbox Solutions Architecture and @lobenichou for the Scrollytelling Template | @John_M_Nelson for the Firefly ArcGIS Blog | @jonni_walker for the Glow Effect Blog',
     chapters: [
         {
@@ -172,21 +172,21 @@ var config = {
             onChapterEnter: [
                 {
                     layer: 'strava-1',
-                    opacity: 1
+                    opacity: 0.8
                 },
                  {
                     layer: 'strava-2',
-                    opacity: 1
+                    opacity: 0.6
                 }
             ],
             onChapterExit: [
                 {
                     layer: 'strava-1',
-                    opacity: 1
+                    opacity: 0.8
                 },
                  {
                     layer: 'strava-2',
-                    opacity: 1
+                    opacity: 0.6
                 }
             ]
         },
@@ -201,12 +201,7 @@ var config = {
                 pitch: 0.00,
                 bearing: 0.00
             },
-            onChapterEnter: [
-                {
-                    layer: 'strava-1',
-                    opacity: 1
-                }
-            ],
+            onChapterEnter: [],
             onChapterExit: []
         },
         {
@@ -220,17 +215,8 @@ var config = {
                 pitch: 60.00,
                 bearing: -8.00
             },
-            onChapterEnter: [
-                {
-                    layer: 'strava-1',
-                    opacity: 1
-                }
-            ],
-            onChapterExit: [
-                {
-                    layer: 'strava-1',
-                    opacity: 1
-                }
+            onChapterEnter: [],
+            onChapterExit: []
             ]
         },
         {
@@ -277,7 +263,7 @@ var config = {
             onChapterExit: [
                 {
                     layer: 'buildings',
-                    opacity: 0.8
+                    opacity: 0.0
                 }
             ]
         },
@@ -292,18 +278,8 @@ var config = {
                 pitch: 0.00,
                 bearing: 0.00
             },
-            onChapterEnter: [
-                {
-                   layer: 'buildings',
-                    opacity: 0.0
-                }
-            ],
-            onChapterExit: [
-                {
-                    layer: 'buildings',
-                    opacity: 0.0
-                }
-            ]
+             onChapterEnter: [],
+             onChapterExit: []
         },
             {
             id: 'Dirt Jumps',
@@ -316,18 +292,8 @@ var config = {
                 pitch: 0.00,
                 bearing: 0.00
             },
-            onChapterEnter: [
-                {
-                    layer: 'strava-1',
-                    opacity: 1
-                }
-            ],
-            onChapterExit: [
-                {
-                    layer: 'strava-1',
-                    opacity: 1
-                }
-            ]
+             onChapterEnter: [],
+             onChapterExit: []
         },
                    {
             id: 'Creeks',
@@ -340,18 +306,8 @@ var config = {
                 pitch: 60.00,
                 bearing:  -37.05
             },
-            onChapterEnter: [
-                {
-                    layer: 'strava-1',
-                    opacity: 1
-                }
-            ],
-            onChapterExit: [
-                {
-                    layer: 'strava-1',
-                    opacity: 1
-                }
-            ]
+             onChapterEnter: [],
+             onChapterExit: []
         },
        {
             id: 'Orono',
@@ -389,18 +345,8 @@ var config = {
                 pitch: 60.00,
                 bearing: 76.80
             },
-            onChapterEnter: [
-                {
-                    layer: 'strava-1',
-                    opacity: 1
-                }
-            ],
-            onChapterExit: [
-                {
-                    layer: 'strava-1',
-                    opacity: 1
-                }
-            ]
+             onChapterEnter: [],
+             onChapterExit: []
         },
          {
             id: 'Durham Forest',
@@ -413,66 +359,36 @@ var config = {
                 pitch: 0.00,
                 bearing: 0.00
             },
-            onChapterEnter: [
-                {
-                    layer: 'strava-1',
-                    opacity: 1
-                }
-            ],
-            onChapterExit: [
-                {
-                    layer: 'strava-1',
-                    opacity: 1
-                }
-            ]
+            onChapterEnter: [],
+            onChapterExit: []
         },
         {
             id: 'Running',
             title: 'How active have we been so far?',
             image: './mapathon/Evan_Balance.gif',
-            description: 'Total KM Travveled, Average Trip Length, etc...',
+            description: '',
             location: {
                 center: [ -78.68438, 43.91550],
                 zoom: 13.17,
                 pitch: 60.00,
                 bearing: 0.00
             },
-            onChapterEnter: [
-                {
-                    layer: 'strava-1',
-                    opacity: 1
-                }
-            ],
-            onChapterExit: [
-                {
-                    layer: 'strava-1',
-                    opacity: 1
-                }
-            ]
+             onChapterEnter: [],
+             onChapterExit: []
         },
          {
             id: 'Stats',
             title: '',
             image: '',
-            description: '<p class="glow"> 160 Activities </br>800KM Travelled</br>5.3KM Average</br>5000 Elevation Gain</br>Max Speed 28KPH</p>',
+            description: 'From March 2020 to October 2020 we have done: <p class="glow"> 160 Activities </br>Travelled 800KM </br>Went up 5000M in Elevation</br>Max Speed 28KPH</p> ',
             location: {
                 center: [ -78.68438, 43.91550],
                 zoom: 13.17,
                 pitch: 60.00,
                 bearing: 0.00
             },
-            onChapterEnter: [
-                {
-                    layer: 'strava-1',
-                    opacity: 1
-                }
-            ],
-            onChapterExit: [
-                {
-                    layer: 'strava-1',
-                    opacity: 1
-                }
-            ]
+            onChapterEnter: [],
+            onChapterExit: []
         }
     ]
 };
