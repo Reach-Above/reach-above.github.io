@@ -56,14 +56,7 @@
             text-decoration: none;
             border-radius: 50%;
           }
-        /* Add a hover effect if you want */
-        .fa:hover {
-          opacity: 0.7;
-        }
-        .fa-twitter {
-          background: #55ACEE;
-          color: white;
-        }
+       
         #features {
             padding-top: 10vh;
             padding-bottom: 10vh;
