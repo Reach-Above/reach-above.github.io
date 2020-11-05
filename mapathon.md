@@ -49,8 +49,7 @@
             font-size: 13px;
         }
         .fa {
-            padding: 5px;
-            font-size: 10px;
+            padding: 1px;
             width: 10px;
             text-align: center;
             text-decoration: none;
