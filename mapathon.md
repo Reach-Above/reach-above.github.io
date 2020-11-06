@@ -1,15 +1,6 @@
 <html>
 <head>
 <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-RD6956Y706"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-RD6956Y706');
-</script>
-
     <meta charset='utf-8' />
      <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
     <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v1.5.0/mapbox-gl.js'></script>
@@ -310,6 +301,10 @@ var config = {
                  {
                     layer: 'strava-2',
                     opacity: 0.0
+                },
+		{
+                    layer: 'strava-3',
+                    opacity: 0.0
                 }
             ]
         },
@@ -333,6 +328,10 @@ var config = {
                  {
                     layer: 'strava-2l',
                     opacity: 0.6
+                },
+		 {
+                    layer: 'strava-3l',
+                    opacity: 1
                 }
             ],
             onChapterExit: [
@@ -342,6 +341,10 @@ var config = {
                 },
                  {
                     layer: 'strava-2l',
+                    opacity: 0.0
+                }
+		{
+                    layer: 'strava-3l',
                     opacity: 0.0
                 }
             ]
@@ -358,7 +361,20 @@ var config = {
                 pitch: 37.00,
                 bearing: -19.02
             },
-            onChapterEnter: [],
+            onChapterEnter: [
+                {
+                    layer: 'strava-1',
+                    opacity: 0.8
+                },
+                 {
+                    layer: 'strava-2',
+                    opacity: 0.6
+                },
+		 {
+                    layer: 'strava-3',
+                    opacity: 1
+                }
+            ],
             onChapterExit: []
         },
         
