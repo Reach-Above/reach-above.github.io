@@ -292,8 +292,26 @@ var config = {
                 pitch: 60.00,
                 bearing:  -37.05
             },
-             onChapterEnter: [],
-             onChapterExit: []
+             onChapterEnter: [
+                {
+                    layer: 'strava-1',
+                    opacity: 0.8
+                },
+                 {
+                    layer: 'strava-2',
+                    opacity: 0.6
+                }
+            ],
+            onChapterExit: [
+                {
+                    layer: 'strava-1',
+                    opacity: 0.0
+                },
+                 {
+                    layer: 'strava-2',
+                    opacity: 0.0
+                }
+            ]
         },
         
         {
@@ -307,8 +325,26 @@ var config = {
                 pitch: 0.00,
                 bearing: 0.00
             },
-             onChapterEnter: [],
-             onChapterExit: []
+             onChapterEnter: [
+                {
+                    layer: 'strava-1l',
+                    opacity: 0.8
+                },
+                 {
+                    layer: 'strava-2l',
+                    opacity: 0.6
+                }
+            ],
+            onChapterExit: [
+                {
+                    layer: 'strava-1l',
+                    opacity: 0.0
+                },
+                 {
+                    layer: 'strava-2l',
+                    opacity: 0.0
+                }
+            ]
         },
         
        {
