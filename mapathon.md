@@ -302,20 +302,24 @@ var config = {
                  {
                     layer: 'strava-2',
                     opacity: 0.6
+                },
+		{
+                    layer: 'strava-3',
+                    opacity: 1
                 }
             ],
             onChapterExit: [
                 {
                     layer: 'strava-1',
-                    opacity: 0
+                    opacity: 0.8
                 },
                  {
                     layer: 'strava-2',
-                    opacity: 0
+                    opacity: 0.6
                 },
 		{
                     layer: 'strava-3',
-                    opacity: 0
+                    opacity: 1
                 }
             ]
         },
@@ -333,6 +337,18 @@ var config = {
             },
              onChapterEnter: [
                 {
+                    layer: 'strava-1',
+                    opacity: 0
+                },
+                 {
+                    layer: 'strava-2',
+                    opacity: 0
+                },
+		{
+                    layer: 'strava-3',
+                    opacity: 0
+                },
+		{
                     layer: 'strava-1l',
                     opacity: 0.8
                 },
@@ -357,6 +373,18 @@ var config = {
 		{
                     layer: 'strava-3l',
                     opacity: 0
+                },
+		{
+                    layer: 'strava-1',
+                    opacity: 0.8
+                },
+                 {
+                    layer: 'strava-2',
+                    opacity: 0.6
+                },
+		{
+                    layer: 'strava-3',
+                    opacity: 1
                 }
             ]
         },
@@ -386,7 +414,20 @@ var config = {
                     opacity: 1
                 }
             ],
-            onChapterExit: []
+            onChapterExit: [
+	    {
+                    layer: 'strava-1',
+                    opacity: 0.8
+                },
+                 {
+                    layer: 'strava-2',
+                    opacity: 0.6
+                },
+		 {
+                    layer: 'strava-3',
+                    opacity: 1
+                }
+		]
         },
         
     {
