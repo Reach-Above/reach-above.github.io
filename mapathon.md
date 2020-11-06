@@ -148,7 +148,7 @@ var config = {
             id: 'Opportunity',
             title: 'An Outdoor Opportunity',
             image: './mapathon/S_E_D.jpg',
-            description: 'With school, sports and indoor activites cancelled we had more opportunities to get outside and explore our community. To do that we rode our bikes all around our community and nearby trails',
+            description: 'With school, sports and indoor activites cancelled we had more opportunities to get outside and explore our community. To do that we rode our bikes all around town and nearby trails',
             location: {
                 center: [-78.69037, 43.93645 ],
                 zoom: 11.74,
