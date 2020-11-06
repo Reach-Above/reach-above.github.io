@@ -259,7 +259,7 @@ var config = {
             id: 'Jury',
             title: 'We discovered some of the History of Bowmanville - Over the bridge to the Jury Lands',
             image: './mapathon/Skids.gif',
-            description: 'During the years 1941 to 1945 the property was used as a German prisoner-of-war camp. The camp was used primarily for German officers, with over 800 prisoners occupying the camp at times. Read more at <a href="https://www.jurylandsfoundation.com">Jury Land Foundation</a>',
+            description: 'During the years 1941 to 1945 the property was used as a German prisoner-of-war camp. The camp was used primarily for German officers, with over 800 prisoners occupying the camp at times. Read more at <a href="https://www.jurylandsfoundation.com">Jury Lands Foundation</a>',
             location: {
                 center: [-78.66974, 43.92563],
                 zoom: 15.30,
