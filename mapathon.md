@@ -26,7 +26,7 @@
             font-family: sans-serif;
         }
         a, a:hover, a:visited {
-            color: #0071bc;
+            color: #FAFAFA;
         }
         #map {
             top:0; 
@@ -113,7 +113,7 @@
         .step div {
             padding:  25px 50px;
             line-height: 25px;
-            font-size: 13px;
+            font-size: 15px;
         }
 
         .step img {
@@ -180,7 +180,7 @@ var config = {
             id: 'local',
             title: 'Our Local Rides',
             image: '',
-            description: 'Almost everyday we got outside and rode our bikes. The darker the red and wider the line the further the ride',
+            description: 'Almost everyday we got outside and rode our bikes. The glowing lines that look like lightsabers represent the path we took. These were recorded using a cell phone with the Strava App',
             location: {
                 center: [-78.68791, 43.91651],
                 zoom: 13.06,
@@ -233,9 +233,9 @@ var config = {
         },
     {
             id: 'Daycare',
-            title: 'And to Evans Daycare',
+            title: 'And to the Daycare that Evan graduated from in June',
             image: '',
-            description: 'In June - Instead of a drive-by, we did a ride-by, to say farewell to Evan teachers as he is off to J.K. ',
+            description: 'Instead of a drive-by, we did a ride-by, to say farewell to the teachers as he is off to J.K.',
             location: {
                 center: [-78.69649, 43.90491  ],
                 zoom: 16.95,
