@@ -142,7 +142,7 @@ var config = {
     title: 'Staying Active during the Pandemic',
     subtitle: 'Local Adventures of Sam & Evan (6 & 4 years old)',
     byline: 'by the Houston Family',
-    footer: 'More on our biking adventures <a href="https://www.instagram.com/reach.above/" class="fa fa-instagram"></a> | Maps and Stuff <a href="https://twitter.com/reach_above" class="fa fa-twitter"></a></br>Special thanks to:</br>Mapbox Solutions Architecture and @lobenichou for the Scrollytelling Template | @John_M_Nelson for the Firefly ArcGIS Blog | @jonni_walker for the Glow Effect Blog',
+    footer: 'More on our biking adventures <a href="https://www.instagram.com/reach.above/" class="fa fa-instagram"></a>  | Maps and Stuff  <a href="https://twitter.com/reach_above" class="fa fa-twitter"></a></br>Special Thanks to:</br>Mapbox Solutions Architecture and @lobenichou for the Scrollytelling Template | @John_M_Nelson for the Firefly ArcGIS Blog | @jonni_walker for the Glow Effect Blog',
     chapters: [
         {
             id: 'Opportunity',
@@ -237,10 +237,10 @@ var config = {
             image: '',
             description: 'In June - Instead of a drive-by, we did a ride-by, to say farewell to Evan teachers as he is off to J.K. ',
             location: {
-                center: [-78.69655, 43.90521 ],
-                zoom: 17.02,
+                center: [-78.69649, 43.90491  ],
+                zoom: 16.95,
                 pitch: 60.00,
-                bearing: 43.20
+                bearing: -24.80
             },
             onChapterEnter: [
                 {
@@ -446,11 +446,11 @@ var config = {
         },
          {
             id: 'Durham Forest',
-            title: 'But we have the most fun at Durham Forest. It has some of the best Mountain Biking in Ontario',
+            title: 'But we have the most fun at Durham Forest. It has some of the best Mountain Biking Trails in Ontario',
             image: './mapathon/Double.gif',
             description: 'Check out this fantastic organization building these wicked trails. <a href="https://durhammountainbiking.ca/">DMBA</a>',
             location: {
-                center: [-79.08406, 44.04963],
+                center: [-79.09287, 44.04797],
                 zoom: 14.65,
                 pitch: 0.00,
                 bearing: 0.00
@@ -466,7 +466,7 @@ var config = {
             location: {
                 center: [ -78.68438, 43.91550],
                 zoom: 13.17,
-                pitch: 60.00,
+                pitch: 0.00,
                 bearing: 0.00
             },
              onChapterEnter: [],
