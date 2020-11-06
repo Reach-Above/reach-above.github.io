@@ -432,9 +432,9 @@ var config = {
         
     {
             id: 'Uxbridge Bike Park',
-            title: 'We travel a bit further simetimes to the Uxbridge Rotary Bike Park',
+            title: 'We have a blast at the Uxbridge Rotary Bike Park',
             image: './mapathon/BP_Evan.gif',
-            description: 'There are no GPS tracks here, but we love riding the pump track in Uxbridge.',
+            description: 'There are no GPS tracks recorded, but trust us, there would be lots of lines here.',
             location: {
                 center: [ -79.12724, 44.12500],
                 zoom: 17.35,
@@ -446,7 +446,7 @@ var config = {
         },
          {
             id: 'Durham Forest',
-            title: 'We have lot of fun at Durham Forest. It has some of the best Mountain Biking Trails in Ontario',
+            title: 'We have lot of fun at Durham Forest. It has some of the best mountain biking trails in Ontario',
             image: './mapathon/Double.gif',
             description: 'Check out this fantastic organization building these wicked trails. <a href="https://durhammountainbiking.ca/">DMBA</a>',
             location: {
@@ -476,7 +476,7 @@ var config = {
             id: 'Stats',
             title: 'From March 2020 to October 2020 we have completed:',
             image: '',
-            description: '<p> 160 Activities </br>Travelled 800KM </br>Went up 5000M in Elevation</br>and had a Max Speed of 28KPH</p> ',
+            description: '<p text-shadow: 2px 2px red;> 160 Activities </br>Travelled 800KM </br>Went up 5000M in Elevation</br>and had a Max Speed of 28KPH</p> ',
             location: {
                 center: [ -78.68438, 43.91550],
                 zoom: 13.17,
