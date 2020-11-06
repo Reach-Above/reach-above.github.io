@@ -476,7 +476,7 @@ var config = {
             id: 'Stats',
             title: 'From March 2020 to October 2020 we have completed:',
             image: '',
-            description: '<p text-shadow: 2px 2px red;> 160 Activities </br>Travelled 800KM </br>Went up 5000M in Elevation</br>and had a Max Speed of 28KPH</p> ',
+            description: '<p style="color:blue;text-shadow: 0px 0px 2px #4d2d4d, 0px 5px 10px #aefe00;"> 160 Activities </br>Travelled 800KM </br>Went up 5000M in Elevation</br>and had a Max Speed of 28KPH</p> ',
             location: {
                 center: [ -78.68438, 43.91550],
                 zoom: 13.17,
