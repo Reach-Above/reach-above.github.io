@@ -353,7 +353,7 @@ var config = {
                  {
                     layer: 'strava-2l',
                     opacity: 0.0
-                }
+                },
 		{
                     layer: 'strava-3l',
                     opacity: 0.0
