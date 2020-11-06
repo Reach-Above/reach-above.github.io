@@ -113,7 +113,7 @@
         .step div {
             padding:  25px 50px;
             line-height: 25px;
-            font-size: 15px;
+            font-size: 14px;
         }
 
         .step img {
@@ -287,7 +287,7 @@ var config = {
             id: 'Creeks',
             title: 'We travelled along the paved and gravel paths. Our favourites run parallel to the Bowmanville Creek and the Soper Creek',
             image: './mapathon/Hill.gif',
-            description: 'Lots of work is going into connecting these trails together with the Waterfront Trail to create a safe active enviroment for the whole community.Thank you <a href="https://valleys2000.ca/">Valleys 2000</a>',
+            description: 'Lots of work is going into connecting these trails together with the Waterfront Trail to create a safe active enviroment for the whole community. Thank you <a href="https://valleys2000.ca/">Valleys 2000</a>',
             location: {
                 center: [ -78.68791,43.90641],
                 zoom:  14.63,
