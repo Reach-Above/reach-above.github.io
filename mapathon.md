@@ -273,7 +273,7 @@ var config = {
             id: 'Dirt Jumps',
             title: 'We loved being dare-devils at the Jackman Rd Dirt Jumps',
             image: './mapathon/Jackman.gif',
-            description: 'We went here a lot you can tell by all the lines overlapping near the river and all the lines with the trips to this excellent area.',
+            description: 'We went here a lot, you can tell by all the lines overlapping near the river and all the lines with the trips to this excellent area.',
             location: {
                 center: [-78.702, 43.920],
                 zoom: 15.54,
