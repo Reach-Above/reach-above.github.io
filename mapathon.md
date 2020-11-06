@@ -146,7 +146,7 @@ var config = {
     chapters: [
         {
             id: 'Opportunity',
-            title: 'Outdoor Opportunity',
+            title: 'An Outdoor Opportunity',
             image: './mapathon/S_E_D.jpg',
             description: 'With school, sports and indoor activites cancelled we had more opportunities to get outside and explore our community. To do that we rode our bikes all around our community and nearby trails',
             location: {
@@ -257,7 +257,7 @@ var config = {
         },
         {
             id: 'Jury',
-            title: 'We discovered some of Bowmanvilles Histoy - Over the bridge to the Jury Lands',
+            title: 'We discovered some of Bowmanville&apos;s History - Over the bridge to the Jury Lands',
             image: './mapathon/Skids.gif',
             description: 'During the years 1941 to 1945 the property was used as a German prisoner-of-war camp. The camp was used primarily for German officers, with over 800 prisoners occupying the camp at times. Read more at <a href="https://www.jurylandsfoundation.com">Jury Land Foundation</a>',
             location: {
@@ -287,7 +287,7 @@ var config = {
             id: 'Creeks',
             title: 'We travelled along the paved and gravel paths. Our favourites run parallel to the Bowmanville Creek and the Soper Creek',
             image: './mapathon/Hill.gif',
-            description: 'Lots of work is going into connecting these two trails together and to the waterfront trail. And protecting the Salmon. Thank you <a href="https://valleys2000.ca/">Valleys 2000</a>',
+            description: 'Lots of work is going into connecting these trails together with the Waterfront Trail to create a safe active enviroment for the whole community.Thank you <a href="https://valleys2000.ca/">Valleys 2000</a>',
             location: {
                 center: [ -78.68791,43.90641],
                 zoom:  14.63,
@@ -446,7 +446,7 @@ var config = {
         },
          {
             id: 'Durham Forest',
-            title: 'But we have the most fun at Durham Forest. It has some of the best Mountain Biking Trails in Ontario',
+            title: 'We have lot of fun at Durham Forest. It has some of the best Mountain Biking Trails in Ontario',
             image: './mapathon/Double.gif',
             description: 'Check out this fantastic organization building these wicked trails. <a href="https://durhammountainbiking.ca/">DMBA</a>',
             location: {
@@ -488,7 +488,7 @@ var config = {
         },
         {
             id: 'Closing',
-            title: 'We hope you have enjoyed our story and that you are staying safe healthy and active during this time as well ',
+            title: 'We hope you have enjoyed our story and that you are staying safe, healthy and active during this time as well. ',
             image: './mapathon/Collage.png',
             description: '',
             location: {
