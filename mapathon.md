@@ -26,7 +26,7 @@
             font-family: sans-serif;
         }
         a, a:hover, a:visited {
-            color: #FAFAFA;
+            color: #75b8ff;
         }
         #map {
             top:0; 
