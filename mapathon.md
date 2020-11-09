@@ -326,7 +326,7 @@ var config = {
         
         {
             id: 'Longest',
-            title: 'Our longest rides were 12KM here is what one looks like on the map.',
+            title: 'Our longest rides were 12KM - this is what one looks like on the map.',
             image: '',
             description: '',
             location: {
