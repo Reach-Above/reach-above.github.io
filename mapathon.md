@@ -148,7 +148,7 @@ var config = {
             id: 'Opportunity',
             title: 'An Outdoor Opportunity',
             image: './mapathon/S_E_D.jpg',
-            description: 'With school, sports and indoor activites cancelled we had more opportunities to get outside and explore our community. To do that we rode our bikes all around town and nearby trails',
+            description: 'With school, sports and indoor activities cancelled we had more opportunities to get outside and explore our community. To do that we rode our bikes all around town and nearby trails',
             location: {
                 center: [-78.69037, 43.93645 ],
                 zoom: 11.74,
@@ -180,7 +180,7 @@ var config = {
             id: 'local',
             title: 'Our Local Rides',
             image: '',
-            description: 'Almost everyday we got outside and rode our bikes. The glowing lines that look like lightsabers represent the path we took. These were recorded using a cell phone with the Strava App',
+            description: 'Almost everyday we got outside and rode our bikes. The glowing lines that look like lightsabers represent the journeys we took. The more intense the lightsabre the more times we traveled over that area. These were recorded using a cell phone with the Strava App.',
             location: {
                 center: [-78.68791, 43.91651],
                 zoom: 13.06,
@@ -287,7 +287,7 @@ var config = {
             id: 'Creeks',
             title: 'We travelled along the paved and gravel paths. Our favourites run parallel to the Bowmanville Creek and the Soper Creek',
             image: './mapathon/Hill.gif',
-            description: 'Lots of work is going into connecting these trails together with the Waterfront Trail to create a safe active enviroment for the whole community. Thank you <a href="https://valleys2000.ca/">Valleys 2000</a>',
+            description: 'Lots of work is going into connecting these trails together with the Waterfront Trail to create a safe active environment for the whole community. Thank you <a href="https://valleys2000.ca/">Valleys 2000</a>',
             location: {
                 center: [ -78.68791,43.90641],
                 zoom:  14.63,
