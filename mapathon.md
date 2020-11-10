@@ -1,6 +1,6 @@
 <html>
 <head>
-	
+<title>Mapathon</title>	
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-3RKGWJ9K0S"></script>
 <script>
@@ -10,7 +10,7 @@
 
   gtag('config', 'G-3RKGWJ9K0S');
 </script>
-<title>Mapathon</title>
+
 
     <meta charset='utf-8' />
      <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
