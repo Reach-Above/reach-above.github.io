@@ -198,7 +198,7 @@ var config = {
             description: 'Full Gaz right out of the gate',
             location: {
                 center: [ -78.67574, 43.91687],
-                zoom: 14.50,
+                zoom: 15.50,
                 pitch: 0.00,
                 bearing: -16.80
             },
