@@ -194,11 +194,11 @@ var config = {
 	 {
             id: 'Home',
             title: 'This area on the map is showing lots of activity with many overlapping glowing lines. This is because all of our community rides start and finish here.',
-            image: './mapathon/Full_Gaz.png',
+            image: './mapathon/Full_GazC.jpg',
             description: 'Full Gaz right out of the gate',
             location: {
                 center: [ -78.67574, 43.91687],
-                zoom: 15.65,
+                zoom: 15.35,
                 pitch: 0.00,
                 bearing: -16.80
             },
