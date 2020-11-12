@@ -191,6 +191,30 @@ var config = {
             onChapterExit: []
        
         },
+	 {
+            id: 'Home',
+            title: 'This area on the map is showing lots of activity with many overlapping glowing lines. This is because all of our community rides start and finish here.',
+            image: 'Full_Gaz.png',
+            description: 'Full Gaz right out of the gate',
+            location: {
+                center: [ -78.67574, 43.91687],
+                zoom: 15.50,
+                pitch: 0.00,
+                bearing: -16.80
+            },
+            onChapterEnter: [
+                {
+                    layer: 'focusmain',
+                    opacity: 0.5
+                }
+            ],
+            onChapterExit: [
+                {
+                    layer: 'focusmain',
+                    opacity: 0.0
+                }
+            ]       
+        },
         {
             id: 'Weather',
             title: 'We rode in all sorts of weather. Rain, Snow, Cold and Hot',
@@ -476,7 +500,7 @@ var config = {
             id: 'Stats',
             title: 'From March 2020 to October 2020 we have completed:',
             image: '',
-            description: '<p style="text-shadow:2px 2px 5px #f36b6b, 1px 1px 4px #f3c86b;font-size:14px;"> 160 Activities </br>Travelled 800KM </br>Went up 5000M in Elevation</br>and had a Max Speed of 28KPH</p> ',
+            description: '<p style="text-shadow:2px 2px 5px #f36b6b, 1px 1px 4px #f3c86b;font-size:14px;"> 160 Activities </br>Travelled 800KM </br>Went up 5,000M in Elevation</br>and had a Max Speed of 28KPH</p> ',
             location: {
                 center: [ -78.68438, 43.91550],
                 zoom: 13.17,
