@@ -135,7 +135,7 @@
 <script>
 var config = {
     style: 'mapbox://styles/reachabove/ckgqu406e4rc119o31llg01wk',
-    accessToken: 'pk.eyJ1IjoicmVhY2hhYm92ZSIsImEiOiJjazA1ZnBuam8zbDBlM2htdnFzazc1bjI1In0.GlSlBxjbFhFjoassRsXKiA',
+    accessToken: 'pk.eyJ1IjoicmVhY2hhYm92ZSIsImEiOiJjazBkcm1wazUwYWNmM2xxZXhhNW1sc2hmIn0.ybV26N8Bl8WyZejLHvwiCw',
     showMarkers: false,
     theme: 'dark',
     alignment: 'left',
