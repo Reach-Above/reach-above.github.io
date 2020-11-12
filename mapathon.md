@@ -194,7 +194,7 @@ var config = {
 	 {
             id: 'Home',
             title: 'This area on the map is showing lots of activity with many overlapping glowing lines. This is because all of our community rides start and finish here.',
-            image: 'Full_Gaz.png',
+            image: './mapathon/Full_Gaz.png',
             description: 'Full Gaz right out of the gate',
             location: {
                 center: [ -78.67574, 43.91687],
