@@ -134,7 +134,7 @@ var config = {
     alignment: 'left',
     title: 'A Story: Duffin Creek',
     subtitle: 'Students from DDSB@home',
-    byline: 'Ms. Alison Elwood Class Gr.7 ',
+    byline: 'Ms. Alison Ellwood Class Gr.7 ',
     footer: 'Footer </br>Special Thanks to:</br>© Reach Above, 2020',
     chapters: [
         {
