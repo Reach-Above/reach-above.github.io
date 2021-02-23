@@ -118,6 +118,9 @@
         }
         </style>
 </head>
+
+/* https://demos.mapbox.com/location-helper/ */
+
 <body>
 	
 <div id="map"></div>
@@ -129,10 +132,10 @@ var config = {
     showMarkers: false,
     theme: 'dark',
     alignment: 'left',
-    title: 'A Story: Duffins Creek',
-    subtitle: 'students from DDSB@home',
+    title: 'A Story: Duffin Creek',
+    subtitle: 'Students from DDSB@home',
     byline: 'Ms. Alison Elwood Class Gr.7 ',
-    footer: '<a href="https://www.instagram.com/reach.above/" class="fa fa-instagram"></a>  Biking Adventures | Maps and Stuff  <a href="https://twitter.com/reach_above" class="fa fa-twitter"></a></br>Special Thanks to:</br>© Reach Above, 2020',
+    footer: 'Footer </br>Special Thanks to:</br>© Reach Above, 2020',
     chapters: [
         {
             id: 'Chapter1',
@@ -140,10 +143,10 @@ var config = {
             image: '',
             description: 'description goes here',
             location: {
-                center: [-78.69037, 43.93645 ],
-                zoom: 11.74,
+                center: [-79.03664, 43.82013 ],
+                zoom: 12.13,
                 pitch: 0.00,
-                bearing: -2.30
+                bearing: 0.00
             },
             onChapterEnter: [
                 {
@@ -184,7 +187,7 @@ var config = {
 	 {
             id: 'Chapter3',
             title: 'Chapter3',
-            image: './mapathon/Full_GazC.jpg',
+            image: '',
             description: 'description...',
             location: {
                 center: [ -78.67574, 43.91687],
@@ -208,7 +211,7 @@ var config = {
         {
             id: 'Chapter 4',
             title: 'Chapter 4',
-            image: './mapathon/S_E.jpg',
+            image: '',
             description: 'Description...',
             location: {
                 center: [-78.67219, 43.92559],
