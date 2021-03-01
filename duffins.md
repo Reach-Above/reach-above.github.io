@@ -127,144 +127,141 @@
 <div id="story"></div>
 <script>
 var config = {
-    style: 'mapbox://styles/mapbox/streets-v11',
+    style: 'mapbox://styles/reachabove/cklkzbol1105f17pce3kwxj6g',
     accessToken: 'pk.eyJ1IjoicmVhY2hhYm92ZSIsImEiOiJja2xpY3V1Z2MwN3Z1MnVtd2FseG5yMnhuIn0.-ZA1RuBCOgW9BiWitgpgXQ',
     showMarkers: false,
     theme: 'dark',
     alignment: 'left',
-    title: 'A Story: Duffin Creek',
+    title: 'A Story: A Duffins Creek Wetland',
     subtitle: 'Students from DDSB@home',
-    byline: 'Ms. Alison Ellwood Class Gr.7 ',
+    byline: '',
     footer: 'Footer </br>Special Thanks to:</br>© Reach Above, 2020',
     chapters: [
         {
             id: 'Chapter1',
-            title: 'Chapter 1',
-            image: '',
-            description: 'description goes here',
+            title: 'Introduction',
+            description: 'We are a group of concerned Grade 7 students from the Pickering and Ajax area of Durham Region,Ontario,Canada. We are trying to stop the proposed warehouse and parking lot development on a wetland that is connected to Duffins Creek,an important part of our local watershed.',
             location: {
-                center: [-79.03664, 43.82013 ],
-                zoom: 12.13,
+                center: [-90.22113, 48.57957 ],
+                zoom:  3.51,
                 pitch: 0.00,
                 bearing: 0.00
             },
             onChapterEnter: [
                 {
-                    layer: '',
-                    opacity: 0.6
-                },
-                 {
-                    layer: '',
+                    layer: 'municipal-boundaries-3857-9l5equ',
                     opacity: 0.6
                 }
             ],
             onChapterExit: [
                 {
-                    layer: '',
-                    opacity: 0.8
+                    layer: 'municipal-boundaries-3857-9l5equ',
+                    opacity: 0.0
                 },
-                 {
-                    layer: '',
-                    opacity: 0.6
+                {
+                    layer: 'municipal-boundaries-3857-9l5equ',
+                    opacity: 0.0
                 }
+                 
             ]
         },
         {
             id: 'Chapter2',
-            title: 'Chapter 2',
-            image: '',
-            description: 'Description',
+            title: 'Where it all began',
+           
+            description: 'Our class read this article with the task of understanding issues from multiple perspective. Because the proposed development is in our backyards we became very curious to know more. We were divided on the issue so we began writing letters to the people involved.',
             location: {
-                center: [-78.68791, 43.91651],
-                zoom: 13.06,
+                center: [-79.03893, 43.83587],
+                zoom: 12.00,
                 pitch: 0.00,
                 bearing: 0.00
             },
-            onChapterEnter: [],
+            onChapterEnter: [{
+                    layer: 'wetlands-3857-59jd17',
+                    opacity: 0.5
+                }],
             onChapterExit: []
        
         },
 	 {
             id: 'Chapter3',
-            title: 'Chapter3',
-            image: '',
-            description: 'description...',
+            title: 'Why are wetlands important to our environment?',
+            
+            description: 'Wetlands provide habitat for wildlife including migratory birds and amphibians. They help to combat climate change by sequestering carbon. Wetlands filter the water and protect rivers and lakes from erosion. This prevents water pollution and protects marine life.',
             location: {
-                center: [ -78.67574, 43.91687],
-                zoom: 15.25,
+                center: [ -79.03893, 43.83587],
+                zoom: 12.5,
                 pitch: 0.00,
                 bearing: -16.80
             },
             onChapterEnter: [
                 {
-                    layer: '',
-                    opacity: 0.5
+                    layer: 'wetlands-3857-59jd17',
+                    opacity: 0.9
                 }
             ],
             onChapterExit: [
                 {
-                    layer: '',
-                    opacity: 0.0
+                    layer: 'wetlands-3857-59jd17',
+                    opacity: 0.9
                 }
             ]       
         },
         {
             id: 'Chapter 4',
-            title: 'Chapter 4',
-            image: '',
-            description: 'Description...',
+            title: 'Why are wetlands important to humans?',
+            
+            description: 'Wetlands do two main things for us. First they filter our drinking water by removing toxins and debris as water flows into our drinking water source (Lake Ontario). Second wetlands prevent our houses and businesses and roads from flooding by holding water in heavy rains or melting events. If we remove the Duffins Creek wetland it will make treating our drinking water more difficult and expensive and may leave our neighbourhoods vulnerable to flooding because there would be nowhere for the water to go.',
             location: {
-                center: [-78.67219, 43.92559],
-                zoom: 17.08,
+                center: [ -79.03893, 43.83587],
+                zoom: 13,
                 pitch: 60.00,
                 bearing: -8.00
             },
 			
-            onChapterEnter: [],
-            onChapterExit: []
+            onChapterEnter: [ {
+                    layer: 'wetlands-3857-59jd17',
+                    opacity: 0.9
+                }],
+            onChapterExit: [
+                {
+                    layer: 'wetlands-3857-59jd17',
+                    opacity: 0.9
+                }]
             
         },
         {
             id: 'Chapter5',
-            title: 'Chapter 5',
-            image: '',
-            description: 'Description... ',
+            title: 'Why do we need a warehouse and parking lot?',
+            
+            description: 'There are two main reasons to build a warehouse and parking lot in our city.First it will provide jobs for people who need them. This especially important as many have lost their jobs due to the COVID 19 pandemic.Secondly the development will provide a lot of tax revenue for the City of Pickering. This will help them provide the much needed services for our community.',
             location: {
-                center: [-78.675, 43.904],
-                zoom: 16.73,
-                pitch: 60.00,
+                center: [-79.05529, 43.83974],
+                zoom: 13.35,
+                pitch: 56.50,
                 bearing: 0.00
             },
             onChapterEnter: [
                 {
-                    layer: '',
-                    opacity: 0.8
+                    layer: 'mzo',
+                    opacity: 0.75
                 },
             ],
-            onChapterExit: [
-                {
-                    layer: '',
-                    opacity: 0.8
-                }
-            ]
+            onChapterExit: []
         },
     {
             id: 'Chapter6',
-            title: 'Chapter 6',
-            image: '',
-            description: 'Description',
+            title: 'Interview with City of Pickering',
+            
+            description: 'We wrote to David Ryan,  Mayor of Pickering, to ask about the project. Mark Guinto, Manager of Public Affairs and Corporate Communications for the City of Pickering joined us for an interview made a proposal to build a warehouse and parking lot on the Duffins Creek Wetland. He said that nothing would happen to the wetlands but from what we have learned we know that this is not true. He also said that if the wetlands were destroyed they could rebuild them but its not possible because wetlands take thousands of years to make. We wanted to hear more about Mayor Ryans opinion so we sent him an email asking him for an interview. We asked him some questions one of them being what would would happen to the animals in the wetlands when they develop over it. His response was that the animals would just move to their new wetland.',rotateAnimation: true,
             location: {
-                center: [-78.69649, 43.90491  ],
-                zoom: 16.95,
-                pitch: 60.00,
-                bearing: -24.80
+                center: [-79.08403, 43.83788],
+                zoom: 16.00,
+                pitch: 56.50,
+                
             },
-            onChapterEnter: [
-                {
-                    layer: '',
-                    opacity: 0.8
-                }
-            ],
+            
+            onChapterEnter: [],
             onChapterExit: [
                 {
                     layer: '',
@@ -274,42 +271,46 @@ var config = {
         },
         {
             id: 'Chapter7',
-            title: 'Chapter 7',
-            image: '',
-            description: 'description...',
+            title: 'How are zoning decisions made?',
+            
+            description: 'The reason why this warehouse development has received so much attention is because of how the decision was made. Usually, if a municipality (city) wants to rezone an area of land, they have to apply to the Conservation Authority (TRCA in this case) and go through public consultation. The City of Pickering figured out how to avoid the TRCA and public consultation by applying to the Minister of Municipal Affairs directly using an MZO. The City of Pickering knew the TRCA would not allow them to develop here because of the fact that it is such an important wetland for our drinking water and flood protection.',
             location: {
-                center: [-78.66974, 43.92563],
-                zoom: 15.30,
+                center: [-79.08403, 43.83788],
+                zoom: 16.00,
                 pitch: 0.00,
                 bearing: 0.00
             },
              onChapterEnter: [],
              onChapterExit: []
+             
         },
             {
             id: 'Chapter8',
-            title: 'Chapter 8',
-            image: '',
-            description: 'description...',
+            title: 'Interview with Tim Gray, Environmental Defence',
+           
+            description: 'The wetlands that are being built on will be more than damaged they will be destroyed forever. He also said that Southern Ontario has lost more than 72% of the wetlands.People are saying that the land is already damaged and that it isnt important',
             location: {
-                center: [-78.702, 43.920],
-                zoom: 15.54,
+                center: [-79.05826, 43.84497],
+                zoom:  11.66,
                 pitch: 0.00,
                 bearing: 0.00
             },
-             onChapterEnter: [],
+             onChapterEnter: [{
+                    layer: 'ggh-significantemp-dxhakr',
+                    opacity: 0.60
+                },],
              onChapterExit: []
         },
            {
             id: 'Chapter9',
-            title: 'Chapter 9',
+            title: 'Interview with Chief Kelly LaRocca, MSIFN',
             image: '',
-            description: 'description...',
+            description: 'The area is part of the traditional territory of the Mississaugas of Scugog Island so we decided to reach out to Chief LaRocca for her opinion. She disagrees with the development plan because of the potential for flooding and the importance of the wetland ecosystem. Chief LaRocca explained that the City of Pickering had The wetland is sacred land that should be protected. As part of the traditional territory of MSIFN, it was their COnstitutional right to be consulted. The Mayor of Pickering, Region of Durham, nor the Province reached out for meaningful talks. ',
             location: {
-                center: [ -78.68791,43.90641],
-                zoom:  14.63,
-                pitch: 60.00,
-                bearing:  -37.05
+                center: [ -78.88920,44.17819],
+                zoom:  12.51,
+                pitch: 0.00,
+                bearing:  0.00
             },
              onChapterEnter: [],
             onChapterExit: []
@@ -317,13 +318,13 @@ var config = {
         
         {
             id: 'Chapter10',
-            title: 'Chapter 10',
+            title: 'Mayor Shaun Collier, Town of Ajax',
             image: '',
-            description: 'description...',
+            description: 'Shaun Collier, Mayor of Ajax has made it clear that he does not support developing on this provincially significant wetland. He says that this wetland is worth $3 million per year in what it does for our community - filtering water and supporting biodiversity. It is part of our culture and actually saves us money. It would not be smart to pave over it.',
             location: {
-                center: [-78.68791, 43.91651],
-                zoom: 13.06,
-                pitch: 0.00,
+                center: [-79.05446, 43.85157],
+                zoom: 16.00,
+                pitch: 53.00,
                 bearing: 0.00
             },
              onChapterEnter: [],
@@ -332,14 +333,14 @@ var config = {
         
        {
             id: 'Chapter11',
-            title: 'Chapter 11',
+            title: 'Interview with Annamie Paul, Leader of the Federal Green Party',
             image: '',
-            description: 'description...',
+            description: 'Annamie Paul is the leader of the Federal Green party of Canada and we got to interview her on the Duffins Creek proposal. Her opinion is to preserve and protect our natural spaces for the long term. Annamie Paul wants to conserve the biodiversity Duffins creek provides us. She also talked about thinking more carefully on what we build and what kind of projects we do. We need high paying jobs that are stable and secure but also do not damage the environment. We need jobs that can actually help us',
             location: {
-                center: [-78.62617, 43.97136 ],
-                zoom: 14.31,
-                pitch: 37.00,
-                bearing: -19.02
+                center: [-79.03893, 43.83587],
+                zoom: 12.37,
+                pitch: 0.00,
+                bearing: 0.00
             },
             onChapterEnter: [],
             onChapterExit: []
@@ -347,7 +348,7 @@ var config = {
         
     {
             id: 'Chapter12',
-            title: 'Chapter 12',
+            title: 'Interview with Mike Schreiner, MPP',
             image: '',
             description: 'description...',
             location: {
@@ -418,8 +419,7 @@ var config = {
     ]
 };
 
-</script>
-<script>
+
 var layerTypes = {
     'fill': ['fill-opacity'],
     'line': ['line-opacity'],
@@ -587,7 +587,6 @@ map.on("load", function() {
 
 // setup resize event
 window.addEventListener('resize', scroller.resize);
-
 </script>
 
 
