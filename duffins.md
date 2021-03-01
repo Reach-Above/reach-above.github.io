@@ -130,7 +130,7 @@ var config = {
     style: 'mapbox://styles/reachabove/cklkzbol1105f17pce3kwxj6g',
     accessToken: 'pk.eyJ1IjoicmVhY2hhYm92ZSIsImEiOiJja2xpY3V1Z2MwN3Z1MnVtd2FseG5yMnhuIn0.-ZA1RuBCOgW9BiWitgpgXQ',
     showMarkers: false,
-    theme: 'light',
+    theme: 'dark',
     alignment: 'left',
     title: 'A Story: A Duffins Creek Wetland',
     subtitle: 'Students from DDSB@home',
