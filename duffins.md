@@ -382,7 +382,7 @@
             id: 'Chapter14',
             title: 'Taking Action',
             iimage: './duffins/Chapter14.jpg'
-            description: 'We disagree with the paving over of an important wetland in Pickering and we hope you agree. We have written a petition that has been approved by the Clerk’s Office. Mike Schreiner, MPP and Ontario Green Party Leader has agreed to read them on our behalf in the Ontario Legislature. Print and sign our petition PICKERING WETLAND PETITION and send it here - MPP Mike Schreiner, Room 451 111 Wellesley St. W. Toronto, Main Legislative Building, Queens Park, Toronto, ON  M7A 1A2',
+            description: 'We disagree with the paving over of an important wetland in Pickering and we hope you agree. We have written a petition that has been approved by the Clerk’s Office. Mike Schreiner, MPP and Ontario Green Party Leader has agreed to read them on our behalf in the Ontario Legislature. Print and sign our petition and send it here <a href="https://docs.google.com/document/d/1ns3jzwtCvhkCiIy9hQTbc7Y2WYkEm-I1xApZiLCZ2Mg/edit?usp=sharing">PICKERING WETLAND PETITION</a> <br>MPP Mike Schreiner, Room 451 111 Wellesley St. W. Toronto, Main Legislative Building, Queens Park, Toronto, ON  M7A 1A2',
             location: {
                 center: [-79.09287, 44.04797],
                 zoom: 14.65,
