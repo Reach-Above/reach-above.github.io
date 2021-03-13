@@ -119,8 +119,6 @@
         </style>
 </head>
 
-/* https://demos.mapbox.com/location-helper/ */
-
 <body>
 	
 <div id="map"></div>
