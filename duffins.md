@@ -126,14 +126,14 @@
 <div id="map"></div>
 <div id="story"></div>
 <script>
-var config = {
+	var config = {
     style: 'mapbox://styles/reachabove/cklkzbol1105f17pce3kwxj6g',
     accessToken: 'pk.eyJ1IjoicmVhY2hhYm92ZSIsImEiOiJja2xpY3V1Z2MwN3Z1MnVtd2FseG5yMnhuIn0.-ZA1RuBCOgW9BiWitgpgXQ',
     showMarkers: false,
     theme: 'dark',
     alignment: 'left',
-    title: 'A Story: A Duffins Creek Wetland',
-    subtitle: 'Students from DDSB@home',
+    title: 'Save Our Duffins Creek Wetland',
+    subtitle: 'By a Concerned Group of Grade 7 Students',
     byline: '',
     footer: 'Footer </br>Special Thanks to:</br>© Reach Above, 2020',
     chapters: [
@@ -169,7 +169,7 @@ var config = {
             id: 'Chapter2',
             title: 'Where it all began',
            
-            description: 'Our class read this article with the task of understanding issues from multiple perspective. Because the proposed development is in our backyards we became very curious to know more. We were divided on the issue so we began writing letters to the people involved.',
+            description: 'Our class read this article back in October and it sparked a lot of debate. We want people to have jobs - especially those who lost them because of the pandemic but we are also concerned about our environment. We want a healthy place to live and grow up. We were divided on the issue so we began doing some research and writing letters to people who might help us learn more.',
             location: {
                 center: [-79.03893, 43.83587],
                 zoom: 12.00,
@@ -187,7 +187,7 @@ var config = {
             id: 'Chapter3',
             title: 'Why are wetlands important to our environment?',
             
-            description: 'Wetlands provide habitat for wildlife including migratory birds and amphibians. They help to combat climate change by sequestering carbon. Wetlands filter the water and protect rivers and lakes from erosion. This prevents water pollution and protects marine life.',
+            description: 'Wetlands provide habitat for wildlife including migratory birds and amphibians. They help to combat climate change by capturing carbon. Wetlands filter rain water and protect rivers and lakes from erosion. This prevents water pollution and protects marine life.',
             location: {
                 center: [ -79.03893, 43.83587],
                 zoom: 12.5,
@@ -211,7 +211,7 @@ var config = {
             id: 'Chapter 4',
             title: 'Why are wetlands important to humans?',
             
-            description: 'Wetlands do two main things for us. First they filter our drinking water by removing toxins and debris as water flows into our drinking water source (Lake Ontario). Second wetlands prevent our houses and businesses and roads from flooding by holding water in heavy rains or melting events. If we remove the Duffins Creek wetland it will make treating our drinking water more difficult and expensive and may leave our neighbourhoods vulnerable to flooding because there would be nowhere for the water to go.',
+            description: 'Wetlands do two main things for us. First, they filter our drinking water by removing toxins and debris as water flows into our drinking water source (Lake Ontario). Second, wetlands prevent our houses and businesses and roads from flooding by holding water when it rains a lot or when a lot of snow melts at one time. If we remove the Duffins Creek wetland, it will make treating our drinking water more difficult and expensive and may leave our neighbourhoods vulnerable to flooding because there would be nowhere for the water to go.',
             location: {
                 center: [ -79.03893, 43.83587],
                 zoom: 13,
@@ -234,7 +234,7 @@ var config = {
             id: 'Chapter5',
             title: 'Why do we need a warehouse and parking lot?',
             
-            description: 'There are two main reasons to build a warehouse and parking lot in our city.First it will provide jobs for people who need them. This especially important as many have lost their jobs due to the COVID 19 pandemic.Secondly the development will provide a lot of tax revenue for the City of Pickering. This will help them provide the much needed services for our community.',
+            description: 'There are two main reasons to build a warehouse and parking lot in our city. First, it will provide jobs for people who need them. This especially important as many have lost their jobs due to the COVID 19 pandemic. Second, the development will provide a lot of tax revenue for the City of Pickering. This will help them provide the much needed services for our community.',
             location: {
                 center: [-79.05529, 43.83974],
                 zoom: 13.35,
@@ -253,7 +253,7 @@ var config = {
             id: 'Chapter6',
             title: 'Interview with City of Pickering',
             
-            description: 'We wrote to David Ryan,  Mayor of Pickering, to ask about the project. Mark Guinto, Manager of Public Affairs and Corporate Communications for the City of Pickering joined us for an interview made a proposal to build a warehouse and parking lot on the Duffins Creek Wetland. He said that nothing would happen to the wetlands but from what we have learned we know that this is not true. He also said that if the wetlands were destroyed they could rebuild them but its not possible because wetlands take thousands of years to make. We wanted to hear more about Mayor Ryans opinion so we sent him an email asking him for an interview. We asked him some questions one of them being what would would happen to the animals in the wetlands when they develop over it. His response was that the animals would just move to their new wetland.',rotateAnimation: true,
+            description: 'We wrote to David Ryan, Mayor of Pickering, to ask about the project. Mark Guinto, Manager of Public Affairs joined us for an interview. The City of Pickering and Region of Durham applied to have an area south of the 401 rezoned to make it possible to build a warehouse and parking lot.  Mark Guinto explained that it would help to have it there so the people who work at the warehouse could shop at the new Durham Live complex across the road when on their breaks. He explained that the wetland would be rebuilt and the animals would just move to the new location. Mr. Guinto did not tell us where this new wetland would be built. He explained how it would bring many much needed jobs to Pickering so people would not have to drive far to work.',rotateAnimation: true,
             location: {
                 center: [-79.08403, 43.83788],
                 zoom: 16.00,
@@ -273,7 +273,22 @@ var config = {
             id: 'Chapter7',
             title: 'How are zoning decisions made?',
             
-            description: 'The reason why this warehouse development has received so much attention is because of how the decision was made. Usually, if a municipality (city) wants to rezone an area of land, they have to apply to the Conservation Authority (TRCA in this case) and go through public consultation. The City of Pickering figured out how to avoid the TRCA and public consultation by applying to the Minister of Municipal Affairs directly using an MZO. The City of Pickering knew the TRCA would not allow them to develop here because of the fact that it is such an important wetland for our drinking water and flood protection.',
+            description: 'The reason why this warehouse development has received so much attention is because of how the decision was made. Usually, if a municipality (city) wants to rezone an area of land, they have to apply to the Conservation Authority (TRCA in this case) and go through public consultation. The City of Pickering avoided the TRCA and public consultation by applying to the Minister of Municipal Affairs directly using an MZO. The City of Pickering knew the TRCA would not allow them to develop here because of the fact that it is such an important wetland for our drinking water and flood protection.',
+            location: {
+                center: [-79.08403, 43.83788],
+                zoom: 16.00,
+                pitch: 0.00,
+                bearing: 0.00
+            },
+             onChapterEnter: [],
+             onChapterExit: []
+             
+        },
+        {
+            id: 'Chapter8',
+            title: 'Interview with Steve Heuchert, TRCA',
+            
+            description: 'We wanted to learn more about how the decision to build on this land was made so we wrote a letter to an urban planner from the TRCA, Steve Heuchert. Mr. Heuchert explained that most of the wetlands in southern Ontario have been lost to development and because they filter our drinking water and protect us from flooding, the wetland in Pickering was made a protected area by the Ministry of Natural Resources and Forestry (MNRF). This meant that the area could not be paved over or developed.He shared with us the three other properties that have been proposed for the warehouse that are not protected. The City of Pickering wanted to build a warehouse so they applied to the government using an MZO. He explained all the different competing interests and how each voice was important.',
             location: {
                 center: [-79.08403, 43.83788],
                 zoom: 16.00,
@@ -285,10 +300,10 @@ var config = {
              
         },
             {
-            id: 'Chapter8',
+            id: 'Chapter9',
             title: 'Interview with Tim Gray, Environmental Defence',
            
-            description: 'The wetlands that are being built on will be more than damaged they will be destroyed forever. He also said that Southern Ontario has lost more than 72% of the wetlands.People are saying that the land is already damaged and that it isnt important',
+            description: 'Environmental Defence is an organization that works to protect the Canadian environment by working with businesses, governments, citizens, scientists, and lawyers to protect our water, air and soil for future generations. We had a chance to meet with Tim Gray, the Executive Director and he shared his concerns about the proposed development on the Duffins Creek wetland. He is even taking the Provincial government to court because he believes that the MZO that was used to skip the scientific research and the decision of the Conservation Authority was unlawful. He reminded us that this wetland cannot be recreated somewhere else but there are plenty of other places for a warehouse in Pickering that is already paved over.',
             location: {
                 center: [-79.05826, 43.84497],
                 zoom:  11.66,
@@ -302,22 +317,26 @@ var config = {
              onChapterExit: []
         },
            {
-            id: 'Chapter9',
+            id: 'Chapter10',
             title: 'Interview with Chief Kelly LaRocca, MSIFN',
             image: '',
-            description: 'The area is part of the traditional territory of the Mississaugas of Scugog Island so we decided to reach out to Chief LaRocca for her opinion. She disagrees with the development plan because of the potential for flooding and the importance of the wetland ecosystem. Chief LaRocca explained that the City of Pickering had The wetland is sacred land that should be protected. As part of the traditional territory of MSIFN, it was their COnstitutional right to be consulted. The Mayor of Pickering, Region of Durham, nor the Province reached out for meaningful talks. ',
+            description: 'The area the City of Pickering wants to develop is part of the traditional territory of the Mississaugas of Scugog Island. We wrote to Chief Kelly LaRocca for her opinion. She strongly disagrees with the development plan because of the potential for flooding and the importance of the wetland ecosystem. The wetland is sacred land that needs be protected for future generations. As part of the traditional territory of MSIFN, it was their Constitutional right to be consulted. The Mayor of Pickering, Region of Durham, nor the Province reached out for meaningful talks.',
             location: {
                 center: [ -78.88920,44.17819],
                 zoom:  12.51,
                 pitch: 0.00,
                 bearing:  0.00
             },
-             onChapterEnter: [],
+             onChapterEnter: [
+                   { layer: 'ggh-significantemp-dxhakr',
+                    opacity: 0.00
+                }
+             ],
             onChapterExit: []
         },
         
         {
-            id: 'Chapter10',
+            id: 'Chapter11',
             title: 'Mayor Shaun Collier, Town of Ajax',
             image: '',
             description: 'Shaun Collier, Mayor of Ajax has made it clear that he does not support developing on this provincially significant wetland. He says that this wetland is worth $3 million per year in what it does for our community - filtering water and supporting biodiversity. It is part of our culture and actually saves us money. It would not be smart to pave over it.',
@@ -332,10 +351,10 @@ var config = {
         },
         
        {
-            id: 'Chapter11',
+            id: 'Chapter12',
             title: 'Interview with Annamie Paul, Leader of the Federal Green Party',
             image: '',
-            description: 'Annamie Paul is the leader of the Federal Green party of Canada and we got to interview her on the Duffins Creek proposal. Her opinion is to preserve and protect our natural spaces for the long term. Annamie Paul wants to conserve the biodiversity Duffins creek provides us. She also talked about thinking more carefully on what we build and what kind of projects we do. We need high paying jobs that are stable and secure but also do not damage the environment. We need jobs that can actually help us',
+            description: 'Annamie Paul is the leader of the Federal Green party of Canada and we got to interview her on the Duffins Creek proposal. Her opinion is to preserve and protect our natural spaces for the long term. Annamie Paul wants to conserve the biodiversity Duffins creek provides us. She also talked about thinking more carefully on what we build and what kind of projects we do. We need high paying jobs that are stable and secure but also do not damage the environment. We need jobs that can actually help us repair the damage we have done to our ecosystem.',
             location: {
                 center: [-79.03893, 43.83587],
                 zoom: 12.37,
@@ -347,10 +366,10 @@ var config = {
         },
         
     {
-            id: 'Chapter12',
+            id: 'Chapter13',
             title: 'Interview with Mike Schreiner, MPP',
             image: '',
-            description: 'description...',
+            description: 'Mike Schreiner is the MPP of the City of Guelph in the Region of Wellington. Groups like Environmental Defence, the David Suzuki Foundation, and Ontario Nature are also registering their concern, as is the Green Party of Ontario, whose leader Mike Schreiner called it a "Reckless request to pave over the natural areas that prevent flooding" He also said ¨ Wetlands are vital for filtering our drinking water and protecting us from flooding.¨ In an interview with our class. One more thing Mike scheiner said is ¨We cannot risk removing these protections for an Amazon warehouse.¨As you can tell from his statements he would like to keep the wetlands. Mike schreiner is going to help us voice our concerns.',
             location: {
                 center: [ -79.12724, 44.12500],
                 zoom: 17.35,
@@ -361,10 +380,10 @@ var config = {
              onChapterExit: []
         },
          {
-            id: 'Chapter13',
-            title: 'Chapter 13',
+            id: 'Chapter14',
+            title: 'Taking Action',
             image: '',
-            description: 'description...',
+            description: 'We disagree with the paving over of an important wetland in Pickering and we hope you agree. We have written a petition that has been approved by the Clerk’s Office. Mike Schreiner, MPP and Ontario Green Party Leader has agreed to read them on our behalf in the Ontario Legislature. Print and sign our petition PICKERING WETLAND PETITION and send it here - MPP Mike Schreiner, Room 451 111 Wellesley St. W. Toronto, Main Legislative Building, Queens Park, Toronto, ON  M7A 1A2',
             location: {
                 center: [-79.09287, 44.04797],
                 zoom: 14.65,
