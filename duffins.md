@@ -371,7 +371,7 @@
                 center: [ -79.09946, 43.81037 ],
                 zoom: 8.43,
                 pitch: 0.00,
-                bearing: 76.80
+                bearing: 0.00
             },
              onChapterEnter: [],
              onChapterExit: []
