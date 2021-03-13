@@ -368,9 +368,9 @@
             image: './duffins/Chapter13.PNG',
             description: 'Mike Schreiner is the MPP of the City of Guelph in the Region of Wellington. Groups like Environmental Defence, the David Suzuki Foundation, and Ontario Nature are also registering their concern, as is the Green Party of Ontario, whose leader Mike Schreiner called it a "Reckless request to pave over the natural areas that prevent flooding" He also said ¨ Wetlands are vital for filtering our drinking water and protecting us from flooding.¨ In an interview with our class. One more thing Mike scheiner said is ¨We cannot risk removing these protections for an Amazon warehouse.¨As you can tell from his statements he would like to keep the wetlands. Mike schreiner is going to help us voice our concerns.',
             location: {
-                center: [ -79.12724, 44.12500],
-                zoom: 17.35,
-                pitch: 60.00,
+                center: [ -79.09946, 43.81037 ],
+                zoom: 8.43,
+                pitch: 0.00,
                 bearing: 76.80
             },
              onChapterEnter: [],
@@ -382,8 +382,8 @@
             iimage: './duffins/Chapter14.jpg',
             description: 'We disagree with the paving over of an important wetland in Pickering and we hope you agree. We have written a petition that has been approved by the Clerk’s Office. Mike Schreiner, MPP and Ontario Green Party Leader has agreed to read them on our behalf in the Ontario Legislature. Print and sign our petition and send it here <a href="https://docs.google.com/document/d/1ns3jzwtCvhkCiIy9hQTbc7Y2WYkEm-I1xApZiLCZ2Mg/edit?usp=sharing">PICKERING WETLAND PETITION</a> <br>MPP Mike Schreiner, Room 451 111 Wellesley St. W. Toronto, Main Legislative Building, Queens Park, Toronto, ON  M7A 1A2',
             location: {
-                center: [-79.09287, 44.04797],
-                zoom: 14.65,
+                center: [-79.06211, 43.84002],
+                zoom: 15.59,
                 pitch: 0.00,
                 bearing: 0.00
             },
