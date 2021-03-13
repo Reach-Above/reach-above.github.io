@@ -168,7 +168,7 @@
         {
             id: 'Chapter2',
             title: 'Where it all began',
-           
+            image: './Duffins/Chapter2.PNG',
             description: 'Our class read this article back in October and it sparked a lot of debate. We want people to have jobs - especially those who lost them because of the pandemic but we are also concerned about our environment. We want a healthy place to live and grow up. We were divided on the issue so we began doing some research and writing letters to people who might help us learn more.',
             location: {
                 center: [-79.03893, 43.83587],
