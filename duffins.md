@@ -133,7 +133,7 @@
     title: 'Save Our Duffins Creek Wetland',
     subtitle: 'By a Concerned Group of Grade 7 Students',
     byline: '',
-    footer: 'Footer </br>Special Thanks to:</br>© Reach Above, 2020',
+    footer: 'Footer </br>Special Thanks to:</br>© Reach Above, 2021',
     chapters: [
         {
             id: 'Chapter1',
@@ -382,7 +382,7 @@
             iimage: './duffins/Chapter14.jpg',
             description: 'We disagree with the paving over of an important wetland in Pickering and we hope you agree. We have written a petition that has been approved by the Clerk’s Office. Mike Schreiner, MPP and Ontario Green Party Leader has agreed to read them on our behalf in the Ontario Legislature. Print and sign our petition and send it here <a href="https://docs.google.com/document/d/1ns3jzwtCvhkCiIy9hQTbc7Y2WYkEm-I1xApZiLCZ2Mg/edit?usp=sharing">PICKERING WETLAND PETITION</a> <br>MPP Mike Schreiner, Room 451 111 Wellesley St. W. Toronto, Main Legislative Building, Queens Park, Toronto, ON  M7A 1A2',
             location: {
-                center: [-79.06211, 43.84002],
+                center: [ -79.06120, 43.83727],
                 zoom: 15.59,
                 pitch: 0.00,
                 bearing: 0.00
