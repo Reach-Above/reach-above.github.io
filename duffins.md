@@ -345,13 +345,16 @@
             title: 'Mayor Shaun Collier, Town of Ajax',
             description: 'Shaun Collier, Mayor of Ajax has made it clear that he does not support developing on this provincially significant wetland. He says that this wetland is worth $3 million per year in what it does for our community - filtering water and supporting biodiversity. It is part of our culture and actually saves us money. It would not be smart to pave over it.',
             location: {
-                center: [-79.05446, 43.85157],
-                zoom: 16.00,
-                pitch: 53.00,
-                bearing: 0.00
+                center: [-79.05743, 43.83878],
+                zoom: 14.32,
+                pitch: 55.00,
+                bearing: -15.68
             },
              onChapterEnter: [],
-             onChapterExit: []
+             onChapterExit: [ {
+                    layer: 'ajax-annandale',
+                    opacity: 0.75
+                },]
         },
         
        {
