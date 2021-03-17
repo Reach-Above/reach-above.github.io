@@ -294,8 +294,14 @@
                 pitch: 0.00,
                 bearing: 0.00
             },
-             onChapterEnter: [],
-             onChapterExit: []
+             onChapterEnter: [{
+                    layer: 'ggh-significantemp-dxhakr',
+                    opacity: 0.00
+                },],
+             onChapterExit: [{
+                    layer: 'ggh-significantemp-dxhakr',
+                    opacity: 0.60
+                }]
              
         },
             {
@@ -314,7 +320,10 @@
                     layer: 'ggh-significantemp-dxhakr',
                     opacity: 0.60
                 },],
-             onChapterExit: []
+             onChapterExit: [{
+                    layer: 'ggh-significantemp-dxhakr',
+                    opacity: 0.00
+                }]
         },
            {
             id: 'Chapter10',
