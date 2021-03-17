@@ -265,7 +265,7 @@
             },
             
             onChapterEnter: [],
-            onChapterExit: [
+            onChapterExit: []
                 {
                     layer: '',
                     opacity: 0.0
@@ -337,9 +337,12 @@
                     opacity: 0.00
                 }
              ],
-            onChapterExit: []
-        },
-        
+            onChapterExit: [
+	           {layer: 'ajax-annandale',
+                    opacity: 0.75
+                }
+	     ]
+              
         {
             id: 'Chapter11',
             title: 'Mayor Shaun Collier, Town of Ajax',
@@ -351,10 +354,7 @@
                 bearing: -15.68
             },
              onChapterEnter: [],
-             onChapterExit: [ {
-                    layer: 'ajax-annandale',
-                    opacity: 0.75
-                },]
+             onChapterExit: []
         },
         
        {
