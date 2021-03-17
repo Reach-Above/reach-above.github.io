@@ -107,7 +107,7 @@
         }
 
         .step img {
-            width: 100%;
+            width: 60%;
         }
 
         @media (max-width: 750px) {
@@ -253,8 +253,8 @@
             image: './duffins/Chapter6.jpeg',
             description: 'We wrote to David Ryan, Mayor of Pickering, to ask about the project. Mark Guinto, Manager of Public Affairs joined us for an interview. The City of Pickering and Region of Durham applied to have an area south of the 401 rezoned to make it possible to build a warehouse and parking lot.  Mark Guinto explained that it would help to have it there so the people who work at the warehouse could shop at the new Durham Live complex across the road when on their breaks. He explained that the wetland would be rebuilt and the animals would just move to the new location. Mr. Guinto did not tell us where this new wetland would be built. He explained how it would bring many much needed jobs to Pickering so people would not have to drive far to work.',rotateAnimation: true,
             location: {
-                center: [-79.08403, 43.83788],
-                zoom: 16.00,
+                center: [-79.08360, 43.83773],
+                zoom: 17.36,
                 pitch: 56.50,
                 
             },
@@ -270,8 +270,8 @@
         {
             id: 'Chapter7',
             title: 'How are zoning decisions made?',
-            image: './duffins/Chapter7.PNG',
             description: 'The reason why this warehouse development has received so much attention is because of how the decision was made. Usually, if a municipality (city) wants to rezone an area of land, they have to apply to the Conservation Authority (TRCA in this case) and go through public consultation. The City of Pickering avoided the TRCA and public consultation by applying to the Minister of Municipal Affairs directly using an MZO. The City of Pickering knew the TRCA would not allow them to develop here because of the fact that it is such an important wetland for our drinking water and flood protection.',
+	    image: './duffins/Chapter7.PNG',
             location: {
                 center: [-79.08403, 43.83788],
                 zoom: 16.00,
@@ -353,8 +353,8 @@
             image: './duffins/Chapter12.jpg',
             description: 'Annamie Paul is the leader of the Federal Green party of Canada and we got to interview her on the Duffins Creek proposal. Her opinion is to preserve and protect our natural spaces for the long term. Annamie Paul wants to conserve the biodiversity Duffins creek provides us. She also talked about thinking more carefully on what we build and what kind of projects we do. We need high paying jobs that are stable and secure but also do not damage the environment. We need jobs that can actually help us repair the damage we have done to our ecosystem.',
             location: {
-                center: [-79.03893, 43.83587],
-                zoom: 12.37,
+                center: [-75.68992, 45.42469],
+                zoom: 8.97,
                 pitch: 0.00,
                 bearing: 0.00
             },
@@ -368,10 +368,10 @@
             image: './duffins/Chapter13.PNG',
             description: 'Mike Schreiner is the MPP of the City of Guelph in the Region of Wellington. Groups like Environmental Defence, the David Suzuki Foundation, and Ontario Nature are also registering their concern, as is the Green Party of Ontario, whose leader Mike Schreiner called it a "Reckless request to pave over the natural areas that prevent flooding" He also said ¨ Wetlands are vital for filtering our drinking water and protecting us from flooding.¨ In an interview with our class. One more thing Mike scheiner said is ¨We cannot risk removing these protections for an Amazon warehouse.¨As you can tell from his statements he would like to keep the wetlands. Mike schreiner is going to help us voice our concerns.',
             location: {
-                center: [ -79.09946, 43.81037 ],
-                zoom: 8.43,
-                pitch: 0.00,
-                bearing: 0.00
+                center: [  -79.39156, 43.66239 ],
+                zoom: 16.00,
+                pitch: 55.00,
+                bearing: -15.68
             },
              onChapterEnter: [],
              onChapterExit: []
