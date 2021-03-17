@@ -266,12 +266,8 @@
             
             onChapterEnter: [],
             onChapterExit: []
-                {
-                    layer: '',
-                    opacity: 0.0
-                }
-            ]
-        },
+              
+            },
         {
             id: 'Chapter7',
             title: 'How are zoning decisions made?',
@@ -342,7 +338,8 @@
                     opacity: 0.75
                 }
 	     ]
-              
+        },
+		
         {
             id: 'Chapter11',
             title: 'Mayor Shaun Collier, Town of Ajax',
