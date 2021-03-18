@@ -353,6 +353,7 @@
             id: 'Chapter11',
             title: 'Mayor Shaun Collier, Town of Ajax',
 	    image: './duffins/Chapter11.jpg',
+	    source: '<small>Image:<a href="https://www.ajax.ca/en/inside-townhall/council-members.aspx#Mayor-Shaun-Collier"> Town of Ajax</a></small>',
             description: 'Shaun Collier, Mayor of Ajax has made it clear that he does not support developing on this provincially significant wetland. He says that this wetland is worth $3 million per year in what it does for our community - filtering water and supporting biodiversity. It is part of our culture and actually saves us money. It would not be smart to pave over it. We also learned that the Town of Ajax also has plans for a warehouse development very near the same place. However, this area was not protected by the TRCA. The land was re-zoned for development through the proper channels and no MZO was used.',
             location: {
                 center: [-79.05743, 43.83878],
