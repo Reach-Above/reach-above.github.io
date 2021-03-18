@@ -138,7 +138,7 @@
         {
             id: 'Chapter1',
             title: 'Introduction',
-            description: 'We are a group of concerned Grade 7 students from the Pickering and Ajax area of Durham Region,Ontario,Canada. We are trying to stop the proposed warehouse and parking lot development on a wetland that is connected to Duffins Creek,an important part of our local watershed.',
+            description: 'We are a group of concerned Grade 7 students from the Pickering and Ajax area of Durham Region,Ontario,Canada. We are trying to stop the proposed warehouse and parking lot development on a wetland that is connected to Duffins Creek,which is an important part of our local watershed.',
             location: {
                 center: [-90.22113, 48.57957 ],
                 zoom:  3.51,
@@ -168,7 +168,7 @@
             title: 'Where it all began',
             image: './duffins/Chapter2.PNG',
 	    source: '<small>Image:<a href="https://www.cbc.ca/news/canada/toronto/pickering-wetland-building-proposal-1.5784390"> CBC News</a></small>',
-            description: 'Our class read this article back in October and it sparked a lot of debate. We want people to have jobs - especially those who lost them because of the pandemic but we are also concerned about our environment. We want a healthy place to live and grow up. We were divided on the issue so we began doing some research and writing letters to people who might help us learn more.',
+            description: 'Our class read this article back in October and it sparked a lot of debate. We want people to have jobs - especially those who lost them because of the pandemic but we are also concerned about our environment. We want a healthy place to live and grow up. We began doing some research and writing letters to people who might help us learn more.Most of them visited our virtual classroom to tell us about it.',
             location: {
                 center: [-79.03893, 43.83587],
                 zoom: 12.00,
@@ -256,7 +256,7 @@
             title: 'Interview with City of Pickering',
             image: './duffins/Chapter6.jpeg',
 	    source: '<small>Image:<a href="https://www.pickering.ca/en/city-hall/mayorsmessage.aspx"> Town of Pickering</a></small>',
-            description: 'We wrote to David Ryan, Mayor of Pickering, to ask about the project. Mark Guinto, Manager of Public Affairs joined us for an interview. The City of Pickering and Region of Durham applied to have an area south of the 401 rezoned to make it possible to build a warehouse and parking lot.  Mark Guinto explained that it would help to have it there so the people who work at the warehouse could shop at the new Durham Live complex across the road when on their breaks. He explained that the wetland would be rebuilt and the animals would just move to the new location. Mr. Guinto did not tell us where this new wetland would be built. He explained how it would bring many much needed jobs to Pickering so people would not have to drive far to work.',rotateAnimation: true,
+            description: 'We wrote to David Ryan, Mayor of Pickering, to ask about the project. Mark Guinto, Manager of Public Affairs joined us for an interview. The City of Pickering and Region of Durham applied to have an area south of the 401 rezoned to make it possible to build a warehouse and parking lot.  Mark Guinto explained that it would help to have it there so the people who work at the warehouse could shop at the new Durham Live complex across the road when on their breaks. He explained that the wetland would be rebuilt and the animals would just move to the new location. Mr. Guinto did not tell us where this new wetland would be built. He explained how it would bring many much needed jobs to Pickering so people would not have to drive far to work.',
             location: {
                 center: [-79.08360, 43.83773],
                 zoom: 17.36,
@@ -271,7 +271,7 @@
         {
             id: 'Chapter7',
             title: 'How are zoning decisions made?',
-            description: 'The reason why this warehouse development has received so much attention is because of how the decision was made. Usually, if a municipality (city) wants to rezone an area of land, they have to apply to the Conservation Authority (TRCA in this case) and go through public consultation. The City of Pickering avoided the TRCA and public consultation by applying to the Minister of Municipal Affairs directly using an MZO. The City of Pickering knew the TRCA would not allow them to develop here because of the fact that it is such an important wetland for our drinking water and flood protection.',
+            description: 'The reason why this warehouse development has received so much attention is because of how the decision was made. Usually, if a municipality (city) wants to rezone an area of land, they have to apply to the Conservation Authority (TRCA in this case) and go through public consultation. The City of Pickering avoided the TRCA and public consultation by applying to the Minister of Municipal Affairs directly asking the Minister to issue a Minister’s Zoning Order. The City of Pickering knew the TRCA would not allow them to develop here because of the fact that it is such an important wetland for our drinking water and flood protection.',
 	    image: './duffins/Chapter7.PNG',
             location: {
                 center: [-79.08403, 43.83788],
@@ -287,7 +287,7 @@
             id: 'Chapter8',
             title: 'Interview with Steve Heuchert, TRCA',
             image: './duffins/Chapter8.PNG',
-            description: 'We wanted to learn more about how the decision to build on this land was made so we wrote a letter to an urban planner from the TRCA, Steve Heuchert. Mr. Heuchert explained that most of the wetlands in southern Ontario have been lost to development and because they filter our drinking water and protect us from flooding, the wetland in Pickering was made a protected area by the Ministry of Natural Resources and Forestry (MNRF). This meant that the area could not be paved over or developed.He shared with us the three other properties that have been proposed for the warehouse that are not protected. The City of Pickering wanted to build a warehouse so they applied to the government using an MZO. He explained all the different competing interests and how each voice was important.',
+            description: 'We wanted to learn more about how the decision to build on this land was made so we wrote a letter to an urban planner from the TRCA, Steve Heuchert. Mr. Heuchert explained that most of the wetlands in southern Ontario have been lost to development. This makes the wetland in Pickering very important for filtering our drinking water and protecting us from flooding. Researchers and scientists from the Ministry of Natural Resources have made it an environmentally protected area. This means that the area could not be paved over or developed.He shared with us three other locations that have been proposed for the warehouse that are not protected and are already zoned for this kind of business. He explained all the different competing interests and how each voice was important. It is very important that we make room for businesses and jobs as well as a safe and clean environment.',
             location: {
                 center: [-79.08403, 43.83788],
                 zoom: 16.00,
@@ -309,7 +309,7 @@
             title: 'Interview with Tim Gray, Environmental Defence',
             image: './duffins/Chapter9.PNG',
 	    source: '<small>Image:<a href="https://www.cbc.ca/news/canada/toronto/pickering-wetland-building-proposal-1.5784390"> CBC</a></small>',
-            description: 'Environmental Defence is an organization that works to protect the Canadian environment by working with businesses, governments, citizens, scientists, and lawyers to protect our water, air and soil for future generations. We had a chance to meet with Tim Gray, the Executive Director and he shared his concerns about the proposed development on the Duffins Creek wetland. He is even taking the Provincial government to court because he believes that the MZO that was used to skip the scientific research and the decision of the Conservation Authority was unlawful. He reminded us that this wetland cannot be recreated somewhere else but there are plenty of other places for a warehouse in Pickering that is already paved over.',
+            description: 'Environmental Defence is an organization that works to protect the Canadian environment by working with businesses, governments, citizens, scientists, and lawyers to protect our water, air and soil for future generations. We had a chance to meet with Tim Gray, the Executive Director and he shared his concerns about the proposed development on the Duffins Creek wetland. He is even taking the Provincial government to court because he and others believe that the MZO that was issued to skip the scientific research and the decision of the Conservation Authority was unlawful. He reminded us that this wetland cannot be recreated somewhere else. There are plenty of other places for a warehouse in Pickering that are already paved over.',
             location: {
                 center: [-79.05826, 43.84497],
                 zoom:  11.66,
@@ -330,7 +330,7 @@
             title: 'Interview with Chief Kelly LaRocca, MSIFN',
             image: './duffins/Chapter10.jpg',
 	    source: '<small>Image:<a href="https://www.tvo.org/article/poster-child-for-destruction-the-fight-to-save-the-duffins-creek-wetland-from-developers"> TVO</a></small>',
-            description: 'The area the City of Pickering wants to develop is part of the traditional territory of the Mississaugas of Scugog Island. We wrote to Chief Kelly LaRocca for her opinion. She strongly disagrees with the development plan because of the potential for flooding and the importance of the wetland ecosystem. The wetland is sacred land that needs be protected for future generations. As part of the traditional territory of MSIFN, it was their Constitutional right to be consulted. The Mayor of Pickering, Region of Durham, nor the Province reached out for meaningful talks.',
+            description: 'The area the City of Pickering wants to develop is part of the traditional territory of the Mississaugas of Scugog Island. We wrote to Chief Kelly LaRocca for her opinion. She strongly disagrees with the development plan because of the potential for flooding and the importance of the wetland ecosystem for the environment and First Nations. The wetland is sacred land that needs to be protected for future generations. As the wetland is part of the traditional and treaty territory of MSIFN, it was their Constitutional right to be consulted. The Mayor of Pickering, Region of Durham, nor the Province reached out for meaningful discussion.',
             location: {
                 center: [ -78.88920,44.17819],
                 zoom:  12.51,
@@ -352,7 +352,7 @@
         {
             id: 'Chapter11',
             title: 'Mayor Shaun Collier, Town of Ajax',
-            description: 'Shaun Collier, Mayor of Ajax has made it clear that he does not support developing on this provincially significant wetland. He says that this wetland is worth $3 million per year in what it does for our community - filtering water and supporting biodiversity. It is part of our culture and actually saves us money. It would not be smart to pave over it.',
+            description: 'Shaun Collier, Mayor of Ajax has made it clear that he does not support developing on this provincially significant wetland. He says that this wetland is worth $3 million per year in what it does for our community - filtering water and supporting biodiversity. It is part of our culture and actually saves us money. It would not be smart to pave over it. We also learned that the Town of Ajax also has plans for a warehouse development very near the same place. However, this area was not protected by the TRCA. The land was re-zoned for development through the proper channels and no MZO was used.',
             location: {
                 center: [-79.05743, 43.83878],
                 zoom: 14.32,
@@ -397,8 +397,22 @@
          {
             id: 'Chapter14',
             title: 'Taking Action',
-            iimage: './duffins/Chapter14.jpg',
-            description: 'We disagree with the paving over of an important wetland in Pickering and we hope you agree. We have written a petition that has been approved by the Clerk’s Office. Mike Schreiner, MPP and Ontario Green Party Leader has agreed to read them on our behalf in the Ontario Legislature. Print and sign our petition and send it here <a href="https://docs.google.com/document/d/1ns3jzwtCvhkCiIy9hQTbc7Y2WYkEm-I1xApZiLCZ2Mg/edit?usp=sharing">PICKERING WETLAND PETITION</a> <br>MPP Mike Schreiner, Room 451 111 Wellesley St. W. Toronto, Main Legislative Building, Queens Park, Toronto, ON  M7A 1A2',
+            image: './duffins/Chapter14.jpg',
+            description: 'We disagree with the paving over of an important wetland in Pickering and we hope you agree. We have written a petition that has been approved by the Clerk’s Office. Mike Schreiner, MPP and Ontario Green Party Leader has agreed to read them on our behalf in the Ontario Legislature. Print and sign our petition <a href="https://docs.google.com/document/d/1ns3jzwtCvhkCiIy9hQTbc7Y2WYkEm-I1xApZiLCZ2Mg/edit?usp=sharing">PICKERING WETLAND PETITION</a> and send it here: <br>MPP Mike Schreiner, Room 451 111 Wellesley St. W. Toronto, Main Legislative Building, Queens Park, Toronto, ON  M7A 1A2 <br>You can also write to your local MPP to let them know that you want the MZO on the Duffins Creek wetland removed and the land protected.',
+            location: {
+                center: [ -79.06120, 43.83727],
+                zoom: 15.59,
+                pitch: 0.00,
+                bearing: 0.00
+            },
+            onChapterEnter: [],
+            onChapterExit: []
+        },
+	{
+            id: 'Chapter15',
+            title: 'News Update',
+            image: './duffins/Chapter15.jpg',
+            description: 'A lot has happened in the past week regarding this issue. In fact, a spokesperson from Amazon has come forward and said that they would not build a warehouse on a provincially significant wetland. Mayor David Ryan has expressed his disappointment. The developer has promised not to develop on the land. However, the MZO that was issued is still in place and the land is still not safe from being paved over. We need as many people as possible to come forward to pressure the Provincial government to remove the MZO for this property and encourage the City of Pickering to protect this land in perpetuity (forever).',
             location: {
                 center: [ -79.06120, 43.83727],
                 zoom: 15.59,
