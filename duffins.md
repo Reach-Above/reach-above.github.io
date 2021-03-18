@@ -1,3 +1,6 @@
+---
+title: Duffins
+---
 <html>
 <head>
 <title>Duffins</title>
