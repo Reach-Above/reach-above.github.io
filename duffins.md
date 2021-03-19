@@ -286,9 +286,13 @@ title: Duffins
             onChapterEnter: [{
                     layer: 'ggh-significantemp-dxhakr',
                     opacity: 0.00
-                },],
+                },{layer: 'ajax-annandale',
+                    opacity: 0.00
+                }],
              onChapterExit: [{
                     layer: 'ggh-significantemp-dxhakr',
+                    opacity: 0.00
+                },{layer: 'ajax-annandale',
                     opacity: 0.00
                 }]
               
@@ -307,10 +311,14 @@ title: Duffins
              onChapterEnter: [{
                     layer: 'ggh-significantemp-dxhakr',
                     opacity: 0.60
-                },],
+                },{layer: 'ajax-annandale',
+                    opacity: 0.00
+                }],
              onChapterExit: [{
                     layer: 'ggh-significantemp-dxhakr',
                     opacity: 0.60
+                },{layer: 'ajax-annandale',
+                    opacity: 0.00
                 }]
              
         },
@@ -328,10 +336,14 @@ title: Duffins
              onChapterEnter: [{
                     layer: 'ggh-significantemp-dxhakr',
                     opacity: 0.60
-                },],
+                },{layer: 'ajax-annandale',
+                    opacity: 0.00
+                }],
              onChapterExit: [{
                     layer: 'ggh-significantemp-dxhakr',
                     opacity: 0.60
+                },{layer: 'ajax-annandale',
+                    opacity: 0.00
                 }]
              
         },
@@ -350,9 +362,13 @@ title: Duffins
              onChapterEnter: [{
                     layer: 'ggh-significantemp-dxhakr',
                     opacity: 0.60
-                },],
+                },{layer: 'ajax-annandale',
+                    opacity: 0.00
+                }],
              onChapterExit: [{
                     layer: 'ggh-significantemp-dxhakr',
+                    opacity: 0.00
+                },{layer: 'ajax-annandale',
                     opacity: 0.00
                 }]
         },
