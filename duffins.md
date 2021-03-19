@@ -378,7 +378,7 @@ title: Duffins
              ],
             onChapterExit: [
 	           {layer: 'ajax-annandale',
-                    opacity: 0.75
+                    opacity: 0.00
                 }
 	     ]
         },
@@ -395,9 +395,13 @@ title: Duffins
                 pitch: 55.00,
                 bearing: -15.68
             },
-             onChapterEnter: [],
-             onChapterExit: [{layer: 'ajax-annandale',
-                    opacity: 0.00
+             onChapterEnter: [
+	        {layer: 'ajax-annandale',
+                    opacity: 0.75
+                }],
+             onChapterExit: [
+	       {layer: 'ajax-annandale',
+                    opacity: 0.75
                 }]
         },
         
@@ -413,8 +417,12 @@ title: Duffins
                 pitch: 0.00,
                 bearing: 0.00
             },
-            onChapterEnter: [],
-            onChapterExit: []
+            onChapterEnter: [{layer: 'ajax-annandale',
+                    opacity: 0.00
+                }],
+            onChapterExit: [{layer: 'ajax-annandale',
+                    opacity: 0.00
+                }]
         },
         
     {
@@ -429,8 +437,12 @@ title: Duffins
                 pitch: 55.00,
                 bearing: -15.68
             },
-             onChapterEnter: [],
-             onChapterExit: []
+             onChapterEnter: [{layer: 'ajax-annandale',
+                    opacity: 0.00
+                }],
+             onChapterExit: [{layer: 'ajax-annandale',
+                    opacity: 0.00
+                }]
         },
          {
             id: 'Chapter14',
@@ -443,8 +455,12 @@ title: Duffins
                 pitch: 0.00,
                 bearing: 0.00
             },
-            onChapterEnter: [],
-            onChapterExit: []
+            onChapterEnter: [{layer: 'ajax-annandale',
+                    opacity: 0.00
+                }],
+            onChapterExit: [{layer: 'ajax-annandale',
+                    opacity: 0.00
+                }]
         },
 	{
             id: 'Chapter15',
@@ -457,8 +473,12 @@ title: Duffins
                 pitch: 0.00,
                 bearing: 0.00
             },
-            onChapterEnter: [],
-            onChapterExit: []
+            onChapterEnter: [{layer: 'ajax-annandale',
+                    opacity: 0.00
+                }],
+            onChapterExit: [{layer: 'ajax-annandale',
+                    opacity: 0.00
+                }]
         },
       ]
 };
