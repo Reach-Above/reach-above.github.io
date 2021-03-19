@@ -160,6 +160,10 @@ title: Duffins
                 {
                     layer: 'municipal-boundaries-3857-9l5equ',
                     opacity: 0.6
+                },
+		{
+                    layer: 'ggh-significantemp-dxhakr',
+                    opacity: 0.00
                 }
             ],
             onChapterExit: [
@@ -170,6 +174,10 @@ title: Duffins
                 {
                     layer: 'municipal-boundaries-3857-9l5equ',
                     opacity: 0.0
+                },
+		{
+                    layer: 'ggh-significantemp-dxhakr',
+                    opacity: 0.00
                 }
                  
             ]
@@ -275,8 +283,14 @@ title: Duffins
                 
             },
             
-            onChapterEnter: [],
-            onChapterExit: []
+            onChapterEnter: [{
+                    layer: 'ggh-significantemp-dxhakr',
+                    opacity: 0.00
+                },],
+             onChapterExit: [{
+                    layer: 'ggh-significantemp-dxhakr',
+                    opacity: 0.00
+                }]
               
             },
         {
@@ -290,8 +304,14 @@ title: Duffins
                 pitch: 0.00,
                 bearing: 0.00
             },
-             onChapterEnter: [],
-             onChapterExit: []
+             onChapterEnter: [{
+                    layer: 'ggh-significantemp-dxhakr',
+                    opacity: 0.60
+                },],
+             onChapterExit: [{
+                    layer: 'ggh-significantemp-dxhakr',
+                    opacity: 0.60
+                }]
              
         },
         {
@@ -307,7 +327,7 @@ title: Duffins
             },
              onChapterEnter: [{
                     layer: 'ggh-significantemp-dxhakr',
-                    opacity: 0.00
+                    opacity: 0.60
                 },],
              onChapterExit: [{
                     layer: 'ggh-significantemp-dxhakr',
@@ -351,6 +371,9 @@ title: Duffins
              onChapterEnter: [
                    { layer: 'ggh-significantemp-dxhakr',
                     opacity: 0.00
+                },
+		{layer: 'ajax-annandale',
+                    opacity: 0.00
                 }
              ],
             onChapterExit: [
@@ -373,7 +396,9 @@ title: Duffins
                 bearing: -15.68
             },
              onChapterEnter: [],
-             onChapterExit: []
+             onChapterExit: [{layer: 'ajax-annandale',
+                    opacity: 0.00
+                }]
         },
         
        {
