@@ -144,7 +144,7 @@ title: Duffins
     title: 'Save Our Duffins Creek Wetland',
     subtitle: 'By a Concerned Group of Grade 7 Students',
     byline: '',
-    footer: 'Additional Data from: <a href="https://geohub.lio.gov.on.ca/"> Ontario GeoHub</a></br>© Reach Above, 2021',
+    footer: 'Ontario data downloaded from: <a href="https://geohub.lio.gov.on.ca/"> Ontario GeoHub</a></br>© Reach Above, 2021',
     chapters: [
         {
             id: 'Chapter1',
