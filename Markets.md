@@ -52,10 +52,10 @@ body {
 <!-- Photo Grid -->
 <div class="row"> 
   <div class="column">
-    <img src="/Markets/1.jpg" style="width:100%">
-    <img src="/images/2.jpg" style="width:100%">
-    <img src="/images/3.jpg" style="width:100%">
-    <img src="/images/4.jpg" style="width:100%">
+    <img src="/Markets/8x10_AT2_Bowmanville_All.png" style="width:100%">
+    <img src="/Markets/8x10_AT_Bowmanville_All.png" style="width:100%">
+    <img src="/Markets/8x10_BW_Bowmanville_All.png" style="width:100%">
+    <img src="/Markets/8x10_WB_Bowmanville_All.png" style="width:100%">
   </div>
 </div>
 
