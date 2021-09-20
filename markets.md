@@ -46,8 +46,6 @@ body {
   <h1><a href="http://reachabove.ca">Reach Above</a></h1>
   <h4>Our local community map art can be found instore at Markets by Dream Day in Bowmanville </h4>
   <p>Prints are 8"x10" and framed. Custom orders are always welcome as well.</p>
-  <p>All data sourced from ©OpenStreetMap contributors</p>
- 
 </div>  
 
 <!-- Photo Grid -->
@@ -60,7 +58,7 @@ body {
     <img src="/Markets/8x10_AT2_Bowmanville_All_Water.png" style="width:100%">
   </div>
 </div>
-p>All data sourced from ©OpenStreetMap contributors</p>
+<p>All data sourced from ©OpenStreetMap contributors</p>
 <script>
    
  
