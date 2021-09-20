@@ -44,8 +44,8 @@ body {
 <!-- Header -->
 <div class="header" id="myHeader">
   <h1><a href="http://reachabove.ca">Reach Above</a></h1>
-  <h4>Our local community map offerings through Markets by Dreamday </h4>
-  <p>Prints are 8"x10" and framed for purchase in store. Custom orders are welcome as well.  </p>
+  <h4>Our local community map art can be found instore at Markets by Dream Day in Bowmanville </h4>
+  <p>Prints are 8"x10" and framed. Custom orders are always welcome as well.  </p>
  
 </div>  
 
