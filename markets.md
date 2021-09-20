@@ -43,7 +43,7 @@ body {
 
 <!-- Header -->
 <div class="header" id="myHeader">
-  <h1><a{color: inherit;href="http://reachabove.ca">Reach Above}</a></h1>
+  <h1><a{color: inherit;href="http://reachabove.ca"}>Reach Above</a></h1>
   <h4>Our local community map offerings through Markets by Dreamday </h4>
   <p>Prints are 8"x10" and framed for purchase in store. Custom orders are welcome as well.  </p>
  
