@@ -61,6 +61,7 @@ body {
     <img src="/Markets/8x10_BW_Bowmanville_Build.png" style="width:100%">
     <img src="/Markets/8x10_BW_Orono_All.png" style="width:100%">
     <img src="/Markets/8x10_BW_Newcastle_All.png" style="width:100%">
+    <img src="/Markets/8x10_AT2_Bowmanville_Ont.png" style="width:100%">
   </div>
 </div>
 <p>All data sourced from ©OpenStreetMap contributors</p>
