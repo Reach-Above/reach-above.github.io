@@ -55,6 +55,7 @@ body {
     <img src="/Markets/8x10_Bowmanville_BLine.png" style="width:100%">
     <img src="/Markets/8x10_Bowmanville_Line.png" style="width:100%">
     <img src="/Markets/8x10_Bowmanville_noline.png" style="width:100%">
+    <img src="/Markets/8x10_Bowmanville_BLineT.png" style="width:100%">
   </div>
 </div>
 <p>All data sourced from ©OpenStreetMap contributors</p>
