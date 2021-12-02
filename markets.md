@@ -30,6 +30,7 @@ body {
   -ms-flex: 50%; /* IE 10 */
   flex: 50%;
   padding: 0 4px;
+  justify-content: center;
 }
 
 .column img {
@@ -53,10 +54,10 @@ body {
 <div class="row"> 
   <div class="column">
     <img src="/Markets/A3_White_Blue_Mock1.png" style="width:100%">
-    <img src="/Markets/Zoomx2_White_Blue.png" style="width:50%">
+    <img src="/Markets/Zoomx2_White_Blue.png" style="width:30%">
     <img src="/Markets/A3_White_Black_Mock1.png" style="width:100%">
     <img src="/Markets/A3_blue_white_Mock1.png" style="width:100%">
-    <img src="/Markets/Zoom_Blue_White.png" style="width:50%";"justify-content": center >
+    <img src="/Markets/Zoom_Blue_White.png" style="width:30%">
   </div>
 </div>
 <p>All data sourced from ©OpenStreetMap contributors</p>
