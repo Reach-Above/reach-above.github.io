@@ -61,7 +61,7 @@ body {
 <div class="header" id="myHeader">
   <h1><a href="https://reachabove.ca">Reach Above</a></h1>
   <h4>Our local community map art can be found instore at Markets in Bowmanville **coming soon!** </h4>
-  <p>Prints are 12"x15" and stylishly framed. Custom designs and sizes are always welcome as well.</p>
+  <p>Prints are 12"x15" and stylishly framed. Custom designs and sizes are available as well including large format canvas.</p>
 </div>  
 
 <!-- Photo Grid -->
