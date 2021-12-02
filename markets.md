@@ -56,8 +56,7 @@ body {
     <img src="/Markets/Zoomx2_White_Blue.png" style="width:50%">
     <img src="/Markets/A3_White_Black_Mock1.png" style="width:100%">
     <img src="/Markets/A3_blue_white_Mock1.png" style="width:100%">
-    <img src="/Markets/Zoom_Blue_White.png" style="width:50%">
-    <img src="/Markets/Zoomx2_Blue_White.png" style="width:50%">
+    <img src="/Markets/Zoom_Blue_White.png" style="width:50%"; "vertical-align:middle>
   </div>
 </div>
 <p>All data sourced from ©OpenStreetMap contributors</p>
