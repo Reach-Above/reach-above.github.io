@@ -52,10 +52,12 @@ body {
 <!-- Photo Grid -->
 <div class="row"> 
   <div class="column">
-    <img src="/Markets/8x10_Bowmanville_BLine.png" style="width:100%">
-    <img src="/Markets/8x10_Bowmanville_Line.png" style="width:100%">
-    <img src="/Markets/8x10_Bowmanville_noline.png" style="width:100%">
-    <img src="/Markets/8x10_Bowmanville_BLineT.png" style="width:100%">
+    <img src="/Markets/A3_White_Blue_Mock1.png" style="width:100%">
+    <img src="/Markets/Zoomx2_White_Blue.png" style="width:100%">
+    <img src="/Markets/A3_White_Black_Mock1.png" style="width:100%">
+    <img src="/Markets/A3_blue_white_Mock1.png" style="width:100%">
+    <img src="/Markets/Zoom_Blue_White.png" style="width:100%">
+    <img src="/Markets/Zoomx2_Blue_White.png" style="width:100%">
   </div>
 </div>
 <p>All data sourced from ©OpenStreetMap contributors</p>
