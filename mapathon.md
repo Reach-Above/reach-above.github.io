@@ -142,7 +142,7 @@ var config = {
     title: 'Staying Active during the Pandemic',
     subtitle: 'Local Adventures of Sam & Evan (6 & 4 years old)',
     byline: 'by the Houston Family',
-    footer: '<a href="https://www.instagram.com/reach.above/" class="fa fa-instagram"></a>  Biking Adventures | Maps and Stuff  <a href="https://twitter.com/reach_above" class="fa fa-twitter"></a></br>Special Thanks to:</br>Mapbox Solutions Architecture and @lobenichou for the Scrollytelling Template | @John_M_Nelson for the Firefly ArcGIS Blog | @jonni_walker for the Glow Effect Blog </br> © Reach Above, 2020',
+    footer: '<a href="https://www.instagram.com/houston.family/" class="fa fa-instagram"></a>  Biking Adventures | Maps and Stuff  <a href="https://twitter.com/reach_above" class="fa fa-twitter"></a></br>Special Thanks to:</br>Mapbox Solutions Architecture and @lobenichou for the Scrollytelling Template | @John_M_Nelson for the Firefly ArcGIS Blog | @jonni_walker for the Glow Effect Blog </br> © Reach Above, 2020',
     chapters: [
         {
             id: 'Opportunity',
