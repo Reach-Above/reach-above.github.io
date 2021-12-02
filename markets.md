@@ -30,7 +30,6 @@ body {
   -ms-flex: 50%; /* IE 10 */
   flex: 50%;
   padding: 0 4px;
-  justify-content: center;
 }
 
 .column img {
