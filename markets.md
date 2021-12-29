@@ -74,7 +74,7 @@ body {
     <img src="/Markets/08_WhiteBlue2.png" style="width:100%">
     <img src="/Markets/02_WhiteBlack.png" style="width:100%">
     <img src="/Markets/A3_White_Blue_Mock1.png" style="width:100%">
-    <img src="/Markets/A3_White_Black_Mock1.png" style="width:100%">
+    <img src="/Markets/04_WhiteBlack.png" style="width:100%">
     
     </div>
 </div>
