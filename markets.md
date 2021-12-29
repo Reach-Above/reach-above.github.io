@@ -67,7 +67,7 @@ body {
 <!-- Photo Grid -->
 <div class="row"> 
   <div class="column">
-    <img src="/Markets/A3_White_Blue_Mock1.png" style="width:100%">
+    <img src="/Markets/A3_White_Blue_Mock1.png" style="width:100%"; "height: 50%">
     <img src="/Markets/A3_White_Black_Mock1.png" style="width:100%">
     <img src="/Markets/A3_blue_white_Mock1.png" style="width:100%">
     </div>
