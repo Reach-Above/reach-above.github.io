@@ -70,6 +70,7 @@ body {
     <img src="/Markets/20_WhiteBlue.png" style="width:100%">
     <img src="/Markets/08_WhiteBlack.png" style="width:100%">
     <img src="/Markets/10_WhiteBlack.png" style="width:100%">
+    <img src="/Markets/04_WhiteBlack_x3.png" style="width:100%">
     <img src="/Markets/14_BlueWhite.png" style="width:100%">
     <img src="/Markets/08_WhiteBlue2.png" style="width:100%">
     <img src="/Markets/02_WhiteBlack.png" style="width:100%">
