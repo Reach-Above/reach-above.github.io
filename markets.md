@@ -91,8 +91,8 @@ var i;
 // Full-width images
 function one() {
     for (i = 0; i < elements.length; i++) {
-    elements[i].style.msFlex = "75%";  // IE10
-    elements[i].style.flex = "75%";
+    elements[i].style.msFlex = "100%";  // IE10
+    elements[i].style.flex = "100%";
   }
 }
 
