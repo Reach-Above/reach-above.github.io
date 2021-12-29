@@ -67,9 +67,15 @@ body {
 <!-- Photo Grid -->
 <div class="row"> 
   <div class="column">
-    <img src="/Markets/A3_White_Blue_Mock1.png" style="width:100%"; "height: 50%">
+    <img src="/Markets/20_WhiteBlue.png" style="width:100%">
+    <img src="/Markets/08_WhiteBlack.png" style="width:100%">
+    <img src="/Markets/10_WhiteBlack.png" style="width:100%">
+    <img src="/Markets/14_BlueWhite.png" style="width:100%">
+    <img src="/Markets/08_WhiteBlue2.png" style="width:100%">
+    <img src="/Markets/02_WhiteBlack.png" style="width:100%">
+    <img src="/Markets/A3_White_Blue_Mock1.png" style="width:100%">
     <img src="/Markets/A3_White_Black_Mock1.png" style="width:100%">
-    <img src="/Markets/A3_blue_white_Mock1.png" style="width:100%">
+    
     </div>
 </div>
 <p>All data sourced from ©OpenStreetMap contributors</p>
@@ -85,8 +91,8 @@ var i;
 // Full-width images
 function one() {
     for (i = 0; i < elements.length; i++) {
-    elements[i].style.msFlex = "100%";  // IE10
-    elements[i].style.flex = "100%";
+    elements[i].style.msFlex = "75%";  // IE10
+    elements[i].style.flex = "75%";
   }
 }
 
