@@ -335,15 +335,15 @@ var config = {
             onChapterExit: [
                 {
                     layer: 'strava-1',
-                    opacity: 0
+                    opacity: 0.0
                 },
                  {
                     layer: 'strava-2',
-                    opacity: 0
+                    opacity: 0.0
                 },
 		{
                     layer: 'strava-3',
-                    opacity: 0
+                    opacity: 0.0
                 }
             ]
         },
@@ -362,15 +362,15 @@ var config = {
              onChapterEnter: [
                 {
                     layer: 'strava-1',
-                    opacity: 0
+                    opacity: 0.0
                 },
                  {
                     layer: 'strava-2',
-                    opacity: 0
+                    opacity: 0.0
                 },
 		{
                     layer: 'strava-3',
-                    opacity: 0
+                    opacity: 0.0
                 },
 		{
                     layer: 'strava-1l',
@@ -388,15 +388,15 @@ var config = {
             onChapterExit: [
                 {
                     layer: 'strava-1l',
-                    opacity: 0
+                    opacity: 0.0
                 },
                  {
                     layer: 'strava-2l',
-                    opacity: 0
+                    opacity: 0.0
                 },
 		{
                     layer: 'strava-3l',
-                    opacity: 0
+                    opacity: 0.0
                 },
 		{
                     layer: 'strava-1',
