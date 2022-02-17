@@ -335,15 +335,15 @@ var config = {
             onChapterExit: [
                 {
                     layer: 'strava-1',
-                    opacity: 0.8
+                    opacity: 0
                 },
                  {
                     layer: 'strava-2',
-                    opacity: 0.6
+                    opacity: 0
                 },
 		{
                     layer: 'strava-3',
-                    opacity: 1
+                    opacity: 0
                 }
             ]
         },
