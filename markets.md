@@ -108,6 +108,7 @@ body {
 
 <!-- Header -->
   <div id="hero">
+    <div id="overlay">
 <div class="header" id="myHeader">
   <h1><a href="https://reachabove.ca">Reach Above</a></h1>
   <h4>Our local community map art is exclusively at Markets Ontario! 62 King Street West - Downtown Bowmanville</h4>
@@ -131,6 +132,7 @@ body {
     </div>
 </div>
 <p>All data sourced from ©OpenStreetMap contributors</p>
+    </div>
     </div>
 <script>
    
