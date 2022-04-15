@@ -31,7 +31,9 @@ body {
   text-align: center;
   padding: 32px;
 }
-
+a {
+  color: black;
+}	
 .row {
   display: -ms-flexbox; /* IE 10 */
   display: flex;
