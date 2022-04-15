@@ -52,7 +52,56 @@ body {
   vertical-align: middle;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
+#hero { background: no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+    }
+#overlay { 
+  -o-animation: colorcycle 20s infinite;
+  -moz-animation: colorcycle20s infinite;
+  -webkit-animation: colorcycle 20s infinite;
+  animation: colorcycle 20s infinite; 
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+  filter: alpha(opacity=50);
+  -moz-opacity: 0.5;
+  -khtml-opacity: 0.5;
+  opacity: 1;
+}
 
+
+@-o-keyframes colorcycle {
+  0%   {background: #a24de3;}
+  25%  {background: #00aeff;}
+  50%  {background: #f45a4a;}
+  75%  {background: #4fd1cd;}
+  100% {background: #a24de3;}
+}
+
+@-moz-keyframes colorcycle {
+  0%   {background: #a24de3;}
+  25%  {background: #00aeff;}
+  50%  {background: #f45a4a;}
+  75%  {background: #4fd1cd;}
+  100% {background: #a24de3;}
+}
+
+@-webkit-keyframes colorcycle {
+  0%   {background: #a24de3;}
+  25%  {background: #00aeff;}
+  50%  {background: #f45a4a;}
+  75%  {background: #4fd1cd;}
+  100% {background: #a24de3;}
+}
+
+@keyframes colorcycle {
+  0%   {background: #a24de3;}
+  25%  {background: #00aeff;}
+  50%  {background: #f45a4a;}
+  75%  {background: #4fd1cd;}
+  100% {background: #a24de3;}
+}
 </style>
 </head>
 <body>
