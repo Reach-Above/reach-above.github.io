@@ -14,12 +14,12 @@ body { margin: 0; padding: 0; }
 <body>
 <div id="map"></div>
 <script>
-	mapboxgl.accessToken = 'pk.eyJ1IjoibWVkdGVnaXMiLCJhIjoiY2p4ZW11cjRkMHFuNDNwbGJqd3pweHh5ZiJ9.hAPzR6v7JtQN6eW96nPnnQ';
+	mapboxgl.accessToken = 'pk.eyJ1IjoicmVhY2hhYm92ZSIsImEiOiJjazBkcm1wazUwYWNmM2xxZXhhNW1sc2hmIn0.ybV26N8Bl8WyZejLHvwiCw';
 const map = new mapboxgl.Map({
 container: 'map', // container ID
-style: 'mapbox://styles/mapbox/streets-v11', // style URL
-center: [-96, 37.8], // starting position
-zoom: 3 // starting zoom
+style: 'mapbox://styles/reachabove/ckyui2t6n000z14phrvue2crl', // style URL
+center: [-78.674, 43.918], // starting position
+zoom: 15 // starting zoom
 });
  
 // Add geolocate control to the map.
