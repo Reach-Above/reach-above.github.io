@@ -79,6 +79,7 @@ a {
     <img src="/Markets/A3_White_Blue_Mock1.png" style="width:100%">
     <img src="/Markets/04_WhiteBlack.png" style="width:100%">
     <img src="/Markets/08_Strava.png" style="width:100%">
+    <img src="/Markets/Strava24x36k.jpg" style="width:100%">
     
     </div>
 </div>
