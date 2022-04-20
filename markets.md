@@ -83,7 +83,7 @@ a {
     
     </div>
 </div>
-<p>All data sourced from ©OpenStreetMap contributors</p>
+<p>All data sourced from ©OpenStreetMap contributors | © Connor Houston, 2022</p>
 
 <script>
    
