@@ -130,12 +130,24 @@ title: Family Rides
                 margin: 0 auto;
             }
         }
+	.btn {
+	  border: none;
+	  color: white;
+	  padding: 12px 16px;
+	  font-size: 14px;
+	  cursor: pointer;
+	}
+
+	.btn:hover {
+	  color: Black;
+	}    
+	    
     </style>
 </head>
 <body>
 	
 <div id="map"></div>
-<a href="https://www.reachabove.ca/" class="fa fa-home"></a> Home	
+<button class="btn"><a href="https://reachabove.ca/"</a><i class="fa fa-home"></i></button>	
 <div id="story"></div>
 <script>
 var config = {
