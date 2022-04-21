@@ -25,11 +25,14 @@ title: Trail Hub
 body {
   margin: 0;
   font-family: 'Segoe UI', sans-serif;
+  background-color: #000000;
 }
 
 .header {
   text-align: center;
   padding: 32px;
+  background-color: #000000;
+  color: white;
 }
 a {
   color: black;
