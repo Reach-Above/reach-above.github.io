@@ -1,10 +1,10 @@
 ---
 title: Trail Hub
 ---
-
+<!DOCTYPE html>
 <html>
-<meta charset="utf-8" />
 <head>
+<meta charset="utf-8" />
 <title>Trail Hub and Strava Maps</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="stylesheet" href=https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css>
@@ -68,7 +68,20 @@ a {
   text-decoration: none;
   border-radius: 50%;
 }
-
+	
+footer {
+  bottom: 0%;
+  color: #ffffff;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  padding-left: 1%;
+  padding-right: 1%;
+  background: #fff;
+  background-color: #000000;	
+  opacity: 1;
+  text-align: center;
+  position: relative;
+}
 
 /* Add a hover effect if you want */
 .fa:hover {
@@ -105,10 +118,11 @@ a {
    </div>
 </div>
 <!-- Footer -->
-<p>All data sourced from © OpenStreetMap contributors | © Connor Houston, 2022</p>
+<footer>
+ <p>All data sourced from © OpenStreetMap contributors | © Connor Houston, 2022</p>
   <p><a href="https://twitter.com/reach_above" class="fa fa-twitter"></a>
   <a href="https://www.instagram.com/reach.above/" class="fa fa-instagram"></a><p>
-
+</footer>
 <script>
    
  
