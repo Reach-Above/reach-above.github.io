@@ -61,8 +61,8 @@ a {
   
 .fa {
   padding: 5px;
-  font-size: 10px;
-  width: 10px;
+  font-size: 12px;
+  width: 12px;
   text-align: center;
   text-decoration: none;
   border-radius: 50%;
@@ -79,20 +79,6 @@ footer {
   text-align: center;
   position: relative;
 }
-
-/* Add a hover effect if you want */
-.fa:hover {
-  opacity: 0.7;
-}
-.fa-twitter {
-  background: #55ACEE;
-  color: white;
-}
-	
-.fa-instagram {
-  background: #125688;
-  color: white;
-}	
 
 </style>
 </head>
