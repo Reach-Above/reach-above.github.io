@@ -136,6 +136,7 @@ title: Family Rides
 	  padding: 12px 16px;
 	  font-size: 14px;
 	  cursor: pointer;
+	  background-color: transparent;  
 	}
 
 	.btn:hover {
