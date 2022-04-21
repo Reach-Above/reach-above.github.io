@@ -7,6 +7,7 @@ title: Trail Hub
 <head>
 <title>Trail Hub and Strava Maps</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href=https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css>
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-3RKGWJ9K0S"></script>
 <script>
@@ -58,6 +59,30 @@ a {
   vertical-align: middle;
   box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.2), 0 6px 20px 0 rgba(255, 255, 255, 0.19);
 }
+  
+.fa {
+  padding: 5px;
+  font-size: 10px;
+  width: 10px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+}
+
+
+/* Add a hover effect if you want */
+.fa:hover {
+  opacity: 0.7;
+}
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+	
+.fa-instagram {
+  background: #125688;
+  color: white;
+}	
 
 </style>
 </head>
@@ -81,6 +106,8 @@ a {
 </div>
 <!-- Footer -->
 <p>All data sourced from © OpenStreetMap contributors | © Connor Houston, 2022</p>
+  <p><a href="https://twitter.com/reach_above" class="fa fa-twitter"></a>
+  <a href="https://www.instagram.com/reach.above/" class="fa fa-instagram"></a><p>
 
 <script>
    
