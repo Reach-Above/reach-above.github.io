@@ -69,7 +69,7 @@ a {
   <h4>Hi everyone! This is all very much a work in progress!</h4>
   <p>Why? Well, what started out as a mapping favour for a friend and a tiny acorn of an idea is now front and center as you walk into Trail Hub.</p>
   <p>I have lots of ideas for maps and will share them through the Trail Hub Boutique</p>
-  <p>And if you like, we can work together to create your own custom map using your STRAVA data to tell your story. This isn't just a transaction between you and I -This is you by the numbers.</p>
+  <p>And if you like, we can work together to create your own custom map using your STRAVA data to tell your story. This isn't just a transaction -this is you- by the numbers. It's kudos to yourself for the rides, runs and sweat achievements and a huge one for me to map out your story.</p>
 </div>  
 
 <!-- Photo Grid -->
