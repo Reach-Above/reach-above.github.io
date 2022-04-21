@@ -75,8 +75,6 @@ footer {
   padding-bottom: 1%;
   padding-left: 1%;
   padding-right: 1%;
-  background: #fff;
-  background-color: #000000;	
   opacity: 1;
   text-align: center;
   position: relative;
