@@ -147,7 +147,7 @@ title: Family Rides
 <body>
 	
 <div id="map"></div>
-<button class="btn"><a href="https://reachabove.ca/"</a><i class="fa fa-home"></i></button>	
+<button class="btn"><i class="fa fa-home"><a href="https://reachabove.ca/"</a></i></button>	
 <div id="story"></div>
 <script>
 var config = {
