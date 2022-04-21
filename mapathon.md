@@ -1,3 +1,6 @@
+---
+title: Mapathon
+---
 <html>
 <head>
 <title>Mapathon</title>	
