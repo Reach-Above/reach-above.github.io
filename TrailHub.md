@@ -34,8 +34,9 @@ body {
   background-color: #000000;
   color: white;
 }
+
 a {
-  color: black;
+  color: white;
 }	
 .row {
   display: -ms-flexbox; /* IE 10 */
