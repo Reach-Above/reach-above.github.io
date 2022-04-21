@@ -31,6 +31,7 @@ title: Family Rides
         a, a:hover, a:visited {
             color: #75b8ff;
         }
+	    
         #map {
             top:0; 
             height: 100vh;
@@ -129,11 +130,26 @@ title: Family Rides
                 margin: 0 auto;
             }
         }
+	    
+	    .btn {
+		  background-color: Black;
+		  border: none;
+		  color: white;
+		  padding: 12px 16px;
+		  font-size: 16px;
+		  cursor: pointer;
+		}
+
+/* Darker background on mouse-over */
+	   .btn:hover {
+		  background-color: Grey;
+		}
         </style>
 </head>
 <body>
 	
 <div id="map"></div>
+<button class="btn"><i class="fa fa-home"></i> Home</button>	
 <div id="story"></div>
 <script>
 var config = {
