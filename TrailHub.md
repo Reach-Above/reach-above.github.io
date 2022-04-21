@@ -34,18 +34,6 @@ body {
   background-color: #000000;
   color: white;
 }
-.content {
-  padding: 16px;
-}
-	
-.sticky {
-  position: fixed;
-  top: 0;
-  width: 100%
-}
-.sticky + .content {
-  padding-top: 102px;
-}
 	
 a {
   color: white;
