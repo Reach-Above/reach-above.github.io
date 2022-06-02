@@ -25,7 +25,7 @@ const map = new mapboxgl.Map({
 container: 'map', // container ID
 style: 'mapbox://styles/mapbox/satellite-v9', // style URL
 zoom: 7, // starting zoom
-center: [138.043, 35.201] // starting center
+center: [ -78.685248, 43.909059] // starting center
 });
  
 map.on('load', () => {
