@@ -32,7 +32,7 @@ map.on('load', () => {
 map.addSource('earthquakes', {
 type: 'geojson',
 // Use a URL for the value for the `data` property.
-data: 'https://docs.mapbox.com/mapbox-gl-js/assets/earthquakes.geojson'
+data: 'https://github.com/Reach-Above/ClaringtonATSR/blob/main/ATSRReportedPoints.geojson'
 });
  
 map.addLayer({
