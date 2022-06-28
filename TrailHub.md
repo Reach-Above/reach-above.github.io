@@ -87,10 +87,10 @@ footer {
 <!-- Header -->
 <div class="header" id="myHeader">
   <h1><a href="https://reachabove.ca">Reach Above</a></h1>
-  <h4>Hi everyone! This is all very much a work in progress!</h4>
-  <p>Why? Well, what started out as a mapping favour for a friend and a tiny acorn of an idea is now front and center as you walk into Trail Hub.</p>
-  <p>I have lots of ideas for maps and will share them through the Trail Hub Boutique</p>
-  <p>And if you like, we can work together to create your own custom map using your STRAVA data to tell your story. This isn't just a transaction -this is you- by the numbers. It's kudos to yourself for the rides, runs and achievements and a huge one for me to map out your story.</p>
+  <h4>Personal Heat Maps</h4>
+  <p>If you want to create your own personal map as a kudos to yourself for the rides, runs and achievements you have made, whether it's been over the Pandemic, a specific year or multiple years, contact me over one of the social channels below</p>
+  <p>Maps are all custom made to suite your acheivements and artistic preferences</p>
+  <p>The most straightforward way to get started is to download your Strava Archive. </p>
 </div>  
 
 <!-- Photo Grid -->
