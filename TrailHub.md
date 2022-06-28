@@ -89,7 +89,7 @@ footer {
   <h1><a href="https://reachabove.ca">Reach Above</a></h1>
   <h4>Personal Heat Maps</h4>
   <p>If you want to create your own personal map as a kudos to yourself for the rides, runs and achievements you have made, whether it's been over the Pandemic, a specific year or multiple years, contact me over one of the social channels below</p>
-  <p>Maps are all custom made to suite your acheivements and artistic preferences</p>
+  <p>Maps are all custom made to suite your acheivements and artistic preferences.</p>
   <p>The most straightforward way to get started is to download your Strava Archive. </p>
 </div>  
 
