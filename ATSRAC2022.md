@@ -18,8 +18,8 @@ title: ATSRAC2022
     <meta charset='utf-8' />
     <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
     <link rel="icon" type="image/x-icon" href="https://raw.githubusercontent.com/mapbox/assembly/publisher-staging/src/svgs/mapbox.svg">
-    <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v2.7.0/mapbox-gl.js'></script>
-    <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v2.7.0/mapbox-gl.css' rel='stylesheet' />
+    <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v2.9.2/mapbox-gl.js'></script>
+    <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v2.9.2/mapbox-gl.css' rel='stylesheet' />
     <script src="https://unpkg.com/intersection-observer@0.12.0/intersection-observer.js"></script>
     <script src="https://unpkg.com/scrollama"></script>
    
@@ -153,29 +153,29 @@ title: ATSRAC2022
 
 <script>
 var config = {
-    style: 'mapbox://styles/reachabove/ckgqu406e4rc119o31llg01wk',
-    accessToken: 'pk.eyJ1IjoicmVhY2hhYm92ZSIsImEiOiJjazBkcm1wazUwYWNmM2xxZXhhNW1sc2hmIn0.ybV26N8Bl8WyZejLHvwiCw',
-    showMarkers: true,
+    style: 'mapbox://styles/reachabove/cl7qbr4v5000a15pon1ik17hk',
+    accessToken: 'pk.eyJ1IjoicmVhY2hhYm92ZSIsImEiOiJja2hlenc1a3cwbTloMnByejU3Z3JoMXVjIn0.EojHQhHk73D3XVIXMyXbAg',
+    showMarkers: false,
     markerColor: '#3FB1CE',
-    inset: true,
-    theme: 'dark',
+    inset: false,
+    theme: 'light',
     use3dTerrain: false, //set true for enabling 3D maps.
     title: 'Active Transportation and Safe Roads Advisory Committee Status Report 2022',
-    subtitle: 'Mayor Foster and Clarington Council Members',
-    byline: 'By a Digital Storyteller',
+    subtitle: 'Presentation for Mayor Foster and Clarington Council Members',
+    byline: '',
     footer: 'Source: source citations, etc. <br> Created using <a href="https://github.com/mapbox/storytelling" target="_blank">Mapbox Storytelling</a> template.',
     chapters: [
         {
             id: 'slug-style-id',
-            alignment: 'left',
+            alignment: 'centered',
             hidden: false,
-            title: 'Display Title',
-            image: './path/to/image/source.png',
-            description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
+            title: 'Introduction',
+            image: '',
+            description: 'The purpose of this report is to provide members of Council with a status report on Clarington Active Transportation and Safe Roads Advisory Committee (AT&SRAC) including; accomplishments, recommended priorities and, challenges; for the next term of Council.',
             location: {
-                center: [-122.418398, 37.759483],
-                zoom: 8.5,
-                pitch: 60,
+                center: [-78.68069, 43.91695],
+                zoom: 9.5,
+                pitch: 0,
                 bearing: 0
             },
             mapAnimation: 'flyTo',
@@ -197,16 +197,16 @@ var config = {
         },
         {
             id: 'second-identifier',
-            alignment: 'right',
+            alignment: 'centered',
             hidden: false,
-            title: 'Second Title',
-            image: './path/to/image/source.png',
-            description: 'Copy these sections to add to your story.',
+            title: 'Background',
+            image: '',
+            description: 'The AT&SRAC was established by Clarington Council in January 2018. <br>10 Members plus Councillor Janice Jones were appointed to the AT&SRAC by Council in April 2018; <br>First meeting was held May 2018; <br>Term of Committee Members amended in 2021 to coincide with the term of Council; <br>A new Committee will be appointed by the next Council. <br> <h3> Current Members</h3>Arnold Mostert, Bart Hawkins Kreps, Connie Kobelka, Connor Houston, Councillor Janice Jones, Jeannie Winters, Jim Boate, Philip Haylock, Richard Oldfield, and myself.  Staff support is provided by Andrew Johnson and Catherine Verhoog.',
             location: {
-                center: [-77.020636, 38.886900],
-                zoom: 8.5,
-                pitch: 60,
-                bearing: -43.2,
+                center: [-78.68069, 43.91695],
+                zoom: 10.5,
+                pitch: 0,
+                bearing: 0,
                 // flyTo additional controls-
                 // These options control the flight curve, making it move
                 // slowly and zoom out almost completely before starting
@@ -216,6 +216,7 @@ var config = {
             },
             mapAnimation: 'flyTo',
             rotateAnimation: true,
+			speed: 2,
             callback: '',
             onChapterEnter: [],
             onChapterExit: []
@@ -224,14 +225,94 @@ var config = {
             id: 'third-identifier',
             alignment: 'left',
             hidden: false,
-            title: 'Third Title',
-            image: './path/to/image/source.png',
-            description: 'Copy these sections to add to your story.',
+            title: 'Accomplishments',
+            image: '',
+            description: 'The following is a list of the many, but not all, accomplishments:',
             location: {
-                center: [6.15116, 46.20595],
-                zoom: 12.52,
-                pitch: 8.01,
+                center: [-78.62706, 43.97922],
+                zoom: 11,
+                pitch: 34,
                 bearing: 0.00
+            },
+            mapAnimation: 'flyTo',
+            rotateAnimation: false,
+			speed: 2,
+            callback: '',
+            onChapterEnter: [],
+            onChapterExit: []
+        },
+        {
+            id: 'fourth-chapter',
+            alignment: 'left',
+            hidden: false,
+            title: '',
+            image: '',
+            description: 'Provided input on trail planning and development;<br> Advocated trail connectivity',
+            location: {
+                center: [-78.80418, 43.88935],
+                zoom: 12.76,
+                pitch: 0,
+                bearing: 0
+            },
+            mapAnimation: 'flyTo',
+			speed: 2,
+            rotateAnimation: false,
+            callback: '',
+            onChapterEnter: [],
+            onChapterExit: []
+        },
+		{
+            id: 'fifth-chapter',
+            alignment: 'left',
+            hidden: false,
+            title: '',
+            image: '',
+            description: 'Promoted active transportation and safety prior to COVID - 19 including;<br> Sport & Leisure Fair, Kids in the Park, Family Safety Day Event;',
+            location: {
+                center: [-78.61575, 43.92238],
+                zoom: 12.76,
+                pitch: 0,
+                bearing: 0
+            },
+            mapAnimation: 'flyTo',
+			speed: 2,
+            rotateAnimation: false,
+            callback: '',
+            onChapterEnter: [],
+            onChapterExit: []
+        },
+		{
+            id: 'sixth-chapter',
+            alignment: 'left',
+            hidden: false,
+            title: '',
+            image: '',
+            description: 'Recommended winter maintenance of trails in Bowmanville and Newcastle which was a tremendous success according to trail users;<br> Advised staff of trail maintenance issues and deficiencies i.e. curb cuts and brush removal;',
+            location: {
+                center: [-78.67135, 43.91589],
+				zoom: 15.34,
+                pitch: 53.50,
+                bearing: 16.80
+            },
+            mapAnimation: 'flyTo',
+            rotateAnimation: false,
+			speed: 2,
+            callback: '',
+            onChapterEnter: [],
+            onChapterExit: []
+        },
+		{
+            id: 'seventh-chapter',
+            alignment: 'left',
+            hidden: false,
+            title: '',
+            image: '',
+            description: 'Advised staff of trail maintenance issues and deficiencies i.e. curb cuts and brush removal;<br> Supported traffic calming initiatives on local roads;<br> Advocated for trail signage and assisted staff with sign selection and locations;',
+            location: {
+                center: [-78.67819, 43.89469],
+                zoom: 15.63,
+                pitch: 74.00,
+                bearing: -15.22
             },
             mapAnimation: 'flyTo',
             rotateAnimation: false,
@@ -239,18 +320,81 @@ var config = {
             onChapterEnter: [],
             onChapterExit: []
         },
-        {
-            id: 'fourth-chapter',
-            alignment: 'fully',
+		{
+            id: 'eigth-chapter',
+            alignment: 'left',
             hidden: false,
-            title: 'Third Title',
-            image: './path/to/image/source.png',
-            description: 'Copy these sections to add to your story.',
+            title: '',
+            image: '',
+            description: 'Participated in June-Bike Month events and organized weekly nature walks;<br> Explored Share the Road – Bike Friendly Community designation;<br> Promoted Farm Fresh Bike Tours in partnership with Clarington Tourism',
             location: {
-                center: [-58.54195, -34.71600],
-                zoom: 4,
+                center: [-78.73569, 43.93137],
+                zoom: 11,
                 pitch: 0,
                 bearing: 0
+            },
+            mapAnimation: 'flyTo',
+            rotateAnimation: false,
+            callback: '',
+            onChapterEnter: [{layer: 'HH1',
+                     opacity: 1,
+                     duration: 5000
+					 }],
+            onChapterExit: [{
+                     layer: 'HH1',
+                     opacity: 0
+                 }]
+        },
+		{
+            id: 'nineth-chapter',
+            alignment: 'left',
+            hidden: false,
+            title: 'Future Priorities',
+            image: '',
+            description: 'Provide input to the draft Active Transportation Master Plan;Continue to advise and support trail development and connectivity;<br>Promote active transportation in the community;<br>Advocate for safer roads for pedestrians and cyclists including traffic calming;<br>Revisit Bike Friendly Community designation;<br>Support expansion of trail winter maintenance;Provide more input on Secondary Plan reviews;Expand Bike Month promotion and participation;Support increased Multi Use Paths on arterial roads;<br>Advocate for improved trail safety i.e dividing line on all trails',
+            location: {
+                center: [-78.59736, 43.95960],
+                zoom: 11.26,
+                pitch: 0,
+                bearing: 0
+            },
+            mapAnimation: 'flyTo',
+            rotateAnimation: false,
+            callback: '',
+            onChapterEnter: [],
+            onChapterExit: []
+        },
+		{
+            id: 'tenth-chapter',
+            alignment: 'centre',
+            hidden: false,
+            title: 'Future Challenges',
+            image: '',
+            description: 'Recruiting members for the Committee especially younger members of the community; increasing community engagement for active transportation especially pedestrian traffic; Working with partners to increase active transportation linked to tourism and local economy.',
+            location: {
+                center: [-78.59736, 43.95960],
+                zoom: 11.26,
+                pitch: 0,
+                bearing: 0
+            },
+            mapAnimation: 'flyTo',
+            rotateAnimation: true,
+            callback: '',
+            onChapterEnter: [],
+            onChapterExit: []
+        },
+		{
+            id: 'eleventh-chapter',
+            alignment: 'centre',
+            hidden: false,
+            title: 'Thank You',
+            image: '',
+            description: 'Staff, especially Public Works, for their support and updates at meetings as well as being available when needed <br>Andrew Johnson who serves as the staff liaison for the AT&SRC; <br>Members of Council for appointing and supporting the Committee and especially Councillor Janice Jones who provided important guidance at various times; <br>	Committee Members who volunteered their time and knowledge to promote active transportation in our community.',
+            location: {
+                center: [-78.67846, 43.97120],
+                zoom: 11.57,
+                pitch: 59.00,
+                bearing: -15.20
             },
             mapAnimation: 'flyTo',
             rotateAnimation: false,
@@ -260,7 +404,8 @@ var config = {
         }
     ]
 };  
-  
+</script>
+<script>  
 var initLoad = true;
 var layerTypes = {
     'fill': ['fill-opacity'],
