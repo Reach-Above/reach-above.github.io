@@ -285,7 +285,7 @@ var config = {
             alignment: 'left',
             hidden: false,
             title: '',
-            image: '',
+            image: './mapathon/FamilyDay.png',
             description: 'Promoted active transportation and safety prior to COVID - 19 including;<br> Sport & Leisure Fair, Kids in the Park, Family Safety Day Event;',
             location: {
                 center: [-78.61575, 43.92238],
@@ -305,7 +305,7 @@ var config = {
             alignment: 'left',
             hidden: false,
             title: '',
-            image: '',
+            image: './mapathon/WinterTrails.png',
             description: 'Recommended winter maintenance of trails in Bowmanville and Newcastle which was a tremendous success according to trail users;<br> Advised staff of trail maintenance issues and deficiencies i.e. curb cuts and brush removal;',
             location: {
                 center: [-78.67135, 43.91589],
@@ -344,7 +344,7 @@ var config = {
             alignment: 'left',
             hidden: false,
             title: '',
-            image: '',
+            image: './mapathon/BikeMonth.png',
             description: 'Participated in June-Bike Month events and organized weekly nature walks;<br> Explored Share the Road – Bike Friendly Community designation;<br> Promoted Farm Fresh Bike Tours in partnership with Clarington Tourism',
             location: {
                 center: [-78.73569, 43.93137],
