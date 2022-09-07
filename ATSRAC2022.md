@@ -190,7 +190,7 @@ var config = {
             hidden: false,
             title: 'Introduction',
             image: '',
-            description: 'The purpose of this report is to provide members of Council with a status report on Clarington Active Transportation and Safe Roads Advisory Committee (AT&SRAC) including; accomplishments, recommended priorities and, challenges; for the next term of Council.',
+            description: 'The purpose of this report is to provide members of Council with a status report on Clarington Active Transportation and Safe Roads Advisory Committee (AT&SRAC) including; accomplishments, recommended priorities and challenges for the next term of Council.',
             location: {
                 center: [-78.68069, 43.91695],
                 zoom: 9.5,
@@ -326,7 +326,7 @@ var config = {
             hidden: false,
             title: '',
             image: './mapathon/TrailSigns.png',
-            description: 'Advised staff of trail maintenance issues and deficiencies i.e. curb cuts and brush removal;<br> Supported traffic calming initiatives on local roads;<br> Advocated for trail signage and assisted staff with sign selection and locations...;',
+            description: 'Advised staff of trail maintenance issues and deficiencies i.e. curb cuts and brush removal;<br> Supported traffic calming initiatives on local roads;<br> Advocated for trail signage and assisted staff with sign selection and locations;',
             location: {
                 center: [-78.67819, 43.89469],
                 zoom: 15.63,
