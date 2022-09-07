@@ -265,7 +265,7 @@ var config = {
             alignment: 'left',
             hidden: false,
             title: '',
-            image: '',
+            image: './mapathon/TrailPlan.png',
             description: '•Provided input on trail planning and development;<br>•Advocated trail connectivity',
             location: {
                 center: [-78.80418, 43.88935],
