@@ -182,7 +182,7 @@ var config = {
     title: 'Active Transportation and Safe Roads Advisory Committee Status Report 2022',
     subtitle: 'Presentation for Mayor Foster and Clarington Council Members',
     byline: '',
-    footer: 'Source: source citations, etc. <br> Created using <a href="https://github.com/mapbox/storytelling" target="_blank">Mapbox Storytelling</a> template.',
+    footer: 'Created using <a href="https://github.com/mapbox/storytelling" target="_blank">Mapbox Storytelling</a> template.',
     chapters: [
         {
             id: 'slug-style-id',
@@ -370,7 +370,7 @@ var config = {
             hidden: false,
             title: 'Future Priorities',
             image: '',
-            description: '•Provide input to the draft Active Transportation Master Plan;<br>•Continue to advise and support trail development and connectivity;<br>•Promote active transportation in the community;<br>•Advocate for safer roads for pedestrians and cyclists including traffic calming;<br>•Revisit Bike Friendly Community designation;<br>•Support expansion of trail winter maintenance;<br>Provide more input on Secondary Plan reviews;<br>•Expand Bike Month promotion and participation;<br>•Support increased Multi Use Paths on arterial roads;<br>•Advocate for improved trail safety i.e dividing line on all trails',
+            description: '•Provide input to the draft Active Transportation Master Plan;<br>•Continue to advise and support trail development and connectivity;<br>•Promote active transportation in the community;<br>•Advocate for safer roads for pedestrians and cyclists including traffic calming;<br>•Revisit Bike Friendly Community designation;<br>•Support expansion of trail winter maintenance;<br>•Provide more input on Secondary Plan reviews;<br>•Expand Bike Month promotion and participation;<br>•Support increased Multi Use Paths on arterial roads;<br>•Advocate for improved trail safety i.e dividing line on all trails',
             location: {
                 center: [-78.59736, 43.95960],
                 zoom: 11.26,
@@ -408,7 +408,7 @@ var config = {
             hidden: false,
             title: 'Thank You',
             image: '',
-            description: 'Staff, especially Public Works, for their support and updates at meetings as well as being available when needed <br>Andrew Johnson who serves as the staff liaison for the AT&SRC; <br>Members of Council for appointing and supporting the Committee and especially Councillor Janice Jones who provided important guidance at various times; <br>	Committee Members who volunteered their time and knowledge to promote active transportation in our community.',
+            description: '•Staff, especially Public Works, for their support and updates at meetings as well as being available when needed <br>Andrew Johnson who serves as the staff liaison for the AT&SRC; <br>•Members of Council for appointing and supporting the Committee and especially Councillor Janice Jones who provided important guidance at various times; <br>•Committee Members who volunteered their time and knowledge to promote active transportation in our community.',
             location: {
                 center: [-78.67846, 43.97120],
                 zoom: 11.57,
@@ -424,7 +424,7 @@ var config = {
         	{
             id: 'twelfth-chapter',
             alignment: 'centre',
-            hidden: true,
+            hidden: false,
             title: 'Questions?',
             image: '',
             description: '',
