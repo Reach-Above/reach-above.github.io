@@ -146,7 +146,7 @@ title: ATSRAC2022
         }
 
         .step img {
-            width: 100%;
+            
         }
 
         @media (max-width: 750px) {
@@ -220,7 +220,7 @@ var config = {
             hidden: false,
             title: 'Background',
             image: '',
-            description: 'The AT&SRAC was established by Clarington Council in January 2018. <br>10 Members plus Councillor Janice Jones were appointed to the AT&SRAC by Council in April 2018; <br>First meeting was held May 2018; <br>Term of Committee Members amended in 2021 to coincide with the term of Council; <br>A new Committee will be appointed by the next Council. <br> <h3> Current Members</h3>Arnold Mostert, Bart Hawkins Kreps, Connie Kobelka, Connor Houston, Councillor Janice Jones, Jeannie Winters, Jim Boate, Philip Haylock, Richard Oldfield, and myself.  Staff support is provided by Andrew Johnson and Catherine Verhoog.',
+            description: '•The AT&SRAC was established by Clarington Council in January 2018. <br>•10 Members plus Councillor Janice Jones were appointed to the AT&SRAC by Council in April 2018; <br>•First meeting was held May 2018; <br>•Term of Committee Members amended in 2021 to coincide with the term of Council; <br>•A new Committee will be appointed by the next Council. <br> <h3> Current Members</h3>Arnold Mostert, Bart Hawkins Kreps, Connie Kobelka, Connor Houston, Councillor Janice Jones, Jeannie Winters, Jim Boate, Philip Haylock, Richard Oldfield, and myself.  Staff support is provided by Andrew Johnson and Catherine Verhoog.',
             location: {
                 center: [-78.68069, 43.91695],
                 zoom: 10.5,
@@ -266,7 +266,7 @@ var config = {
             hidden: false,
             title: '',
             image: '',
-            description: 'Provided input on trail planning and development;<br> Advocated trail connectivity',
+            description: '•Provided input on trail planning and development;<br>•Advocated trail connectivity',
             location: {
                 center: [-78.80418, 43.88935],
                 zoom: 12.76,
@@ -286,7 +286,7 @@ var config = {
             hidden: false,
             title: '',
             image: './mapathon/FamilyDay.png',
-            description: 'Promoted active transportation and safety prior to COVID - 19 including;<br> Sport & Leisure Fair, Kids in the Park, Family Safety Day Event;',
+            description: '•Promoted active transportation and safety prior to COVID - 19 including;<br>•Sport & Leisure Fair, Kids in the Park, Family Safety Day Event;',
             location: {
                 center: [-78.61575, 43.92238],
                 zoom: 12.76,
@@ -306,7 +306,7 @@ var config = {
             hidden: false,
             title: '',
             image: './mapathon/WinterTrails.png',
-            description: 'Recommended winter maintenance of trails in Bowmanville and Newcastle which was a tremendous success according to trail users;<br> Advised staff of trail maintenance issues and deficiencies i.e. curb cuts and brush removal;',
+            description: '•Recommended winter maintenance of trails in Bowmanville and Newcastle which was a tremendous success according to trail users;<br>•Advised staff of trail maintenance issues and deficiencies i.e. curb cuts and brush removal',
             location: {
                 center: [-78.67135, 43.91589],
 				zoom: 15.34,
@@ -326,7 +326,7 @@ var config = {
             hidden: false,
             title: '',
             image: './mapathon/TrailSigns.png',
-            description: 'Advised staff of trail maintenance issues and deficiencies i.e. curb cuts and brush removal;<br> Supported traffic calming initiatives on local roads;<br> Advocated for trail signage and assisted staff with sign selection and locations;',
+            description: '•Supported traffic calming initiatives on local roads;<br>•Advocated for trail signage and assisted staff with sign selection and locations',
             location: {
                 center: [-78.67819, 43.89469],
                 zoom: 15.63,
@@ -345,7 +345,7 @@ var config = {
             hidden: false,
             title: '',
             image: './mapathon/BikeMonth.png',
-            description: 'Participated in June-Bike Month events and organized weekly nature walks;<br> Explored Share the Road – Bike Friendly Community designation;<br> Promoted Farm Fresh Bike Tours in partnership with Clarington Tourism',
+            description: '•Participated in June-Bike Month events and organized weekly nature walks;<br>•Explored Share the Road – Bike Friendly Community designation;<br>•Promoted Farm Fresh Bike Tours in partnership with Clarington Tourism',
             location: {
                 center: [-78.73569, 43.93137],
                 zoom: 11,
@@ -370,7 +370,7 @@ var config = {
             hidden: false,
             title: 'Future Priorities',
             image: '',
-            description: 'Provide input to the draft Active Transportation Master Plan;<br>Continue to advise and support trail development and connectivity;<br>Promote active transportation in the community;<br>Advocate for safer roads for pedestrians and cyclists including traffic calming;<br>Revisit Bike Friendly Community designation;<br>Support expansion of trail winter maintenance;<br>Provide more input on Secondary Plan reviews;<br>Expand Bike Month promotion and participation;<br>Support increased Multi Use Paths on arterial roads;<br>Advocate for improved trail safety i.e dividing line on all trails',
+            description: '•Provide input to the draft Active Transportation Master Plan;<br>•Continue to advise and support trail development and connectivity;<br>•Promote active transportation in the community;<br>•Advocate for safer roads for pedestrians and cyclists including traffic calming;<br>•Revisit Bike Friendly Community designation;<br>•Support expansion of trail winter maintenance;<br>Provide more input on Secondary Plan reviews;<br>•Expand Bike Month promotion and participation;<br>•Support increased Multi Use Paths on arterial roads;<br>•Advocate for improved trail safety i.e dividing line on all trails',
             location: {
                 center: [-78.59736, 43.95960],
                 zoom: 11.26,
@@ -389,7 +389,7 @@ var config = {
             hidden: false,
             title: 'Future Challenges',
             image: '',
-            description: 'Recruiting members for the Committee especially younger members of the community;<br> increasing community engagement for active transportation especially pedestrian traffic;<br> Working with partners to increase active transportation linked to tourism and local economy.',
+            description: '•Recruiting members for the Committee especially younger members of the community;<br>•Increasing community engagement for active transportation especially pedestrian traffic;<br>•Working with partners to increase active transportation linked to tourism and local economy.',
             location: {
                 center: [-78.59736, 43.95960],
                 zoom: 11.26,
