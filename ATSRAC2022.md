@@ -420,6 +420,25 @@ var config = {
             callback: '',
             onChapterEnter: [],
             onChapterExit: []
+        },
+        	{
+            id: 'twelfth-chapter',
+            alignment: 'centre',
+            hidden: true,
+            title: 'Questions?',
+            image: '',
+            description: '',
+            location: {
+                center: [-78.67846, 43.97120],
+                zoom: 11.57,
+                pitch: 59.00,
+                bearing: -15.20
+            },
+            mapAnimation: 'flyTo',
+            rotateAnimation: false,
+            callback: '',
+            onChapterEnter: [],
+            onChapterExit: []
         }
     ]
 };  
