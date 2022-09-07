@@ -370,7 +370,7 @@ var config = {
             hidden: false,
             title: 'Future Priorities',
             image: '',
-            description: 'Provide input to the draft Active Transportation Master Plan;Continue to advise and support trail development and connectivity;<br>Promote active transportation in the community;<br>Advocate for safer roads for pedestrians and cyclists including traffic calming;<br>Revisit Bike Friendly Community designation;<br>Support expansion of trail winter maintenance;Provide more input on Secondary Plan reviews;Expand Bike Month promotion and participation;Support increased Multi Use Paths on arterial roads;<br>Advocate for improved trail safety i.e dividing line on all trails',
+            description: 'Provide input to the draft Active Transportation Master Plan;<br>Continue to advise and support trail development and connectivity;<br>Promote active transportation in the community;<br>Advocate for safer roads for pedestrians and cyclists including traffic calming;<br>Revisit Bike Friendly Community designation;<br>Support expansion of trail winter maintenance;<br>Provide more input on Secondary Plan reviews;<br>Expand Bike Month promotion and participation;<br>Support increased Multi Use Paths on arterial roads;<br>Advocate for improved trail safety i.e dividing line on all trails',
             location: {
                 center: [-78.59736, 43.95960],
                 zoom: 11.26,
@@ -389,7 +389,7 @@ var config = {
             hidden: false,
             title: 'Future Challenges',
             image: '',
-            description: 'Recruiting members for the Committee especially younger members of the community; increasing community engagement for active transportation especially pedestrian traffic; Working with partners to increase active transportation linked to tourism and local economy.',
+            description: 'Recruiting members for the Committee especially younger members of the community;<br> increasing community engagement for active transportation especially pedestrian traffic;<br> Working with partners to increase active transportation linked to tourism and local economy.',
             location: {
                 center: [-78.59736, 43.95960],
                 zoom: 11.26,
