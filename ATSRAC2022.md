@@ -123,7 +123,7 @@ title: ATSRAC2022
             margin: auto;
         }
         .light {
-            color: #444;
+            color: #242424;
             background-color: #fafafa;
         }
         .dark {
@@ -142,7 +142,7 @@ title: ATSRAC2022
         .step div {
             padding:  25px 50px;
             line-height: 25px;
-            font-size: 13px;
+            font-size: 15px;
         }
 
         .step img {
