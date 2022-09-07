@@ -325,7 +325,7 @@ var config = {
             alignment: 'left',
             hidden: false,
             title: '',
-            image: '',
+            image: './mapathon/TrailSigns.png',
             description: 'Advised staff of trail maintenance issues and deficiencies i.e. curb cuts and brush removal;<br> Supported traffic calming initiatives on local roads;<br> Advocated for trail signage and assisted staff with sign selection and locations;',
             location: {
                 center: [-78.67819, 43.89469],
