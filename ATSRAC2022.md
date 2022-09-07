@@ -84,6 +84,25 @@ title: ATSRAC2022
             padding-top: 10vh;
             padding-bottom: 10vh;
         }
+	
+	 .container-lg {
+             max-width: 100vw !important;
+             margin-right: auto;
+             margin-left: auto;
+        }   
+	
+	 .px-3 {
+             padding-right: 0px !important;
+             padding-left: 0px !important;
+        }
+        .markdown-body h2 {
+        border-bottom: 0px !important;
+        }
+        
+         .markdown-body h1 {
+        border-bottom: 0px !important;
+        }
+	  
         .hidden {
             visibility: hidden;
         }
