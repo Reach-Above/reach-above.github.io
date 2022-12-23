@@ -52,7 +52,6 @@ title: More Maps
 								</ul>
 							<blockquote>You will receive an email with a link to download your data (this may take a few hours.) For this reason, it’s important that you have access to the email account attached to your Strava profile.</blockquote>
 									</div>
-									</div>
 								
 									<div class="box alt">
 										<div class="row gtr-50 gtr-uniform">
@@ -66,7 +65,8 @@ title: More Maps
 											<div class="col-4"><span class="image fit"><img src="images/TH_07.png" alt="" /></span></div>
 											<div class="col-4"><span class="image fit"><img src="images/TH_08.png" alt="" /></span></div>
 											<div class="col-4"><span class="image fit"><img src="images/TH_09.png" alt="" /></span></div>
-									
+										</div>
+									</div>
 								<hr />
 
 								<h4>Communnity Maps</h4>
@@ -87,7 +87,7 @@ title: More Maps
 										</div>
 									</div>
 
-							</div>
+							
 						</section>
 					</article>
 
