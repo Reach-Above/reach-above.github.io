@@ -1,3 +1,7 @@
+---
+title: More Maps
+---
+
 <html>
 	<head>
 		<title>Reach Above - Learn More</title>
@@ -33,7 +37,7 @@
 				<!-- Main -->
 					<article id="main">
 						<header>
-							<h2>Learn & See More</h2>
+							<h2>More</h2>
 							<p>More Map eye Candy and How to grab Strava Data</p>
 						</header>
 						<section class="wrapper style5">
