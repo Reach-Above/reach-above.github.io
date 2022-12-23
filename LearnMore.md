@@ -38,14 +38,21 @@ title: More Maps
 					<article id="main">
 						<header>
 							<h2>More</h2>
-							<p>More Map eye Candy and How to grab Strava Data</p>
+							<p>Map eye Candy and How to grab Strava Data</p>
 						</header>
 						<section class="wrapper style5">
 							<div class="inner">
 
 								<h3>Personal Heat Maps</h3>
-								<p>Log into the account on Strava.com from which you wish to bulk export data. <br /> Hover over your name in the upper right-hand corner of the Strava page. Choose "Settings," then find the "My Account" tab from the menu listed on the Left. <br />Select “Get Started” under “Download or Delete Your Account.” <br />Select “Request your archive” on the next page.
-You will receive an email with a link to download your data (this may take a few hours.) For this reason, it’s important that you have access to the email account attached to your Strava profile.</p>
+								<ul class="alt">
+									<li>Log into the account on Strava.com from which you wish to bulk export data.</li>
+									<li>Hover over your name in the upper right-hand corner of the Strava page. Choose "Settings,"then find the "My Account" tab from the menu listed on the Left.</li>
+									<li>Select “Get Started” under “Download or Delete Your Account.”</li>
+									<li>Select “Request your archive” on the next page.</li>
+								</ul>
+							<blockquote>You will receive an email with a link to download your data (this may take a few hours.) For this reason, it’s important that you have access to the email account attached to your Strava profile.</blockquote>
+									</div>
+									</div>
 								
 									<div class="box alt">
 										<div class="row gtr-50 gtr-uniform">
@@ -59,9 +66,7 @@ You will receive an email with a link to download your data (this may take a few
 											<div class="col-4"><span class="image fit"><img src="images/TH_07.png" alt="" /></span></div>
 											<div class="col-4"><span class="image fit"><img src="images/TH_08.png" alt="" /></span></div>
 											<div class="col-4"><span class="image fit"><img src="images/TH_09.png" alt="" /></span></div>
-										</div>
-									</div>
-
+									
 								<hr />
 
 								<h4>Communnity Maps</h4>
