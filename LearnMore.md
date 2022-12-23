@@ -51,7 +51,7 @@ title: More Maps
 									<li>Select “Request your archive” on the next page.</li>
 								</ul>
 							<blockquote>You will receive an email with a link to download your data (this may take a few hours.) For this reason, it’s important that you have access to the email account attached to your Strava profile.</blockquote>
-									</div>
+									
 								
 									<div class="box alt">
 										<div class="row gtr-50 gtr-uniform">
@@ -87,7 +87,7 @@ title: More Maps
 										</div>
 									</div>
 
-							
+							</div>
 						</section>
 					</article>
 
