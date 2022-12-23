@@ -45,16 +45,16 @@ You will receive an email with a link to download your data (this may take a few
 								
 									<div class="box alt">
 										<div class="row gtr-50 gtr-uniform">
-											<div class="col-12"><span class="image fit"><img src="images/banner.jpg" alt="" /></span></div>
-											<div class="col-4"><span class="image fit"><img src="images/pic01.jpg" alt="" /></span></div>
-											<div class="col-4"><span class="image fit"><img src="images/pic02.jpg" alt="" /></span></div>
-											<div class="col-4"><span class="image fit"><img src="images/pic03.jpg" alt="" /></span></div>
-											<div class="col-4"><span class="image fit"><img src="images/pic03.jpg" alt="" /></span></div>
-											<div class="col-4"><span class="image fit"><img src="images/pic02.jpg" alt="" /></span></div>
-											<div class="col-4"><span class="image fit"><img src="images/pic01.jpg" alt="" /></span></div>
-											<div class="col-4"><span class="image fit"><img src="images/pic02.jpg" alt="" /></span></div>
-											<div class="col-4"><span class="image fit"><img src="images/pic01.jpg" alt="" /></span></div>
-											<div class="col-4"><span class="image fit"><img src="images/pic03.jpg" alt="" /></span></div>
+											<div class="col-12"><span class="image fit"><img src="images/Heat_Mock_01.png" alt="" /></span></div>
+											<div class="col-4"><span class="image fit"><img src="images/TH_O1.png" alt="" /></span></div>
+											<div class="col-4"><span class="image fit"><img src="images/TH_O2.png" alt="" /></span></div>
+											<div class="col-4"><span class="image fit"><img src="images/TH_O3.png" alt="" /></span></div>
+											<div class="col-4"><span class="image fit"><img src="images/TH_O4.png" alt="" /></span></div>
+											<div class="col-4"><span class="image fit"><img src="images/TH_O5.png" alt="" /></span></div>
+											<div class="col-4"><span class="image fit"><img src="images/TH_O6.png" alt="" /></span></div>
+											<div class="col-4"><span class="image fit"><img src="images/TH_O7.png" alt="" /></span></div>
+											<div class="col-4"><span class="image fit"><img src="images/TH_O8.png" alt="" /></span></div>
+											<div class="col-4"><span class="image fit"><img src="images/TH_O9.png" alt="" /></span></div>
 										</div>
 									</div>
 
@@ -66,14 +66,14 @@ You will receive an email with a link to download your data (this may take a few
 									<div class="box alt">
 										<div class="row gtr-50 gtr-uniform">
 											<div class="col-4"><span class="image fit"><img src="/Markets/20_WhiteBlue.png" alt="" /></span></div>
-											<div class="col-4"><span class="image fit"><img src="/Markets/08_WhiteBlack.png" alt="" /></span></div>
+											<div class="col-4"><span class="image fit"><img src="/images/BT_01.png" alt="" /></span></div>
 											<div class="col-4"><span class="image fit"><img src="/Markets/10_WhiteBlack.png" alt="" /></span></div>
 											<div class="col-4"><span class="image fit"><img src="/Markets/04_WhiteBlack_x3.png" alt="" /></span></div>
-											<div class="col-4"><span class="image fit"><img src="/Markets/14_BlueWhite.png" alt="" /></span></div>
+											<div class="col-4"><span class="image fit"><img src="/images/BT_02.png" alt="" /></span></div>
 											<div class="col-4"><span class="image fit"><img src="/Markets/08_WhiteBlue2.png" alt="" /></span></div>
 											<div class="col-4"><span class="image fit"><img src="/Markets/02_WhiteBlack.png" alt="" /></span></div>
+											<div class="col-4"><span class="image fit"><img src="/images/BT_03.png" alt="" /></span></div>
 											<div class="col-4"><span class="image fit"><img src="/Markets/A3_White_Blue_Mock1.png" alt="" /></span></div>
-											<div class="col-4"><span class="image fit"><img src="/Markets/04_WhiteBlack.png" alt="" /></span></div>
 										</div>
 									</div>
 
