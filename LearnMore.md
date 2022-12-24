@@ -38,21 +38,13 @@ title: More Maps
 					<article id="main">
 						<header>
 							<h2>More</h2>
-							<p>Map eye Candy and How to grab Strava Data</p>
+							<p>Map Eye-Candy and How to grab Strava Data</p>
 						</header>
 						<section class="wrapper style5">
 							<div class="inner">
 
 								<h3>Personal Heat Maps</h3>
-								<ul class="alt">
-									<li>Log into the account on Strava.com from which you wish to bulk export data.</li>
-									<li>Hover over your name in the upper right-hand corner of the Strava page. Choose "Settings,"then find the "My Account" tab from the menu listed on the Left.</li>
-									<li>Select “Get Started” under “Download or Delete Your Account.”</li>
-									<li>Select “Request your archive” on the next page.</li>
-								</ul>
-							<blockquote>You will receive an email with a link to download your data (this may take a few hours.) For this reason, it’s important that you have access to the email account attached to your Strava profile.</blockquote>
-									
-								
+								<p>Want some motivation for the upcoming season? How about a custom map of the previous seasons sweat for your garge, pain-cave or office. Hanging it your house, canvas or framed in Black and White look top-notch. These maps are totally up to you. Pay tribute to a specific ride or experience or timeframe.</p>
 									<div class="box alt">
 										<div class="row gtr-50 gtr-uniform">
 											<div class="col-12"><span class="image fit"><img src="images/Heat_Mock_01.png" alt="" /></span></div>
@@ -67,10 +59,21 @@ title: More Maps
 											<div class="col-4"><span class="image fit"><img src="images/TH_09.png" alt="" /></span></div>
 										</div>
 									</div>
+								
+								<ul class="alt">
+									<p>How to get your Strava Data:</p>
+									<li>Log into the account on Strava.com from which you wish to bulk export data.</li>
+									<li>Hover over your name in the upper right-hand corner of the Strava page. Choose "Settings,"then find the "My Account" tab from the menu listed on the Left.</li>
+									<li>Select “Get Started” under “Download or Delete Your Account.”</li>
+									<li>Select “Request your archive” on the next page.</li>
+								</ul>
+							<blockquote>You will receive an email with a link to download your data (this may take a few hours.) For this reason, it’s important that you have access to the email account attached to your Strava profile.</blockquote>
+									
+								
 								<hr />
 
 								<h4>Communnity Maps</h4>
-								<p>Some pics of Community maps</p>
+								<p>Custom Community Maps are beautiful art and also have special meaning to the place you love. These can be any colour to match your home decor and come with a black or white frame. Maps wherever possible include roads, rails, waterways, trails and buildings.</p>
 
 									<div class="box alt">
 										<div class="row gtr-50 gtr-uniform">
