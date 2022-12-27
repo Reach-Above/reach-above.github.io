@@ -44,7 +44,7 @@ title: More Maps
 							<div class="inner">
 
 								<h3>Personal Heat Maps</h3>
-								<p>Want some motivation for the upcoming season? How about a custom map of the previous seasons sweat for your garge, pain-cave or office. Hanging it your house, canvas or framed in Black and White look top-notch. These maps are totally up to you. Pay tribute to a specific ride or experience or timeframe.</p>
+								<p>Want some motivation for the upcoming season? How about a custom map of the previous seasons sweat for your garage, pain-cave or office. Hanging it your house, canvas or framed in Black and White look top-notch. These maps are totally up to you. Pay tribute to a specific ride or experience or timeframe.</p>
 									<div class="box alt">
 										<div class="row gtr-50 gtr-uniform">
 											<div class="col-12"><span class="image fit"><img src="images/Heat_Mock_01.png" alt="" /></span></div>
@@ -61,19 +61,18 @@ title: More Maps
 									</div>
 								
 								<ul class="alt">
-									<p>How to get your Strava Data:</p>
+									<h5>How to get your Strava Data:</h5>
 									<li>Log into the account on Strava.com from which you wish to bulk export data.</li>
-									<li>Hover over your name in the upper right-hand corner of the Strava page. Choose "Settings,"then find the "My Account" tab from the menu listed on the Left.</li>
+									<li>Hover over your name in the upper right-hand corner of the Strava page. Choose "Settings, "then find the "My Account" tab from the menu listed on the Left.</li>
 									<li>Select “Get Started” under “Download or Delete Your Account.”</li>
 									<li>Select “Request your archive” on the next page.</li>
 								</ul>
 							<blockquote>You will receive an email with a link to download your data (this may take a few hours.) For this reason, it’s important that you have access to the email account attached to your Strava profile.</blockquote>
-									
 								
 								<hr />
 
-								<h4>Communnity Maps</h4>
-								<p>Custom Community Maps are beautiful art and also have special meaning to the place you love. These can be any colour to match your home decor and come with a black or white frame. Maps wherever possible include roads, rails, waterways, trails and buildings.</p>
+								<h4>Local Maps</h4>
+								<p>Custom Local Maps are beautiful art and also have special meaning to the place you love. These can be any colour to match your home decor and come with a black or white frame. Maps include roads, rails, waterways, trails and buildings when possible. </p>
 
 									<div class="box alt">
 										<div class="row gtr-50 gtr-uniform">
