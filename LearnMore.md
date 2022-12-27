@@ -72,7 +72,7 @@ title: More Maps
 								<hr />
 
 								<h4>Local Maps</h4>
-								<p>Custom Local Maps are beautiful art and also have special meaning to the place you love. These can be any colour to match your home decor and come with a black or white frame. Maps include roads, rails, waterways, trails and buildings when possible. </p>
+								<p>Custom Local Maps are beautiful art and also have special meaning to the place you love. These can be any colour to match your home decor and come with a black or white frame. Maps include roads, rails, waterways, trails and buildings where possible. </p>
 
 									<div class="box alt">
 										<div class="row gtr-50 gtr-uniform">
