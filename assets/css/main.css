@@ -17,7 +17,7 @@ form, label, legend, table, caption, tbody,
 tfoot, thead, tr, th, td, article, aside,
 canvas, details, embed, figure, figcaption,
 footer, header, hgroup, menu, nav, output, ruby,
-section, summary, time, mark, audio, video {
+section, summary, time, mark, audio, video {style 
 	margin: 0;
 	padding: 0;
 	border: 0;
@@ -2078,7 +2078,7 @@ input, select, textarea {
 			}
 
 		.icon.style1 {
-			color: #946F5F;
+			color: #e99898;
 		}
 
 		.icon.style2 {
@@ -2817,7 +2817,7 @@ input, select, textarea {
 		}
 
 		.wrapper.style1 {
-			background-color: #2E4723;
+			background-color: #e99898;
 			color: #c8ece9;
 		}
 
