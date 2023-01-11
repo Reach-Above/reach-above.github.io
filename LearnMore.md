@@ -9,6 +9,15 @@ title: More Maps
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=G-3RKGWJ9K0S"></script>
+			<script>
+			  window.dataLayer = window.dataLayer || [];
+			  function gtag(){dataLayer.push(arguments);}
+			  gtag('js', new Date());
+
+			  gtag('config', 'G-3RKGWJ9K0S');
+		</script>
 	</head>
 	<body class="is-preload">
 
@@ -99,7 +108,7 @@ title: More Maps
 							<li><a href="https://twitter.com/reach_above" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
 							<li><a href="https://www.instagram.com/reach.above/" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
 							<li><a href="https://reachabove.ca/" class="icon brands fa-dribbble"><span class="label">Dribbble</span></a></li>
-							<li><a href="#" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
+							
 						</ul>
 						<ul class="copyright">
 							<li>&copy;Reach Above 2023</li>
