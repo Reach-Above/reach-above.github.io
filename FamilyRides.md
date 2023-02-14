@@ -145,8 +145,8 @@ var config = {
     theme: 'dark',
     alignment: 'left',
     title:  'Staying Active during the Pandemic',
-    subtitle: 'Local Adventures of Sam & Evan (6 & 4 years old)',
-    byline: 'by the Houston Family',
+    subtitle: 'Local Adventures of the Houston Family (6 & 4 years old)',
+    byline: '',
     footer: '<a href="https://www.instagram.com/houston.family/" class="fa fa-instagram"></a>  Biking Adventures | Maps and Stuff  <a href="https://twitter.com/reach_above" class="fa fa-twitter"></a></br>Special Thanks to:</br>Mapbox Solutions Architecture and @lobenichou for the Scrollytelling Template | @John_M_Nelson for the Firefly ArcGIS Blog | @jonni_walker for the Glow Effect Blog </br> © Reach Above, 2020',
     chapters: [
         {
@@ -262,7 +262,7 @@ var config = {
         },
     {
             id: 'Daycare',
-            title: 'And to the Daycare that Evan graduated from in June',
+            title: 'And to the Daycare. Graduated in June 2020',
             image: '',
             description: 'Instead of a drive-by, we did a ride-by, to say farewell to the teachers as he is off to J.K.',
             location: {
