@@ -526,7 +526,18 @@ var config = {
                 pitch: 60.00,
                 bearing: 0.00
             },
-             onChapterEnter: [],
+             onChapterEnter: [{
+                    layer: 'strava-feb2023-1',
+                    opacity: 0.0
+                },
+                 {
+                    layer: 'strava-feb2023-2',
+                    opacity: 0.0
+                },
+		 {
+                    layer: 'strava-feb2023-3',
+                    opacity: 0.0
+                }],
              onChapterExit: [ {
                     layer: 'strava-feb2023-1',
                     opacity: 0.0
@@ -542,11 +553,11 @@ var config = {
         },
 	{
             id: 'But wait',
-            title: 'But wait its 2023 now! What have we been up to in 2021 and 2022?',
-            image: './mapathon/Collage.png',
-            description: '',
+            title: 'But wait its 2023! What have we been up to in 2021/2022?',
+            image: './mapathon/2023_Image.png',
+            description: 'Just shy of 100 rides and over 650km! WHAT!!!',
             location: {
-                center: [-78.87927, 43.96227],
+                center: [-79.02821, 43.97793],
                 zoom: 10.30,
                 pitch: 0.00,
                 bearing: 0.00
