@@ -527,8 +527,47 @@ var config = {
                 bearing: 0.00
             },
              onChapterEnter: [],
-             onChapterExit: []
+             onChapterExit: [ {
+                    layer: 'strava-feb2023-1',
+                    opacity: 0.0
+                },
+                 {
+                    layer: 'strava-feb2023-2',
+                    opacity: 0.0
+                },
+		 {
+                    layer: 'strava-feb2023-3',
+                    opacity: 0.0
+                }]
+        },
+	{
+            id: 'But wait',
+            title: 'But wait its 2023 now! What have we been up to in 2021 and 2022?',
+            image: './mapathon/Collage.png',
+            description: '',
+            location: {
+                center: [-78.87927, 43.96227],
+                zoom: 10.30,
+                pitch: 0.00,
+                bearing: 0.00
+            },
+              onChapterEnter: [
+                {
+                    layer: 'strava-feb2023-1',
+                    opacity: 0.8
+                },
+                 {
+                    layer: 'strava-feb2023-2',
+                    opacity: 0.6
+                },
+		 {
+                    layer: 'strava-feb2023-3',
+                    opacity: 1
+                }
+            ],
+           onChapterExit: []
         }
+	
     ]
 };
 
