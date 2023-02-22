@@ -35,7 +35,7 @@ title: Contact
 										<ul>
 											<li><a href="index.html">Home</a></li>
 											<li><a href="https://reachabove.ca/LearnMore">Learn More</a></li>
-											<li><a href="https://reachabove.ca/LearnMore">Contact</a></li>
+											<li><a href="https://reachabove.ca/Contact">Contact</a></li>
 											<li><a href="https://reachabove.ca/FamilyRides">Biking</a></li>
 										</ul>
 									</div>
@@ -45,12 +45,20 @@ title: Contact
 					</header>
 
 				<!-- Main -->
-					<article id="contact">
+					<article id="main">
 						<header>
 							<h2>Contact</h2>
-							<p>How to get in touch</p>
+							<p>How to get in touch.</p>
 						</header>
-						<section>
+						
+						<section class="wrapper style5">
+							<div class="inner">
+							<h3>The best way to get in touch is over Instagram or Twitter. Links below!</h3>
+								<p><ul class="icons">
+							<li><a href="https://twitter.com/reach_above" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+							<li><a href="https://www.instagram.com/reach.above/" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+							</ul></p>
+							<section>
 									<h4>Form</h4>
 									<form method="post" action="#">
 										<div class="row gtr-uniform">
@@ -80,6 +88,8 @@ title: Contact
 										</div>
 									</form>
 								</section>
+							</div>
+						</section>
 					</article>
 
 				<!-- Footer -->
