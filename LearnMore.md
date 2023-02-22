@@ -54,7 +54,7 @@ title: More Maps
 							<div class="inner">
 
 								<h3>Personal Heat Maps</h3>
-								<p>Want some motivation for the upcoming season? How about a custom map of the previous seasons sweat for your garage, pain-cave or office. Hanging it your house, canvas or framed in Black and White look top-notch. These maps are totally up to you. Pay tribute to a specific ride or experience or timeframe.</p>
+								<p>Want some motivation for the upcoming season? How about a custom map of the previous seasons sweat for your garage, pain-cave or office. Hanging it your house, canvas or framed in Black and White look top-notch. These maps are totally up to you. Pay tribute to a specific ride or experience or timeframe. Navigate over to the <a href="https://reachabove.ca/Contact">Contact Page</a> to get in touch and chat about mapping your achievements.</p>
 									<div class="box alt">
 										<div class="row gtr-50 gtr-uniform">
 											<div class="col-12"><span class="image fit"><img src="images/Heat_Mock_01.png" alt="" /></span></div>
