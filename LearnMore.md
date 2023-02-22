@@ -35,7 +35,7 @@ title: More Maps
 										<ul>
 											<li><a href="index.html">Home</a></li>
 											<li><a href="https://reachabove.ca/LearnMore">Learn More</a></li>
-											<li><a href="https://reachabove.ca/LearnMore">Contact</a></li>
+											<li><a href="https://reachabove.ca/Contact">Contact</a></li>
 											<li><a href="https://reachabove.ca/FamilyRides">Biking</a></li>
 										</ul>
 									</div>
