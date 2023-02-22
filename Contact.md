@@ -53,7 +53,7 @@ title: Contact
 						
 						<section class="wrapper style5">
 							<div class="inner">
-							<h3>The best way to get in touch is Direct Messages over Instagram <a href="https://www.instagram.com/reach.above/" class="icon brands fa-instagram"><span class="label">Instagram</span></a> or Twitter <a href="https://twitter.com/reach_above" class="icon brands fa-twitter"><span class="label">Twitter</span></a>. Or you can send an email to sales@reachabove.ca <a href="mailto:sales@reachabove.ca" class="icon solid fa-envelope"><span class="label">Email</span></a></h3>
+							<p>Direct Messages over Instagram <a href="https://www.instagram.com/reach.above/" class="icon brands fa-instagram"><span class="label">Instagram</span></a> or Twitter <a href="https://twitter.com/reach_above" class="icon brands fa-twitter"><span class="label">Twitter</span></a> work best. Or drop an email to maps@reachabove.ca <a href="mailto:maps@reachabove.ca" class="icon solid fa-envelope"><span class="label">Email</span></a></p>
 
 							</div>
 						</section>
