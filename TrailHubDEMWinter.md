@@ -6,8 +6,8 @@ title: Trail Hub DEM Winter
 <meta charset="utf-8">
 <title>Trail Hub Digital Terrain Map 2023</title>
 <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no">
-<link href="https://api.mapbox.com/mapbox-gl-js/v2.14.1/mapbox-gl.css" rel="stylesheet">
-<script src="https://api.mapbox.com/mapbox-gl-js/v2.14.1/mapbox-gl.js"></script>
+<link href="https://api.mapbox.com/mapbox-gl-js/v3.1.0/mapbox-gl.css" rel="stylesheet">
+<script src="https://api.mapbox.com/mapbox-gl-js/v3.1.0/mapbox-gl.js"></script>
 	<!-- Global site tag (gtag.js) - Google Analytics -->
 		<script async src="https://www.googletagmanager.com/gtag/js?id=G-3RKGWJ9K0S"></script>
 			<script>
@@ -29,7 +29,7 @@ body { margin: 0; padding: 0; }
     const map = new mapboxgl.Map({
         container: 'map', // container ID
         // Choose from Mapbox's core styles, or make your own style with Mapbox Studio
-        style: 'mapbox://styles/reachabove/clrghkfxt00at01qhh683eppt', // style URL
+        style: 'mapbox://styles/reachabove/clrp92mv4005o01o84dxz9iqv', // style URL
         center: [-79.073013, 44.031898], // starting position
         zoom: 14.88, // starting zoom
 		bearing: -14.43,
