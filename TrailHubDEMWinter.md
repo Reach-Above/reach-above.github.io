@@ -55,7 +55,7 @@ title: Trail Hub DEM Winter
     #toggle-hiking { background-color: #dea3ca; }
     #toggle-long, #toggle-short { background-color: #23bec8; }
 	
-	#layer-toggle:hover, #toggle-hiking:hover, #toggle-long:hover, #toggle-short:hover {
+	#layer-toggle:hover, #label-toggle:hover, #toggle-hiking:hover, #toggle-long:hover, #toggle-short:hover {
     background-color: #f0f0f0;
 }
    #graphic-box {
@@ -93,6 +93,8 @@ title: Trail Hub DEM Winter
     <button id="toggle-long" class="toggle-btn">Snowshoe Trail</button>
     <button id="toggle-short" class="toggle-btn">Snowshoe Trail - Short</button>
 	<button id="layer-toggle" class="toggle-btn">Toggle Contours</button>
+	<button id="toggle-poly" class="toggle-btn">Toggle Building</button>
+	<button id="label-toggle" class="toggle-btn">Toggle Labels</button>
 	<button id="toggle-graphic-box" class="toggle-btn">Toggle Print Box</button>
 </div>
  <div id="graphic-box"></div>
@@ -132,6 +134,19 @@ title: Trail Hub DEM Winter
 
     // Add event listener to the button
     document.getElementById('layer-toggle').addEventListener('click', toggleLayer);
+	
+	// Function to toggle the visibility of the line layer
+    function toggleLayer() {
+        const visibility = map.getLayoutProperty('th-pois', 'visibility');
+        if (visibility === 'visible') {
+            map.setLayoutProperty('th-pois', 'visibility', 'none');
+        } else {
+            map.setLayoutProperty('th-pois', 'visibility', 'visible');
+        }
+    }
+
+    // Add event listener to the button
+    document.getElementById('label-toggle').addEventListener('click', toggleLayer);
 	
 	function updateLayerStyle() {
             map.setPaintProperty('th-trails-winter2024-merge-9j33yk copy', 'line-color', [
@@ -175,6 +190,17 @@ title: Trail Hub DEM Winter
         document.getElementById('toggle-long').addEventListener('click', toggleLong);
         document.getElementById('toggle-short').addEventListener('click', toggleShort);
 		
+		function togglePolyLayer() {
+		var visibility = map.getLayoutProperty('trailhub-poly', 'visibility');
+		   if (visibility !== 'visible') {
+			map.setLayoutProperty('trailhub-poly', 'visibility', 'visible');
+		} else {
+			// Otherwise, set it to none
+			map.setLayoutProperty('trailhub-poly', 'visibility', 'none');
+		}
+	}
+		document.getElementById('toggle-poly').addEventListener('click', togglePolyLayer);
+		
 		function toggleGraphicBox() {
             var box = document.getElementById('graphic-box');
             box.style.display = (box.style.display === 'block') ? 'none' : 'block';
@@ -185,6 +211,11 @@ title: Trail Hub DEM Winter
     // Ensure the layer is loaded before toggling
    map.on('load', function() {
         map.setLayoutProperty('countours10m-simplify-720bqt', 'visibility', 'none');
+		updateLayerStyle();
+    });
+	
+	map.on('load', function() {
+        map.setLayoutProperty('th-pois', 'visibility', 'none');
 		updateLayerStyle();
     });
 	
