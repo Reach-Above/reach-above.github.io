@@ -136,7 +136,7 @@ title: Trail Hub DEM Winter
     document.getElementById('layer-toggle').addEventListener('click', toggleLayer);
 	
 	// Function to toggle the visibility of the line layer
-    function toggleLayer() {
+    function toggleLabel() {
         const visibility = map.getLayoutProperty('th-pois', 'visibility');
         if (visibility === 'visible') {
             map.setLayoutProperty('th-pois', 'visibility', 'none');
@@ -146,7 +146,7 @@ title: Trail Hub DEM Winter
     }
 
     // Add event listener to the button
-    document.getElementById('label-toggle').addEventListener('click', toggleLayer);
+    document.getElementById('label-toggle').addEventListener('click', toggleLabel);
 	
 	function updateLayerStyle() {
             map.setPaintProperty('th-trails-winter2024-merge-9j33yk copy', 'line-color', [
@@ -208,7 +208,8 @@ title: Trail Hub DEM Winter
 
         // Add event listener to the toggle button
         document.getElementById('toggle-graphic-box').addEventListener('click', toggleGraphicBox);
-    // Ensure the layer is loaded before toggling
+   
+   // Ensure the layer is loaded before toggling
    map.on('load', function() {
         map.setLayoutProperty('countours10m-simplify-720bqt', 'visibility', 'none');
 		updateLayerStyle();
