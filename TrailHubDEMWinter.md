@@ -54,8 +54,9 @@ title: Trail Hub DEM Winter
     #layer-toggle { background-color: #eee; }
     #toggle-hiking { background-color: #dea3ca; }
     #toggle-long, #toggle-short { background-color: #23bec8; }
-	
-	#layer-toggle:hover, #label-toggle:hover, #toggle-hiking:hover, #toggle-long:hover, #toggle-short:hover {
+	#toggle-bike { background-color: #ffde5a; }
+	#ski-toggle { background-color: #8dc640; }
+	#layer-toggle:hover, #label-toggle:hover, #toggle-hiking:hover, #toggle-long:hover, #toggle-short:hover, #toggle-bike:hover, #toggle-ski:hover {
     background-color: #f0f0f0;
 }
    #graphic-box {
@@ -92,6 +93,8 @@ title: Trail Hub DEM Winter
     <button id="toggle-hiking" class="toggle-btn">Hiking Trail</button>
     <button id="toggle-long" class="toggle-btn">Snowshoe Trail</button>
     <button id="toggle-short" class="toggle-btn">Snowshoe Trail - Short</button>
+	<button id="toggle-bike" class="toggle-btn">Fat Bike Trail</button>
+	<button id="ski-toggle" class="toggle-btn">Toggle Ski Trail</button>
 	<button id="layer-toggle" class="toggle-btn">Toggle Contours</button>
 	<button id="toggle-poly" class="toggle-btn">Toggle Building</button>
 	<button id="label-toggle" class="toggle-btn">Toggle Labels</button>
@@ -115,7 +118,7 @@ title: Trail Hub DEM Winter
 		pitch: 60.50
     });
 	
-	let hikingOpacity = 1, longOpacity = 1, shortOpacity = 1;
+	let hikingOpacity = 1, longOpacity = 1, shortOpacity = 1, bikeOpacity = 1;
 
     // Add a scale control to the map
     map.addControl(new mapboxgl.ScaleControl());
@@ -131,9 +134,10 @@ title: Trail Hub DEM Winter
             map.setLayoutProperty('countours10m-simplify-720bqt', 'visibility', 'visible');
         }
     }
-
+	
     // Add event listener to the button
     document.getElementById('layer-toggle').addEventListener('click', toggleLayer);
+	
 	
 	// Function to toggle the visibility of the line layer
     function toggleLabel() {
@@ -148,6 +152,22 @@ title: Trail Hub DEM Winter
     // Add event listener to the button
     document.getElementById('label-toggle').addEventListener('click', toggleLabel);
 	
+	// Function to toggle the visibility of the ski line layer
+    function visibilitySki() {
+        const visibility = map.getLayoutProperty('th-trails-winter2024ski', 'visibility');
+		const visibilityShadow = map.getLayoutProperty('th-trails-winter2024ski Shadow', 'visibility');
+        if (visibilitySki === 'visible' || visibilityShadow === 'visible') {
+        map.setLayoutProperty('th-trails-winter2024ski', 'visibility', 'none');
+        map.setLayoutProperty('th-trails-winter2024ski Shadow', 'visibility', 'none');
+    } else {
+        map.setLayoutProperty('th-trails-winter2024ski', 'visibility', 'visible');
+        map.setLayoutProperty('th-trails-winter2024ski Shadow', 'visibility', 'visible');
+    }
+}
+
+    // Add event listener to the button
+    document.getElementById('ski-toggle').addEventListener('click', visibilitySki);
+	
 	function updateLayerStyle() {
             map.setPaintProperty('th-trails-winter2024-merge-9j33yk copy', 'line-color', [
                 "match",
@@ -155,6 +175,7 @@ title: Trail Hub DEM Winter
                 ["Hiking"], hikingOpacity ? "#dea3ca" : "transparent",
                 ["Long"], longOpacity ? "#23bec8" : "transparent",
                 ["Short"], shortOpacity ? "#23bec8" : "transparent",
+				['\nWinter Fat Biking to Durham Forest\n'], bikeOpacity ? "#ffde5a" : "transparent",
                 "#ffffff"
             ]);
 			
@@ -164,6 +185,7 @@ title: Trail Hub DEM Winter
             "Hiking", hikingOpacity ? "#000000" : "transparent",
             "Long", longOpacity ? "#000000" : "transparent",
             "Short", shortOpacity ? "#000000" : "transparent",
+			"\nWinter Fat Biking to Durham Forest\n", bikeOpacity ? "#000000" : "transparent",
             "#000000"
         ]);
 		
@@ -184,11 +206,17 @@ title: Trail Hub DEM Winter
             shortOpacity = 1 - shortOpacity;
             updateLayerStyle();
         }
+		
+		function toggleBike() {
+            bikeOpacity = 1 - bikeOpacity;
+            updateLayerStyle();
+        }
 
         // Add event listeners to buttons
         document.getElementById('toggle-hiking').addEventListener('click', toggleHiking);
         document.getElementById('toggle-long').addEventListener('click', toggleLong);
         document.getElementById('toggle-short').addEventListener('click', toggleShort);
+		document.getElementById('toggle-bike').addEventListener('click', toggleBike);
 		
 		function togglePolyLayer() {
 		var visibility = map.getLayoutProperty('trailhub-poly', 'visibility');
@@ -211,14 +239,14 @@ title: Trail Hub DEM Winter
    
    // Ensure the layer is loaded before toggling
    map.on('load', function() {
-        map.setLayoutProperty('countours10m-simplify-720bqt', 'visibility', 'none');
-		updateLayerStyle();
-    });
+    map.setLayoutProperty('countours10m-simplify-720bqt', 'visibility', 'none');
+    map.setLayoutProperty('th-pois', 'visibility', 'none');
+    map.setLayoutProperty('th-trails-winter2024ski', 'visibility', 'none');
+    map.setLayoutProperty('th-trails-winter2024ski Shadow', 'visibility', 'none');
+    updateLayerStyle();
+});
+
 	
-	map.on('load', function() {
-        map.setLayoutProperty('th-pois', 'visibility', 'none');
-		updateLayerStyle();
-    });
 	
 	// Initial display of values
 	document.getElementById('bearing-display').innerHTML = 'Bearing: ' + map.getBearing().toFixed(2) + '°';
