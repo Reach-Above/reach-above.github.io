@@ -83,6 +83,24 @@
                         'line-width': 3
                     }
                 });
+
+                // Change cursor to pointer on hover
+                map.on('mouseenter', trail.name, () => {
+                    map.getCanvas().style.cursor = 'pointer';
+                });
+                
+                // Revert cursor on mouse leave
+                map.on('mouseleave', trail.name, () => {
+                    map.getCanvas().style.cursor = '';
+                });
+
+                // Display popup on click
+                map.on('click', trail.name, (e) => {
+                    new mapboxgl.Popup()
+                        .setLngLat(e.lngLat)
+                        .setHTML(`<strong>${trail.name}</strong>`)
+                        .addTo(map);
+                });
             });
         });
     </script>
