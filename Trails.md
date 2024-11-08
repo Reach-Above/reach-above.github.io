@@ -41,31 +41,31 @@
             });
         });
 
-        // Array of trail names and corresponding URLs
+        // Array of trail names, URLs, and colors
         const trails = [
-            { name: "Agustas Gloop", url: "https://reachabove.ca/geojson/Agustas Gloop.geojson" },
-            { name: "Chocolate Flush", url: "https://reachabove.ca/geojson/ChocolateFlush.geojson" },
-            { name: "Connector", url: "https://reachabove.ca/geojson/Connector.geojson" },
-            { name: "Dilly Dally", url: "https://reachabove.ca/geojson/DillyDally.geojson" },
-            { name: "Easy Way Back", url: "https://reachabove.ca/geojson/Easy_Way_back.geojson" },
-            { name: "Golden Ticket", url: "https://reachabove.ca/geojson/GoldenTicket.geojson" },
-            { name: "Harder Way Back", url: "https://reachabove.ca/geojson/HarderWayBack.geojson" },
-            { name: "Hot Butter", url: "https://reachabove.ca/geojson/HotButter.geojson" },
-            { name: "Loompa", url: "https://reachabove.ca/geojson/Loompa.geojson" },
-            { name: "Rattler", url: "https://reachabove.ca/geojson/Rattler.geojson" },
-            { name: "Rock Paper Scissors", url: "https://reachabove.ca/geojson/RockPaperScissors.geojson" },
-            { name: "The Big Flush", url: "https://reachabove.ca/geojson/TheBigFlush.geojson" },
-            { name: "The Climb Down", url: "https://reachabove.ca/geojson/TheClimbDown.geojson" },
-            { name: "The Girlfriend", url: "https://reachabove.ca/geojson/TheGirlFriend.geojson" },
-            { name: "Trail Head", url: "https://reachabove.ca/geojson/TrailHead.geojson" },
-            { name: "Tree Hugger", url: "https://reachabove.ca/geojson/TreeHugger.geojson" },
-            { name: "Which Way", url: "https://reachabove.ca/geojson/WhichWay.geojson" },
-            { name: "Wonka Bar", url: "https://reachabove.ca/geojson/WonkaBar.geojson" }
+            { name: "Agustas Gloop", url: "https://reachabove.ca/geojson/Agustas Gloop.geojson", color: "#FF5733" },
+            { name: "Chocolate Flush", url: "https://reachabove.ca/geojson/ChocolateFlush.geojson", color: "#8D33FF" },
+            { name: "Connector", url: "https://reachabove.ca/geojson/Connector.geojson", color: "#33FF57" },
+            { name: "Dilly Dally", url: "https://reachabove.ca/geojson/DillyDally.geojson", color: "#FF33A8" },
+            { name: "Easy Way Back", url: "https://reachabove.ca/geojson/Easy_Way_back.geojson", color: "#33C3FF" },
+            { name: "Golden Ticket", url: "https://reachabove.ca/geojson/GoldenTicket.geojson", color: "#FFD700" },
+            { name: "Harder Way Back", url: "https://reachabove.ca/geojson/HarderWayBack.geojson", color: "#FF6F33" },
+            { name: "Hot Butter", url: "https://reachabove.ca/geojson/HotButter.geojson", color: "#33FFDD" },
+            { name: "Loompa", url: "https://reachabove.ca/geojson/Loompa.geojson", color: "#FF5733" },
+            { name: "Rattler", url: "https://reachabove.ca/geojson/Rattler.geojson", color: "#FF33FF" },
+            { name: "Rock Paper Scissors", url: "https://reachabove.ca/geojson/RockPaperScissors.geojson", color: "#FFFF33" },
+            { name: "The Big Flush", url: "https://reachabove.ca/geojson/TheBigFlush.geojson", color: "#33FF99" },
+            { name: "The Climb Down", url: "https://reachabove.ca/geojson/TheClimbDown.geojson", color: "#FF3366" },
+            { name: "The Girlfriend", url: "https://reachabove.ca/geojson/TheGirlFriend.geojson", color: "#3399FF" },
+            { name: "Trail Head", url: "https://reachabove.ca/geojson/TrailHead.geojson", color: "#FF9933" },
+            { name: "Tree Hugger", url: "https://reachabove.ca/geojson/TreeHugger.geojson", color: "#66FF33" },
+            { name: "Which Way", url: "https://reachabove.ca/geojson/WhichWay.geojson", color: "#FF33CC" },
+            { name: "Wonka Bar", url: "https://reachabove.ca/geojson/WonkaBar.geojson", color: "#FF6633" }
         ];
 
-        // Load each trail GeoJSON as a line layer
-        trails.forEach(trail => {
-            map.on('load', () => {
+        // Load each trail GeoJSON as a line layer with its specific color
+        map.on('load', () => {
+            trails.forEach(trail => {
                 map.addSource(trail.name, {
                     type: 'geojson',
                     data: trail.url
@@ -79,7 +79,7 @@
                         'line-cap': 'round'
                     },
                     paint: {
-                        'line-color': '#ff69b4', // Customize line color as needed
+                        'line-color': trail.color,
                         'line-width': 3
                     }
                 });
