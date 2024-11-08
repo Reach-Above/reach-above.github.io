@@ -43,7 +43,7 @@
 
         // Array of trail names and corresponding URLs
         const trails = [
-            { name: "Agustas Gloop", url: "https://reachabove.ca/geojson/Agustas_Gloop.geojson" },
+            { name: "Agustas Gloop", url: "https://reachabove.ca/geojson/Agustas Gloop.geojson" },
             { name: "Chocolate Flush", url: "https://reachabove.ca/geojson/ChocolateFlush.geojson" },
             { name: "Connector", url: "https://reachabove.ca/geojson/Connector.geojson" },
             { name: "Dilly Dally", url: "https://reachabove.ca/geojson/DillyDally.geojson" },
