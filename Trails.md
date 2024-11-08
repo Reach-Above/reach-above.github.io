@@ -18,8 +18,8 @@
         const map = new mapboxgl.Map({
             container: 'map',
             style: 'mapbox://styles/mapbox/streets-v12',
-            center: [-24, 42], // Initial map center [longitude, latitude]
-            zoom: 1
+            center: [-79.070756, 44.031415], // Initial map center [longitude, latitude]
+            zoom: 16
         });
 
         // Geolocate control to find user location
