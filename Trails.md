@@ -56,7 +56,7 @@
             { name: "Rock Paper Scissors", url: "https://reachabove.ca/geojson/RockPaperScissors.geojson" },
             { name: "The Big Flush", url: "https://reachabove.ca/geojson/TheBigFlush.geojson" },
             { name: "The Climb Down", url: "https://reachabove.ca/geojson/TheClimbDown.geojson" },
-            { name: "The Girlfriend", url: "https://reachabove.ca/geojson/TheGirlfriend.geojson" },
+            { name: "The Girlfriend", url: "https://reachabove.ca/geojson/TheGirlFriend.geojson" },
             { name: "Trail Head", url: "https://reachabove.ca/geojson/TrailHead.geojson" },
             { name: "Tree Hugger", url: "https://reachabove.ca/geojson/TreeHugger.geojson" },
             { name: "Which Way", url: "https://reachabove.ca/geojson/WhichWay.geojson" },
