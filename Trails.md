@@ -43,24 +43,24 @@
 
         // Array of trail names and corresponding URLs
         const trails = [
-            { name: "Agustas Gloop", url: "https://reach-above.github.io/geojson/Agustas_Gloop.geojson" },
-            { name: "Chocolate Flush", url: "https://reach-above.github.io/geojson/ChocolateFlush.geojson" },
-            { name: "Connector", url: "https://reach-above.github.io/geojson/Connector.geojson" },
-            { name: "Dilly Dally", url: "https://reach-above.github.io/geojson/DillyDally.geojson" },
-            { name: "Easy Way Back", url: "https://reach-above.github.io/geojson/Easy_Way_back.geojson" },
-            { name: "Golden Ticket", url: "https://reach-above.github.io/geojson/GoldenTicket.geojson" },
-            { name: "Harder Way Back", url: "https://reach-above.github.io/geojson/HarderWayBack.geojson" },
-            { name: "Hot Butter", url: "https://reach-above.github.io/geojson/HotButter.geojson" },
-            { name: "Loompa", url: "https://reach-above.github.io/geojson/Loompa.geojson" },
-            { name: "Rattler", url: "https://reach-above.github.io/geojson/Rattler.geojson" },
-            { name: "Rock Paper Scissors", url: "https://reach-above.github.io/geojson/RockPaperScissors.geojson" },
-            { name: "The Big Flush", url: "https://reach-above.github.io/geojson/TheBigFlush.geojson" },
-            { name: "The Climb Down", url: "https://reach-above.github.io/geojson/TheClimbDown.geojson" },
-            { name: "The Girlfriend", url: "https://reach-above.github.io/geojson/TheGirlfriend.geojson" },
-            { name: "Trail Head", url: "https://reach-above.github.io/geojson/TrailHead.geojson" },
-            { name: "Tree Hugger", url: "https://reach-above.github.io/geojson/TreeHugger.geojson" },
-            { name: "Which Way", url: "https://reach-above.github.io/geojson/WhichWay.geojson" },
-            { name: "Wonka Bar", url: "https://reach-above.github.io/geojson/WonkaBar.geojson" }
+            { name: "Agustas Gloop", url: "https://reachabove.ca/geojson/Agustas_Gloop.geojson" },
+            { name: "Chocolate Flush", url: "https://rreachabove.ca/geojson/ChocolateFlush.geojson" },
+            { name: "Connector", url: "https://reachabove.ca/geojson/Connector.geojson" },
+            { name: "Dilly Dally", url: "https://reachabove.ca/geojson/DillyDally.geojson" },
+            { name: "Easy Way Back", url: "https://reachabove.ca/geojson/Easy_Way_back.geojson" },
+            { name: "Golden Ticket", url: "https://reachabove.ca/geojson/GoldenTicket.geojson" },
+            { name: "Harder Way Back", url: "https://reachabove.ca/geojson/HarderWayBack.geojson" },
+            { name: "Hot Butter", url: "https://reachabove.ca/geojson/HotButter.geojson" },
+            { name: "Loompa", url: "https://reachabove.ca/geojson/Loompa.geojson" },
+            { name: "Rattler", url: "https://reachabove.ca/geojson/Rattler.geojson" },
+            { name: "Rock Paper Scissors", url: "https://reachabove.ca/geojson/RockPaperScissors.geojson" },
+            { name: "The Big Flush", url: "https://reachabove.ca/geojson/TheBigFlush.geojson" },
+            { name: "The Climb Down", url: "https://reachabove.ca/geojson/TheClimbDown.geojson" },
+            { name: "The Girlfriend", url: "https://reachabove.ca/geojson/TheGirlfriend.geojson" },
+            { name: "Trail Head", url: "https://reachabove.ca/geojson/TrailHead.geojson" },
+            { name: "Tree Hugger", url: "https://reachabove.ca/geojson/TreeHugger.geojson" },
+            { name: "Which Way", url: "https://reachabove.ca/geojson/WhichWay.geojson" },
+            { name: "Wonka Bar", url: "https://reachabove.ca/geojson/WonkaBar.geojson" }
         ];
 
         // Load each trail GeoJSON as a line layer
