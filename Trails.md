@@ -22,11 +22,6 @@
             zoom: 16
         });
 
-        // Apply a grayscale filter to make the map black and white
-        map.on('load', () => {
-            map.setPaintProperty('satellite', 'raster-saturation', -1); // Set saturation to remove color
-        });
-
         // Geolocate control to find user location
         const geolocateControl = new mapboxgl.GeolocateControl({
             positionOptions: {
@@ -68,42 +63,48 @@
             { name: "Wonka Bar", url: "https://reachabove.ca/geojson/WonkaBar.geojson", color: "#FF6633" }
         ];
 
-        // Load each trail GeoJSON as a line layer with its specific color
-        trails.forEach(trail => {
-            map.addSource(trail.name, {
-                type: 'geojson',
-                data: trail.url
-            });
-            map.addLayer({
-                id: trail.name,
-                type: 'line',
-                source: trail.name,
-                layout: {
-                    'line-join': 'round',
-                    'line-cap': 'round'
-                },
-                paint: {
-                    'line-color': trail.color,
-                    'line-width': 3
-                }
-            });
+        // Ensure the map style is fully loaded before adding layers
+        map.on('load', () => {
+            // Apply a grayscale filter to make the map black and white
+            map.setPaintProperty('satellite', 'raster-saturation', -1); // Set saturation to remove color
 
-            // Change cursor to pointer on hover
-            map.on('mouseenter', trail.name, () => {
-                map.getCanvas().style.cursor = 'pointer';
-            });
-            
-            // Revert cursor on mouse leave
-            map.on('mouseleave', trail.name, () => {
-                map.getCanvas().style.cursor = '';
-            });
+            // Load each trail GeoJSON as a line layer with its specific color
+            trails.forEach(trail => {
+                map.addSource(trail.name, {
+                    type: 'geojson',
+                    data: trail.url
+                });
+                map.addLayer({
+                    id: trail.name,
+                    type: 'line',
+                    source: trail.name,
+                    layout: {
+                        'line-join': 'round',
+                        'line-cap': 'round'
+                    },
+                    paint: {
+                        'line-color': trail.color,
+                        'line-width': 3
+                    }
+                });
 
-            // Display popup on click
-            map.on('click', trail.name, (e) => {
-                new mapboxgl.Popup()
-                    .setLngLat(e.lngLat)
-                    .setHTML(`<strong>${trail.name}</strong>`)
-                    .addTo(map);
+                // Change cursor to pointer on hover
+                map.on('mouseenter', trail.name, () => {
+                    map.getCanvas().style.cursor = 'pointer';
+                });
+                
+                // Revert cursor on mouse leave
+                map.on('mouseleave', trail.name, () => {
+                    map.getCanvas().style.cursor = '';
+                });
+
+                // Display popup on click
+                map.on('click', trail.name, (e) => {
+                    new mapboxgl.Popup()
+                        .setLngLat(e.lngLat)
+                        .setHTML(`<strong>${trail.name}</strong>`)
+                        .addTo(map);
+                });
             });
         });
     </script>
