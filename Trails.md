@@ -17,9 +17,14 @@
         mapboxgl.accessToken = 'pk.eyJ1IjoicmVhY2hhYm92ZSIsImEiOiJja2hlenc1a3cwbTloMnByejU3Z3JoMXVjIn0.EojHQhHk73D3XVIXMyXbAg';
         const map = new mapboxgl.Map({
             container: 'map',
-            style: 'mapbox://styles/mapbox/streets-v12',
+            style: 'mapbox://styles/mapbox/satellite-streets-v12', // Aerial imagery with streets overlay
             center: [-79.070756, 44.031415], // Initial map center [longitude, latitude]
             zoom: 16
+        });
+
+        // Apply a grayscale filter to make the map black and white
+        map.on('load', () => {
+            map.setPaintProperty('satellite', 'raster-saturation', -1); // Set saturation to remove color
         });
 
         // Geolocate control to find user location
@@ -64,43 +69,41 @@
         ];
 
         // Load each trail GeoJSON as a line layer with its specific color
-        map.on('load', () => {
-            trails.forEach(trail => {
-                map.addSource(trail.name, {
-                    type: 'geojson',
-                    data: trail.url
-                });
-                map.addLayer({
-                    id: trail.name,
-                    type: 'line',
-                    source: trail.name,
-                    layout: {
-                        'line-join': 'round',
-                        'line-cap': 'round'
-                    },
-                    paint: {
-                        'line-color': trail.color,
-                        'line-width': 3
-                    }
-                });
+        trails.forEach(trail => {
+            map.addSource(trail.name, {
+                type: 'geojson',
+                data: trail.url
+            });
+            map.addLayer({
+                id: trail.name,
+                type: 'line',
+                source: trail.name,
+                layout: {
+                    'line-join': 'round',
+                    'line-cap': 'round'
+                },
+                paint: {
+                    'line-color': trail.color,
+                    'line-width': 3
+                }
+            });
 
-                // Change cursor to pointer on hover
-                map.on('mouseenter', trail.name, () => {
-                    map.getCanvas().style.cursor = 'pointer';
-                });
-                
-                // Revert cursor on mouse leave
-                map.on('mouseleave', trail.name, () => {
-                    map.getCanvas().style.cursor = '';
-                });
+            // Change cursor to pointer on hover
+            map.on('mouseenter', trail.name, () => {
+                map.getCanvas().style.cursor = 'pointer';
+            });
+            
+            // Revert cursor on mouse leave
+            map.on('mouseleave', trail.name, () => {
+                map.getCanvas().style.cursor = '';
+            });
 
-                // Display popup on click
-                map.on('click', trail.name, (e) => {
-                    new mapboxgl.Popup()
-                        .setLngLat(e.lngLat)
-                        .setHTML(`<strong>${trail.name}</strong>`)
-                        .addTo(map);
-                });
+            // Display popup on click
+            map.on('click', trail.name, (e) => {
+                new mapboxgl.Popup()
+                    .setLngLat(e.lngLat)
+                    .setHTML(`<strong>${trail.name}</strong>`)
+                    .addTo(map);
             });
         });
     </script>
