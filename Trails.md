@@ -46,7 +46,7 @@ const trails = [
     { type: "Hiking", url: "https://reachabove.ca/geojson/Hiking.geojson", color: "#fa0098" },
     { type: "Snowshoe", url: "https://reachabove.ca/geojson/Snowshoe.geojson", color: "#00bdc7" },
     { type: "MountainBike", url: "https://reachabove.ca/geojson/MountainBike.geojson", color: "#ffde5a" },
-    { type: "Connector", url: "https://reachabove.ca/geojson/Connector.geojson", color: "#ffde5a" }
+    { type: "Connector", url: "https://reachabove.ca/geojson/connector_Durham.geojson", color: "#ffde5a" }
 ];
 
 // Ensure the map style is fully loaded before adding layers
