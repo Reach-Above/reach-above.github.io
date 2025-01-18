@@ -41,72 +41,59 @@
             });
         });
 
-        // Array of trail names, URLs, and colors
-        const trails = [
-            { name: "Agustas Gloop", url: "https://reachabove.ca/geojson/Agustas Gloop.geojson", color: "#FF5733" },
-            { name: "Chocolate Flush", url: "https://reachabove.ca/geojson/ChocolateFlush.geojson", color: "#8D33FF" },
-            { name: "Connector", url: "https://reachabove.ca/geojson/Connector.geojson", color: "#33FF57" },
-            { name: "Dilly Dally", url: "https://reachabove.ca/geojson/DillyDally.geojson", color: "#FF33A8" },
-            { name: "Easy Way Back", url: "https://reachabove.ca/geojson/Easy_Way_back.geojson", color: "#33C3FF" },
-            { name: "Golden Ticket", url: "https://reachabove.ca/geojson/GoldenTicket.geojson", color: "#FFD700" },
-            { name: "Harder Way Back", url: "https://reachabove.ca/geojson/HarderWayBack.geojson", color: "#FF6F33" },
-            { name: "Hot Butter", url: "https://reachabove.ca/geojson/HotButter.geojson", color: "#33FFDD" },
-            { name: "Loompa", url: "https://reachabove.ca/geojson/Loompa.geojson", color: "#FF5733" },
-            { name: "Rattler", url: "https://reachabove.ca/geojson/Rattler.geojson", color: "#FF33FF" },
-            { name: "Rock Paper Scissors", url: "https://reachabove.ca/geojson/RockPaperScissors.geojson", color: "#FFFF33" },
-            { name: "The Big Flush", url: "https://reachabove.ca/geojson/TheBigFlush.geojson", color: "#33FF99" },
-            { name: "The Climb Down", url: "https://reachabove.ca/geojson/TheClimbDown.geojson", color: "#FF3366" },
-            { name: "The Girlfriend", url: "https://reachabove.ca/geojson/TheGirlFriend.geojson", color: "#3399FF" },
-            { name: "Trail Head", url: "https://reachabove.ca/geojson/TrailHead.geojson", color: "#FF9933" },
-            { name: "Tree Hugger", url: "https://reachabove.ca/geojson/TreeHugger.geojson", color: "#66FF33" },
-            { name: "Which Way", url: "https://reachabove.ca/geojson/WhichWay.geojson", color: "#FF33CC" },
-            { name: "Wonka Bar", url: "https://reachabove.ca/geojson/WonkaBar.geojson", color: "#FF6633" }
-        ];
+        // Array of trails with their associated URLs and colors
+const trails = [
+    { type: "Hiking", url: "https://reachabove.ca/geojson/Hiking.geojson", color: "#fa0098" },
+    { type: "Snowshoe", url: "https://reachabove.ca/geojson/Snowshoe.geojson", color: "#00bdc7" },
+    { type: "MountainBike", url: "https://reachabove.ca/geojson/MountainBike.geojson", color: "#ffde5a" },
+    { type: "Connector", url: "https://reachabove.ca/geojson/Connector.geojson", color: "#ffde5a" }
+];
 
-        // Ensure the map style is fully loaded before adding layers
-        map.on('load', () => {
-            // Apply a grayscale filter to make the map black and white
-            map.setPaintProperty('satellite', 'raster-saturation', -1); // Set saturation to remove color
+// Ensure the map style is fully loaded before adding layers
+map.on('load', () => {
+    // Apply a grayscale filter to make the map black and white
+    map.setPaintProperty('satellite', 'raster-saturation', -1); // Set saturation to remove color
 
-            // Load each trail GeoJSON as a line layer with its specific color
-            trails.forEach(trail => {
-                map.addSource(trail.name, {
-                    type: 'geojson',
-                    data: trail.url
-                });
-                map.addLayer({
-                    id: trail.name,
-                    type: 'line',
-                    source: trail.name,
-                    layout: {
-                        'line-join': 'round',
-                        'line-cap': 'round'
-                    },
-                    paint: {
-                        'line-color': trail.color,
-                        'line-width': 3
-                    }
-                });
-
-                // Change cursor to pointer on hover
-                map.on('mouseenter', trail.name, () => {
-                    map.getCanvas().style.cursor = 'pointer';
-                });
-                
-                // Revert cursor on mouse leave
-                map.on('mouseleave', trail.name, () => {
-                    map.getCanvas().style.cursor = '';
-                });
-
-                // Display popup on click
-                map.on('click', trail.name, (e) => {
-                    new mapboxgl.Popup()
-                        .setLngLat(e.lngLat)
-                        .setHTML(`<strong>${trail.name}</strong>`)
-                        .addTo(map);
-                });
-            });
+    // Load each trail GeoJSON as a line layer with its specific color
+    trails.forEach(trail => {
+        map.addSource(trail.type, {
+            type: 'geojson',
+            data: trail.url
         });
+        map.addLayer({
+            id: trail.type,
+            type: 'line',
+            source: trail.type,
+            layout: {
+                'line-join': 'round',
+                'line-cap': 'round'
+            },
+            paint: {
+                'line-color': trail.color,
+                'line-width': 3
+            }
+        });
+
+        // Change cursor to pointer on hover
+        map.on('mouseenter', trail.type, () => {
+            map.getCanvas().style.cursor = 'pointer';
+        });
+        
+        // Revert cursor on mouse leave
+        map.on('mouseleave', trail.type, () => {
+            map.getCanvas().style.cursor = '';
+        });
+
+        // Display popup on click
+        map.on('click', trail.type, (e) => {
+            new mapboxgl.Popup()
+                .setLngLat(e.lngLat)
+                .setHTML(`<strong>${trail.type} Trail</strong>`)
+                .addTo(map);
+        });
+    });
+});
+
     </script>
 </body>
 </html>
