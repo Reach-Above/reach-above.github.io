@@ -97,7 +97,7 @@
                 });
             });
 
-            // Add contours layer
+            // Add contours layer (default off)
             map.addSource('contours', {
                 type: 'vector',
                 url: 'mapbox://reachabove.5dvu4zig' // Your contours source
@@ -109,17 +109,16 @@
                 source: 'contours',
                 'source-layer': 'contours_1m_Parcel-8zw58j', // Your source layer
                 layout: {
-                    'line-join': 'round',
-                    'line-cap': 'round'
+                    'visibility': 'none' // Initially off
                 },
                 paint: {
-                    'line-color': '#000000',
+                    'line-color': 'rgba(255, 255, 255, 0.5)', // White with 50% transparency
                     'line-width': 1
                 }
             });
 
             // Toggle contours visibility
-            let contoursVisible = true;
+            let contoursVisible = false;
             document.getElementById('toggle-contours').addEventListener('click', () => {
                 contoursVisible = !contoursVisible;
                 map.setLayoutProperty(
