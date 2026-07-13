@@ -93,7 +93,7 @@ map.on('load', () => {
     // Exaggerated terrain
     map.setTerrain({
         source: 'mapbox-dem',
-        exaggeration: 3
+        exaggeration: 1.75
     });
 
     // Load trail layers
