@@ -1,64 +1,37 @@
-Williams Treaties x Ontario School Boards
-===========================================
+Williams Treaties x Ontario School Boards — corrected source
+Updated: October 4, 2026
 
-Created: 2026-10-03
+Treaty source
+Ontario IAO Digital Treaty Map NEW, FeatureServer layer 1 (Treaties):
+https://services6.arcgis.com/nSz32Ykx1FOOroQd/arcgis/rest/services/IAO_Digital_Treaty_Map_NEW/FeatureServer/1
+Query: Treaty1_Name LIKE '%Williams%' OR Treaty2_Name LIKE '%Williams%'
+Requested outFields=*, returnGeometry=true, outSR=4326, f=geojson.
+Returned OBJECTIDs: 24, 25, 26, 27. No transfer-limit warning.
+The layer describes its source as "Treaties simplified 5m Nov 2024".
+No additional coordinate rounding or simplification was applied.
 
-Purpose
--------
-Identify Ontario school board polygons that intersect the Williams Treaties (1923) area for use in Mapbox/MapLibre.
+Four mapped sections
+24: Williams Treaties / John Collins' Purchase
+25: Williams Treaties / Johnson-Butler Purchase
+26: Williams Treaties / Rice Lake Purchase
+27: Williams Treaties / Robinson-Huron Treaty
+All four original source features are used for display. Their union is used for spatial overlay and area measurement to avoid double counting.
 
-Inputs
-------
-1. Four Ontario school board shapefiles supplied by the user:
-   - English Public
-   - English Catholic
-   - French Public
-   - French Catholic
-   These files use NAD83 / EPSG:4269 and were prepared/copied in May 2023 from the school board boundary source data.
+Board inputs and method
+All four supplied Ontario school-board shapefiles were reread: 31 English Public, 29 English Catholic, 4 French Public and 8 French Catholic (72 total).
+Source board boundaries are NAD83; their coordinates are treated as equivalent to WGS84 at this illustrative map scale.
+52 source geometries required make_valid. Non-polygon remnants from repairs were excluded.
+Select boards with positive-area intersection, rather than mere boundary contact.
+Areas and percentages use Lambert azimuthal equal-area centred at 45N, 79W, WGS84:
++proj=laea +lat_0=45 +lon_0=-79 +datum=WGS84 +units=m +no_defs
 
-2. Williams Treaties (1923) geometry derived from the Government of Canada Historic Treaties ArcGIS service via a public GitHub mirror. The mirror script queried:
-   https://geo.sac-isc.gc.ca/geomatics/rest/services/Donnees_Ouvertes-Open_Data/Historic_Treaty_E/MapServer/0/query
-   and then rounded coordinates to two decimals and generalized linework to 0.04 degrees for web display.
+Results
+28 boards: 11 English Public, 9 English Catholic, 4 French Public and 4 French Catholic.
+No additions or removals compared with the former bundle. Overlap areas and percentages have been recomputed; the former metrics must not be reused.
+Rainbow DSB and CSP du Grand Nord both intersect the Ontario source. Flags that were specific to uncertainty in the former generalized federal-derived polygon were removed. This confirms mapped intersection only.
 
-Important limitation
---------------------
-The treaty geometry used in this analysis is generalized. This is appropriate for identifying likely board intersections and web mapping, but it should not be treated as a legal boundary. The Government of Canada also describes historic treaty boundaries as estimated/informational rather than surveyed legal descriptions.
+Superseded source
+The previous bundle used a heavily generalized federal-derived geometry with two-decimal rounding and 0.04-degree line generalization. It does not match the Ontario map footprint. This version replaces that geometry and all dependent overlap outputs.
 
-Result
-------
-28 school board polygons intersect the generalized Williams Treaties geometry.
-
-Two results are flagged EDGE CHECK because their overlap is concentrated close to the generalized treaty edge:
-- Rainbow District School Board
-- CSP du Grand Nord de l'Ontario
-
-Files
------
-- williams_intersecting_school_boards.geojson
-  Full polygons for the 28 intersecting boards, with intersection metrics. Best primary layer for MapLibre/Mapbox.
-
-- williams_school_board_intersections.geojson
-  Only the portions of each board polygon inside the treaty geometry. Useful for visual QA or a clipped display.
-
-- williams_treaties_simplified.geojson
-  Generalized Williams Treaties geometry used in this overlay.
-
-- williams_intersecting_school_boards.csv
-  Attribute-only list with overlap area and percentage.
-
-Fields
-------
-BOARD_NAME                School board name
-BOARD_NUM                 Board identifier
-TYPE                      Public or Catholic
-LANGUAGE                  English or French
-DISTRICT                  District/region field from source
-system                    LANGUAGE + TYPE
-intersects_williams       True for selected boards
-intersection_km2          Approximate overlap area
-pct_board_in_williams     Approximate percent of board polygon overlapping treaty
-review_flag               ROBUST INTERSECTION or EDGE CHECK
-
-Recommended publication approach
---------------------------------
-Use the full intersecting-board GeoJSON as the selectable/clickable board layer and the treaty GeoJSON as a separate reference polygon. Do not use the clipped layer as the only board layer if users need to recognize the full jurisdiction of a board.
+Limitations
+Ontario's map is illustrative; it does not establish actual legal treaty boundaries or rights. The underlying board boundaries and names have not been reconciled to a current board directory. A board-service-area overlap does not establish that every school or school site lies within the mapped treaty area.

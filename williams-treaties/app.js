@@ -27,7 +27,7 @@ function metricText(p) { return `${Number(p.pct_board_in_williams).toFixed(1)}% 
 function renderList() {
   const boards=currentBoards().sort((a,b)=>a.properties.BOARD_NAME.localeCompare(b.properties.BOARD_NAME,'en'));
   $('board-list').replaceChildren();
-  $('result-count').textContent=`${boards.length} of 28 boards`;
+  $('result-count').textContent=`${boards.length} of ${state.boards.features.length} boards`;
   if(!boards.length) {const li=document.createElement('li');li.className='empty';li.textContent='No matching boards in this system. Try another name or choose All four systems.';$('board-list').append(li);}
   for(const feature of boards) {
     const p=feature.properties,li=document.createElement('li'),button=document.createElement('button');
@@ -47,7 +47,7 @@ function selectBoard(id,zoom=false) {
   $('selected-name').textContent=p.BOARD_NAME;$('selected-system').textContent=`${p.system} · ${p.BOARD_NUM}`;
   $('selected-area').textContent=`${number.format(p.intersection_km2)} km²`;
   $('selected-percent').textContent=`${Number(p.pct_board_in_williams).toFixed(1)}%`;
-  $('selected-note').textContent=p.review_flag==='EDGE CHECK'?'Boundary review flagged: this overlap is close to the generalized treaty edge.':'Figures are approximate and refer to the board service area, not individual schools.';
+  $('selected-note').textContent=p.review_flag==='EDGE CHECK'?'Boundary review flagged: confirm this mapped overlap against the source boundaries.':'Figures are approximate and refer to the board service area, not individual schools.';
   $('selection').hidden=false;
   document.querySelectorAll('.board-button').forEach(button=>button.setAttribute('aria-pressed',String(button.dataset.board===id)));
   updateMap();
@@ -132,7 +132,7 @@ async function loadJSON(path) {
 }
 async function boot() {
   try {
-    const [boards,overlaps,treaty]=await Promise.all(['boards','overlaps','treaty'].map(name=>loadJSON(`./data/${name}.geojson`)));
+    const [boards,overlaps,treaty]=await Promise.all(['boards','overlaps','treaty'].map(name=>loadJSON(`./data/${name}.geojson?v=20261004`)));
     if(!boards.features.length||!treaty.features.length) throw new Error('Map data is empty');
     state.boards=boards;state.overlaps=overlaps;state.treaty=treaty;
     const byId=new Map(boards.features.map(f=>[f.properties.BOARD_NUM,f]));

@@ -16,12 +16,16 @@ The page contains system filters, accent-insensitive board-name search, selectab
 
 - `index.html`, `style.css`, `app.js`: interface.
 - `data/boards.geojson`: full boundaries for the 28 candidate boards.
-- `data/overlaps.geojson`: portions inside the generalized treaty area.
-- `data/treaty.geojson`: generalized treaty polygon used by the supplied analysis.
+- `data/overlaps.geojson`: portions inside the union of Ontario’s four Williams Treaties sections.
+- `data/treaty.geojson`: four original Williams Treaties sections from Ontario’s IAO Digital Treaty Map.
 - `data/boards.csv`: downloadable analysis table.
 - `data/analysis-notes.txt`: provenance and analysis limitations from the original bundle.
 
-Data is copied from the October 3, 2026 analysis bundle, with JSON whitespace removed and board IDs added. Coordinates and precomputed metrics are preserved. This page performs no spatial intersection and does not validate the original analysis. The two flagged boards remain visible and labelled.
+Data was rebuilt on October 4, 2026 from all 72 original supplied school board shapefiles and Ontario’s IAO Digital Treaty Map (FeatureServer layer 1). The 28 selected boards are the same as the previous version, but the treaty footprint, clipped areas and overlap metrics have been replaced. The two flags specific to the former generalized federal-derived polygon were removed because both boards also intersect Ontario’s mapped sections. This does not establish legal boundaries.
+
+The Ontario query selected features where `Treaty1_Name` or `Treaty2_Name` contains Williams, returning OBJECTIDs 24, 25, 26 and 27. All four source features are retained for display without additional coordinate rounding or simplification. Their geometric union is used for analysis so no area is counted twice. The service itself describes the linework as simplified to 5 m in November 2024.
+
+Invalid source school board geometries were repaired using Shapely `make_valid`; non-area remnants were excluded. Only polygonal board and overlap geometries are exported. Areas use a Lambert azimuthal equal-area projection centred at 45°N, 79°W with the WGS84 datum. Source board coordinates use NAD83 and are treated as equivalent to WGS84 at this illustrative map scale. Board names remain those in the supplied files.
 
 ## Preview locally
 
@@ -35,7 +39,7 @@ Open `http://localhost:8000/williams-treaties/`. Opening the HTML through `file:
 
 ## External services
 
-MapLibre GL JS 5.6.1 and its CSS load from UNPKG. The background uses standard OpenStreetMap raster tiles; attribution stays visible. The page and data use relative URLs. GeoJSON totals about 6.8 MB before HTTP compression.
+MapLibre GL JS 5.6.1 and its CSS load from UNPKG. The background uses standard OpenStreetMap raster tiles; attribution stays visible. The page and data use relative URLs. GeoJSON files are compressed by hosting where supported. Versioned data URLs avoid loading the previous polygon from browser caches.
 
 For expected small school use, this requires no token or paid account. Observe https://operations.osmfoundation.org/policies/tiles/: no bulk downloading, offline prefetching, or removal of attribution. For heavy public traffic, switch to an appropriate hosted basemap service. The board list remains usable if the library or map graphics fail; a tile failure shows a message. There are no school point locations, attendance catchments, analytics, accounts, or saved user data.
 
@@ -45,4 +49,4 @@ Replace all three GeoJSON files and the CSV together after rerunning the analysi
 
 ## Validation
 
-Checked in headless Chromium at desktop (1440 × 1000) and phone (390 × 844) sizes: system counts, board selection, search and empty state, boundary-review details, clipped-layer and treaty-visibility toggles, modal opening/closing, and phone horizontal overflow. No JavaScript page errors were observed. GeoJSON IDs, board counts, CSV records, review flags and metric ranges were checked. Browser QA loaded the pinned MapLibre files locally and substituted blank raster tiles; live external basemap availability was not verified.
+Checked in headless Chromium at desktop (1440 × 1000) and phone (390 × 844) sizes: system counts, board selection, search and empty state, boundary-review details, clipped-layer and treaty-visibility toggles, modal opening/closing, and phone horizontal overflow. No JavaScript page errors were observed. GeoJSON IDs, all 72 input boards, 28 selected boards, four treaty sections, CSV records and metric ranges were checked. Browser QA loaded the pinned MapLibre files locally and substituted blank raster tiles; live external basemap availability was not verified.

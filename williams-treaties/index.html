@@ -6,9 +6,9 @@
   <meta name="description" content="Explore Ontario school board service areas that overlap the mapped Williams Treaties (1923) area.">
   <title>Williams Treaties & School Boards | ReachAbove</title>
   <link rel="stylesheet" href="https://unpkg.com/maplibre-gl@5.6.1/dist/maplibre-gl.css">
-  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="./style.css?v=20261004">
   <script defer src="https://unpkg.com/maplibre-gl@5.6.1/dist/maplibre-gl.js"></script>
-  <script defer src="./app.js"></script>
+  <script defer src="./app.js?v=20261004"></script>
 </head>
 <body>
   <a class="skip-link" href="#board-list">Skip to school board list</a>
@@ -42,7 +42,7 @@
         <p id="selected-note" class="detail-note"></p>
         <button class="quiet-button" id="zoom-board">Zoom to full board</button>
       </section>
-      <footer class="sidebar-footer"><a href="./data/boards.csv" download>Download the 28-board list (CSV)</a><p>26 other intersections · 2 flagged for boundary review</p></footer>
+      <footer class="sidebar-footer"><a href="./data/boards.csv?v=20261004" download>Download the 28-board list (CSV)</a><p>All 72 boards assessed · Illustrative treaty boundaries</p></footer>
     </aside>
     <section class="map-panel" aria-label="Interactive treaty and school board map">
       <div id="map" aria-label="Map of Williams Treaties and school board service areas"></div>
@@ -54,21 +54,21 @@
   </main>
   <dialog id="about-dialog" aria-labelledby="about-title">
     <div class="dialog-heading"><h2 id="about-title">About this map</h2><button id="close-about" class="icon-button" aria-label="Close map information">×</button></div>
-    <p>This map identifies <strong>28 school board service areas</strong> with an area overlap in the generalized Williams Treaties (1923) polygon used for this analysis. It supports education and geographic exploration.</p>
+    <p>This map identifies <strong>28 school board service areas</strong> with an area overlap in the four Williams Treaties (1923) sections from Ontario’s treaty map. It supports education and geographic exploration.</p>
     <h3>How to read the map</h3>
     <p>Choose a school system, then select a board in the list or on the map. <strong>Full board areas</strong> shows the whole service area; <strong>Overlaps only</strong> shows the portion inside the mapped treaty area. Counts and search apply to the selected system.</p>
     <p>Board areas from different school systems cover the same places. When several boards overlap at a map click, choose one from the popup.</p>
     <h3>Sources and limitations</h3>
     <ul>
       <li><strong>School boards:</strong> four Ontario school board boundary shapefiles supplied for this project, prepared/copied in May 2023. Names and boundaries are retained from those files; that date does not confirm that the boundaries are current. <a href="https://data.ontario.ca/dataset/school-board-boundaries" target="_blank" rel="noopener">Ontario boundary catalogue</a>.</li>
-      <li><strong>Treaty area:</strong> a generalized web copy derived from the Government of Canada Historic Treaties service. Its source processing rounded coordinates to two decimal places and generalized linework to 0.04 degrees. <a href="https://open.canada.ca/data/en/dataset/f281b150-0645-48e4-9c30-01f55f93f78e" target="_blank" rel="noopener">Federal dataset</a>.</li>
-      <li><strong>Boundary review:</strong> Rainbow District School Board and CSP du Grand Nord de l'Ontario are flagged because their overlap lies close to the generalized treaty edge.</li>
-      <li><strong>Overlap figures:</strong> approximate results from the supplied analysis, calculated before display. A small overlap does not mean every school in that board lies in the treaty area.</li>
+      <li><strong>Treaty area:</strong> Ontario’s IAO Digital Treaty Map, Treaties layer. All four sections labelled Williams Treaties are displayed with their source coordinates preserved. The service describes its linework as simplified to 5 m in November 2024. <a href="https://www.ontario.ca/page/map-ontario-treaties-and-reserves" target="_blank" rel="noopener">Ontario treaty map</a>.</li>
+      <li><strong>Four sections:</strong> Ontario pairs Williams Treaties with John Collins’ Purchase, Johnson-Butler Purchase, Rice Lake Purchase and Robinson-Huron Treaty. All four are included; no single section represents the full mapped area.</li>
+      <li><strong>Overlap figures:</strong> recalculated from all 72 supplied board boundaries against the combined Ontario sections, using a Lambert azimuthal equal-area projection centred on the region. A small overlap does not mean every school in that board lies in the treaty area.</li>
     </ul>
     <p class="notice">Treaty boundaries are illustrative and estimated. This map does not establish legal boundaries, treaty rights, school attendance eligibility, or a land acknowledgement for any particular location.</p>
-    <p class="dialog-footer">Analysis prepared October 3, 2026 · Hosted by ReachAbove</p>
-    <a href="./data/analysis-notes.txt" target="_blank">Read the analysis notes</a>
+    <p class="dialog-footer">Analysis updated October 4, 2026 · Hosted by ReachAbove</p>
+    <a href="./data/analysis-notes.txt?v=20261004" target="_blank">Read the analysis notes</a>
   </dialog>
-  <noscript><div class="noscript">Enable JavaScript to use the map. You can still <a href="./data/boards.csv">download the school board list</a>.</div></noscript>
+  <noscript><div class="noscript">Enable JavaScript to use the map. You can still <a href="./data/boards.csv?v=20261004">download the school board list</a>.</div></noscript>
 </body>
 </html>
