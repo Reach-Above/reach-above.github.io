@@ -4,7 +4,7 @@
 const COLORS = {'English Public':'#1764ae','English Catholic':'#b54a20','French Public':'#087967','French Catholic':'#713fac'};
 const $ = id => document.getElementById(id);
 const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-const state = {system:'English Public',query:'',view:'full',selected:null,boards:null,overlaps:null,treaty:null,map:null,ready:false,popup:null};
+const state = {system:'English Public',query:'',view:'full',selected:null,boards:null,overlaps:null,treaty:null,schools:null,map:null,ready:false,popup:null};
 const number = new Intl.NumberFormat('en-CA',{maximumFractionDigits:0});
 
 function bounds(geojson) {
@@ -59,7 +59,11 @@ function clearSelection() {
   document.querySelectorAll('.board-button').forEach(button=>button.setAttribute('aria-pressed','false'));
   updateMap();
 }
-function fit(feature) {state.map?.fitBounds(bounds(feature),{padding:window.innerWidth<=720?60:85,maxZoom:10,duration:reducedMotion?0:650});}
+function fit(feature) {
+  if(!state.map) return;
+  state.map.resize();
+  state.map.fitBounds(bounds(feature),{padding:window.innerWidth<=720?60:85,maxZoom:10,duration:reducedMotion?0:650});
+}
 function updateMap() {
   if(!state.ready) return;
   const ids=currentBoards().map(f=>f.properties.BOARD_NUM);
@@ -68,11 +72,48 @@ function updateMap() {
     for(const suffix of ['fill','line','review']) {
       const layer=`${view}-${suffix}`;
       state.map.setFilter(layer,suffix==='review'?['all',filter,['==',['get','review_flag'],'EDGE CHECK']]:filter);
-      state.map.setLayoutProperty(layer,'visibility',state.view===view?'visible':'none');
+      state.map.setLayoutProperty(layer,'visibility',$('show-boards').checked&&state.view===view?'visible':'none');
     }
     state.map.setFilter(`${view}-selected`,['==',['get','BOARD_NUM'],state.selected||'']);
-    state.map.setLayoutProperty(`${view}-selected`,'visibility',state.view===view?'visible':'none');
+    state.map.setLayoutProperty(`${view}-selected`,'visibility',$('show-boards').checked&&state.view===view?'visible':'none');
   }
+  if(state.schools) {
+    state.map.setFilter('school-points',['in',['get','board_id'],['literal',ids]]);
+    state.map.setLayoutProperty('school-points','visibility',$('show-schools').checked?'visible':'none');
+    const count=state.schools.features.filter(f=>ids.includes(f.properties.board_id)).length;
+    $('school-count').textContent=`${number.format(count)} schools in filtered boards`;
+  }
+  document.querySelectorAll('[name=view]').forEach(input=>input.disabled=!$('show-boards').checked);
+}
+function clickableLayers() {
+  const layers=[];
+  if(state.schools&&$('show-schools').checked) layers.push('school-points');
+  if($('show-boards').checked) layers.push(`${state.view}-fill`);
+  return layers;
+}
+function showSchools(hits,lngLat) {
+  const ids=[...new Set(hits.map(f=>f.properties.school_id))];
+  const container=document.createElement('div');container.className='school-popup';
+  for(const id of ids) {
+    const p=state.schools.features.find(f=>f.properties.school_id===id).properties;
+    const card=document.createElement('section'),title=document.createElement('h3');
+    title.textContent=p.school_name;card.append(title);
+    const details=[p.board_name,p.full_address,p.grades?`Grades: ${p.grades}`:''];
+    details.push(p.inside_williams?'Inside the mapped treaty area':'Outside the mapped treaty area');
+    details.push(p.coordinate_precision==='ADDRESS_INTERPOLATION'?'Location: estimated from the street address':'Location: source facility point; not independently surveyed');
+    if(p.site_status_note) details.push(p.site_status_note);
+    if(p.near_treaty_boundary) details.push('Near the treaty boundary; verify the campus location before using the classification.');
+    for(const detail of details.filter(Boolean)) {const line=document.createElement('p');line.textContent=detail;card.append(line);}
+    try {
+      const url=new URL(p.school_website);
+      if(['https:','http:'].includes(url.protocol)) {
+        const link=document.createElement('a');link.href=url.href;link.target='_blank';link.rel='noopener';link.textContent='School website';card.append(link);
+      }
+    } catch(error) { /* A missing or invalid website needs no link. */ }
+    container.append(card);
+  }
+  state.popup?.remove();
+  state.popup=new maplibregl.Popup({maxWidth:'330px'}).setLngLat(lngLat).setDOMContent(container).addTo(state.map);
 }
 function filterChanged() {
   if(state.selected&&!currentBoards().some(f=>f.properties.BOARD_NUM===state.selected)) clearSelection();
@@ -99,11 +140,19 @@ function initializeMap() {
         state.map.addLayer({id:`${view}-selected`,type:'line',source,paint:{'line-color':'#102c47','line-width':4}});
       }
       state.map.addLayer({id:'treaty-outline',type:'line',source:'treaty',paint:{'line-color':'#843da5','line-width':3,'line-dasharray':[3,1.5]}});
+      if(state.schools) {
+        state.map.addSource('schools',{type:'geojson',data:state.schools});
+        state.map.addLayer({id:'school-points',type:'circle',source:'schools',paint:{'circle-color':color,'circle-radius':['interpolate',['linear'],['zoom'],5,3,10,5,14,7],'circle-stroke-color':'#fff','circle-stroke-width':1.2,'circle-opacity':.9}});
+      }
       state.ready=true;updateMap();fit(state.treaty);
       for(const layer of ['treaty-fill','treaty-outline']) state.map.setLayoutProperty(layer,'visibility',$('show-treaty').checked?'visible':'none');
       $('map-status').hidden=true;
       state.map.on('click',event=>{
-        const hits=state.map.queryRenderedFeatures(event.point,{layers:[`${state.view}-fill`]});
+        const layers=clickableLayers();
+        if(!layers.length) return;
+        const hits=state.map.queryRenderedFeatures(event.point,{layers});
+        const schools=hits.filter(f=>f.layer.id==='school-points');
+        if(schools.length) {showSchools(schools,event.lngLat);return;}
         const ids=[...new Set(hits.map(f=>f.properties.BOARD_NUM))];
         if(!ids.length) return;
         if(ids.length===1) {selectBoard(ids[0]);return;}
@@ -114,7 +163,7 @@ function initializeMap() {
         }
         state.popup?.remove();state.popup=new maplibregl.Popup({maxWidth:'330px'}).setLngLat(event.lngLat).setDOMContent(container).addTo(state.map);
       });
-      state.map.on('mousemove',event=>{state.map.getCanvas().style.cursor=state.map.queryRenderedFeatures(event.point,{layers:[`${state.view}-fill`]}).length?'pointer':'';});
+      state.map.on('mousemove',event=>{const layers=clickableLayers();state.map.getCanvas().style.cursor=layers.length&&state.map.queryRenderedFeatures(event.point,{layers}).length?'pointer':'';});
     });
     state.map.on('error',event=>{
       if(event.error?.message?.includes('tile.openstreetmap.org')) showStatus('The background map could not load. Board boundaries and the board list remain available.',true);
@@ -132,9 +181,14 @@ async function loadJSON(path) {
 }
 async function boot() {
   try {
-    const [boards,overlaps,treaty]=await Promise.all(['boards','overlaps','treaty'].map(name=>loadJSON(`./data/${name}.geojson?v=20261004`)));
+    const [boards,overlaps,treaty,schools]=await Promise.all([
+      ...['boards','overlaps','treaty'].map(name=>loadJSON(`./data/${name}.geojson?v=20261004-schools`)),
+      loadJSON('./data/schools.geojson?v=20261004-schools').catch(()=>null)
+    ]);
     if(!boards.features.length||!treaty.features.length) throw new Error('Map data is empty');
     state.boards=boards;state.overlaps=overlaps;state.treaty=treaty;
+    state.schools=schools;
+    if(!schools) {$('show-schools').checked=false;$('show-schools').disabled=true;$('school-count').textContent='School points unavailable — try reloading';}
     const byId=new Map(boards.features.map(f=>[f.properties.BOARD_NUM,f]));
     boards.features.forEach(f=>f.id=f.properties.BOARD_NUM);
     overlaps.features.forEach(f=>{f.id=f.properties.BOARD_NUM;if(!byId.has(f.id)) throw new Error('Overlap board missing from data');f.properties={...byId.get(f.id).properties};});
@@ -150,6 +204,7 @@ document.querySelectorAll('[name=system]').forEach(input=>input.addEventListener
 $('search').addEventListener('input',event=>{state.query=event.target.value;filterChanged();});
 document.querySelectorAll('[name=view]').forEach(input=>input.addEventListener('change',()=>{state.view=input.value;state.popup?.remove();state.popup=null;updateMap();}));
 $('show-treaty').addEventListener('change',event=>{if(state.ready) for(const layer of ['treaty-fill','treaty-outline']) state.map.setLayoutProperty(layer,'visibility',event.target.checked?'visible':'none');});
+for(const id of ['show-schools','show-boards']) $(id).addEventListener('change',()=>{state.popup?.remove();state.popup=null;updateMap();});
 $('clear-selection').addEventListener('click',clearSelection);
 $('reset-view').addEventListener('click',()=>{if(state.ready) fit(state.treaty);});
 $('zoom-board').addEventListener('click',()=>{const f=state.boards?.features.find(f=>f.id===state.selected);if(f&&state.ready) fit(f);});

@@ -1,0 +1,228 @@
+# Schools belonging to the 28 boards overlapping Williams Treaties
+
+Prepared 4 October 2026 for ReachAbove. This is a reviewable compilation, not a
+certification that every coordinate is the current school-building location.
+
+## Scope
+
+The roster is the Ontario Ministry of Education's publicly funded school
+contact list dated 11 August 2026. Select records by the 28 board IDs that
+intersect the corrected Ontario Williams Treaties geometry. Do not select
+schools by spatial containment in school-board polygons: English/French and
+public/Catholic systems overlap.
+
+All schools in those boards are retained, including schools outside the treaty
+area. `inside_williams` indicates point containment in the four Ontario treaty
+features. It does not establish legal obligations or treaty rights.
+
+## Files
+
+* `schools_all_records.csv`: every selected Ministry record, including unresolved
+  locations and virtual/seasonal/treatment programs. School and board IDs are
+  text. Preserve leading zeros when importing into Excel.
+* `schools.geojson`: located records in the `school` category, suitable for the
+  main map layer. EPSG:4326, longitude then latitude. This includes regular,
+  alternative, adult, vocational and junior-high school records, but excludes
+  records specifically classified as continuing education, summer, virtual or
+  treatment/correctional programs.
+* `schools_all_located_records.geojson`: all located physical or program-address
+  records. A program at an administrative address is not a separate campus.
+* `schools_needing_review.csv`: unresolved nonvirtual locations, address
+  conflicts, interpolated points, points outside their board polygon, and points
+  within 250 metres of the treaty boundary. A row here can have coordinates.
+* `schools_address_changes.csv`: completed/corrected/normalised addresses,
+  conflicting addresses, and approved name changes. Original values are retained.
+* `board_coverage.csv`: coverage and point-containment counts by board.
+* `coverage.json` and `coverage_report.md`: dataset totals and limitations.
+* `source/`: original Ontario roster, Statistics Canada data/source list/record
+  layout, cached NRCan geolocation responses, and analysis boundary snapshots.
+* `verified-addresses.json` and `verified-locations.json`: documented decisions
+  and source links used during reconciliation.
+
+Counts are school or program records, not unique buildings. An elementary and
+secondary school or several programs can share one address and map coordinate.
+The Ministry snapshot can include new campuses before the permanent buildings
+are occupied; `site_status_note` records known temporary-placement issues.
+
+## Address reconciliation
+
+Every selected record originally had a Street value, though a few were rural
+routes, intersections or otherwise incomplete. Six records were missing a city
+and/or postal code. Four were completed using the provider/government directory
+or another Ministry school record at the same civic address. The two unresolved
+treatment-program records are retained as `ADDRESS_CONFLICT`; verified provider
+contact addresses appear separately in `candidate_contact_address`. Those are
+not asserted to be the specific program's student location.
+
+S.A. Cawker's Ministry address incorrectly referred to an Oshawa school. Its
+current school website confirms 16200 Old Simcoe Road, Port Perry, L9L1P3.
+Courtice Secondary's intersection-only address was completed from its board
+directory as 1717 Nash Road. Forest View's duplicated Street word was normalised.
+Four new DDSB schools were given their approved names from the board's July 2026
+announcement, with original roster names preserved. Heartwood's permanent
+campus occupancy has not been confirmed; the board described temporary host
+placements for the beginning of the 2026 school year.
+
+Contact details beyond address/name were not exhaustively rechecked. In
+particular, S.A. Cawker's roster telephone can be wrong along with its original
+website. The corrected school website is included; use that site to verify
+telephone details before contacting the school.
+
+## Location matching and confidence
+
+1. Match Ontario school ID and board ID to Statistics Canada's ODEF v3.0.1.
+   Reuse a point only when the current street still matches after conservative
+   bilingual street-type normalization. Keep civic numbers and directions.
+2. For unmatched school/program IDs, allow an exact civic address matched to an
+   ODEF record in the same municipality or with the same full postal code. If
+   source points for that address differ by 100 metres or more, do not accept
+   the address match automatically. This is a shared-address match, not an ID
+   match, and is labelled medium confidence.
+3. For remaining addresses, use the NRCan GeoGratis Geolocation Service. Accept
+   only an `INTERPOLATED_POSITION` result with matching civic number, normalized
+   street, municipality and province, agreeing candidates within 100 metres,
+   and a point within the corresponding board polygon. Reject city centroids,
+   street centroids and ambiguous or different-municipality results.
+4. NRCan points are road-address estimates, labelled `ADDRESS_INTERPOLATION`.
+   They require review before use as precise campus or treaty-boundary locations.
+5. One ODEF outlier was corrected: Bayside Secondary's elementary program had a
+   longitude over 30 km from its secondary program at the same address. The
+   secondary-campus source point was used instead, and the school website
+   confirms the shared civic address.
+6. Virtual records retain their contact addresses but do not receive student
+   campus points. Locations are never assigned to a school using only a board,
+   city, postal-code centroid, or a different civic number.
+
+`location_confidence=high` means confidence in the ID/address record match. It
+does not mean the coordinates have been independently surveyed or visually
+verified. ODEF Ontario records used here have source date 5 July 2024; the
+download includes a 17 November 2025 correction note. Address checks catch many
+moves, but cannot detect every bad or stale source coordinate. NRCan's underlying
+road data vintage is not asserted to be October 2026; that is the lookup date.
+
+`inside_board_boundary` is a diagnostic, not how board membership is assigned.
+Small boundary differences or school sites outside board areas can occur.
+`near_treaty_boundary` uses a 250 metre review buffer in EPSG:3347; classifications
+near boundaries should be checked against actual campus locations.
+
+## Sources and attribution
+
+* Ontario Ministry of Education, Ontario public school contact information:
+  https://data.ontario.ca/dataset/ontario-public-school-contact-information
+  Open Government Licence – Ontario.
+* Statistics Canada, Open Database of Educational Facilities, v3.0.1:
+  https://www150.statcan.gc.ca/n1/pub/37-26-0001/372600012022001-eng.htm
+  Open Government Licence – Canada. Includes the supplied source list so the
+  underlying provider and source date can be inspected.
+* Natural Resources Canada, Geolocation Service:
+  https://geogratis.gc.ca/site/eng/geoloc
+  https://geo.ca/terms-and-conditions/
+  Coordinates reproduced from address lookup responses; result qualifiers are
+  retained as precision flags. The compilation is not endorsed by NRCan.
+* Ontario IAO Digital Treaty Map, Treaties layer 1:
+  https://services6.arcgis.com/nSz32Ykx1FOOroQd/arcgis/rest/services/IAO_Digital_Treaty_Map_NEW/FeatureServer/1
+  Uses Williams Treaties feature IDs 24, 25, 26 and 27, preserving the map's
+  original geometries for point-in-polygon analysis. Source is an illustrative
+  digital treaty map, not a surveyed legal boundary.
+* Board/provider verification links are recorded on each amended record.
+
+Suggested map attribution: Ontario Ministry of Education; Statistics Canada,
+Open Database of Educational Facilities; Natural Resources Canada. Distinguish
+address estimates from source facility points in the layer's metadata/popups.
+
+## Reproducing the delivered files
+
+Install Python 3, Shapely and pyproj. The packaged source snapshots and verified
+decisions are sufficient for `python3 build.py`, which recreates `output/`.
+`accept_geocoding.py` can re-evaluate the cached geocoder results. The lookup
+scripts are one-time extraction tools, not a scheduled refresh service. Do not
+treat an older cached response as independent verification of current occupancy.
+
+This compilation is displayed as the school point layer on the ReachAbove map. The map file retains essential display and location provenance fields; the CSV retains the complete records.
+
+# School data coverage — 4 October 2026
+
+| Measure | Records |
+|---|---:|
+| Selected boards | 28 |
+| All Ministry roster records | 2765 |
+| School-category records | 2312 |
+| School-category records with coordinates | 2292 (99.1%) |
+| School-category records without coordinates | 20 |
+| Located school records inside the displayed treaty area | 795 |
+| All located school/program-address records | 2571 |
+| Virtual records excluded from points | 25 |
+| Nonvirtual records without coordinates | 169 |
+| Initially incomplete address records | 6 |
+| Initially incomplete records completed | 4 |
+| Remaining address conflicts/missing postal codes | 2 |
+| Review-list rows (some already have coordinates) | 284 |
+
+The main GeoJSON contains only located school-category records. All records,
+including the 20 schools that could not be located reliably, remain
+in the full CSV. The unlocated schools have full roster street/city/postal
+addresses; most are new or moved campuses absent from older point/address data.
+Coordinate coverage is not an independent accuracy audit of every campus.
+
+## Coordinate sources/matching
+
+* NRCAN_ADDRESS_INTERPOLATION: 80 records.
+* ODEF_SCHOOL_ID_AND_ADDRESS: 2274 records.
+* ODEF_SHARED_EXACT_ADDRESS: 216 records.
+* VIRTUAL_NO_STUDENT_CAMPUS: 25 records.
+* UNRESOLVED: 167 records.
+* ODEF_REVIEWED_SHARED_CAMPUS: 1 records.
+* ADDRESS_CONFLICT: 2 records.
+
+## Remaining address conflicts
+
+* **640573 — Jerome D Diamond Adolescent Centre – EL**: roster says 122 Keewatin
+  Avenue, Toronto, without a postal code. Provider says 196 Keewatin Avenue,
+  Toronto, M4P1Z8; secondary-program roster agrees. The elementary-program site
+  is not independently confirmed. Both addresses are recorded; no point emitted.
+* **640182 — Youthdale Treatment Ctr – Crisis EL&SEC**: roster says 840 Danforth
+  Avenue, with no city/postal code. Toronto was supplied from related roster
+  records, but this civic address is not confirmed by the provider's published
+  locations. The provider's 227 Victoria Street contact address is recorded
+  separately; no program-campus point emitted.
+
+## Schools without reliable coordinates
+
+School IDs and board membership come from the current Ministry roster. These
+addresses have not been replaced with city/postal centroids or guessed points.
+
+| School ID | School | Address |
+|---|---|---|
+| 755770 | École secondaire catholique La Renaissance | 301 Church rue, Espanola, ON, P5E1B3 |
+| 841490 | École élémentaire catholique La Renaissance | 301 Church rue, Espanola, ON, P5E1B3 |
+| 796718 | École élémentaire catholique Notre-Place | 4385 route municipale 80, Val Thérèse, ON, P3P1S7 |
+| 903237 | École secondaire publique Rivière-Rideau | 830 Heritage Boulevard, Kemptville, ON, K0G1J0 |
+| 425064 | Heartwood Public School | 1 Limoges Street, Whitby, ON, L1P0M3 |
+| 185555 | Josiah Henson Public School | 1100 Azalea Avenue, Pickering, ON, L1X0G7 |
+| 260975 | Maamawi iyaawag Public School | 466 Windfields Farm Drive, Oshawa, ON, L1H7K4 |
+| 273543 | Whitby Meadows Public School | 470 Coronation Road, Whitby, ON, L1P0J6 |
+| 368982 | Waaban Public School | 2495 Steeplechase Street, Oshawa, ON, L1L0J7 |
+| 581131 | Trillium Woods Public School | 92 Hurst Drive, Ajax, ON, L1T0N9 |
+| 969341 | Cedar Valley Secondary School | 245 Windfields Farm Drive East, Oshawa, ON, L1L0S9 |
+| 411473 | Northglen Orchard Public School | 140 Northglen Blvd., Bowmanville, ON, L1C3K2 |
+| 835226 | St Michael's Separate School | 5346 Highway 60 Hwy, Douglas, ON, K0J1S0 |
+| 856410 | St Thomas the Apostle Separate School | 833 First Street, Renfrew, ON, K7V4E1 |
+| 024081 | Horseshoe Heights Public School | 739 Horseshoe Valley Road, Oro-Medonte, ON, L0K1E0 |
+| 135011 | Davisville Junior Public School | 50 Davisville Ave, Toronto, ON, M4S1E8 |
+| 932116 | Oasis Alternative Secondary School | 115 Simpson Ave, Toronto, ON, M4K1A1 |
+| 235245 | Queensville Public School | 135 Walter English Dr, Queensville, ON, L0G1R0 |
+| 235113 | Sharon Public School | 900 Murrell Blvd, East Gwillimbury, ON, L9N0P6 |
+| 229490 | Spring Lakes Public School | 431 Baker Hill Blvd, Stouffville, ON, L4A5G3 |
+
+## Validation completed
+
+School-ID uniqueness, membership in exactly the 28 selected boards, board totals,
+category totals, CSV/GeoJSON coordinate agreement, geographic ranges, required
+point provenance, exclusion of virtual/conflicting records, and treaty
+point-in-polygon classification were checked. Points near treaty boundaries and
+outside board polygons are retained in the review list. Estimates are marked
+as ADDRESS_INTERPOLATION and medium confidence. High confidence on ODEF matches
+refers to identity/address linkage, not surveyed positional accuracy.
+
+See README.md and per-record notes for source links, dates, methodology and
+address/name corrections. The main school-category points are included in the website layer.

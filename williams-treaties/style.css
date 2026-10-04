@@ -5,6 +5,21 @@
 @media(max-width:720px){.masthead{display:grid;grid-template-columns:1fr auto;gap:10px;padding:16px}.brand{font-size:14px}.brand-mark{font-size:18px}.title{grid-row:2;grid-column:1/-1}.title h1{font-size:21px}.title p{font-size:13px}.masthead>.quiet-button{font-size:12px;padding:7px 9px}.workspace{display:flex;flex-direction:column;height:auto;min-height:0}.map-panel{order:-1;height:53dvh;min-height:330px}.sidebar{border-right:0}.sidebar-top{padding:22px 18px 0}.systems{grid-template-columns:1fr 1fr}.systems label{font-size:13px;padding:9px 7px;gap:6px}.all-systems{grid-column:1/-1}.board-list{max-height:340px;flex:none}.map-toolbar{top:12px;left:12px;gap:7px;right:52px}.map-button{font-size:12px;padding:9px}.view-switch span{font-size:12px;padding:7px}.map-legend{left:12px;bottom:83px;font-size:12px;padding:9px 10px;gap:7px}.map-note{left:12px;bottom:30px;max-width:calc(100% - 64px)}.map-status{left:12px;top:100px;font-size:13px}.selection{padding:16px 18px}.sidebar-footer{padding:16px 18px}dialog{padding:22px}.dialog-heading h2{font-size:21px}}
 @media(prefers-reduced-motion:reduce){*{scroll-behavior:auto!important}}
 
+/* Each layer has an independent control; point colours follow school systems. */
+.map-legend{display:grid;gap:0;padding:8px 12px;max-width:calc(100% - 80px)}
+.map-legend label{border:0;padding:4px 0;gap:8px;min-height:28px;cursor:pointer}
+.map-legend input{margin:0;accent-color:var(--blue);width:15px;height:15px}
+.map-legend .treaty-key,.board-key{width:23px;height:13px;flex:none}
+.board-key{border:1.5px solid var(--blue);background:#1764ae1c}
+.school-key{width:10px;height:10px;flex:none;border-radius:50%;background:var(--blue);box-shadow:0 0 0 1px #fff,0 0 0 2px #1764ae40;margin:0 6px 0 7px}
+.school-count{font-size:11px;color:var(--muted);padding:0 0 5px 23px}
+.view-switch label:has(input:disabled){opacity:.45;cursor:default}
+.sidebar-footer>a{display:block;line-height:1.5;margin-bottom:5px}
+.school-popup section+section{border-top:1px solid var(--line);margin-top:14px;padding-top:14px}
+.school-popup h3{font-size:15px;line-height:1.4;margin:0 15px 8px 0}
+.school-popup p{font-size:12px;line-height:1.45;margin:5px 0}
+.school-popup a{display:inline-block;font-size:13px;margin-top:5px}
+
 /* Reserve space for explanatory text and the always-visible basemap attribution. */
 .map-note{bottom:0;left:0;right:0;width:100%;max-width:none;padding:7px 16px;border-radius:0;background:#fffffff2;border-top:1px solid var(--line)}
 .maplibregl-ctrl-bottom-right{bottom:34px}
