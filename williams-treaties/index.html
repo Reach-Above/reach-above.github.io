@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Explore Ontario school board service areas that overlap the mapped Williams Treaties (1923) area.">
+  <title>Williams Treaties & School Boards | ReachAbove</title>
+  <link rel="stylesheet" href="https://unpkg.com/maplibre-gl@5.6.1/dist/maplibre-gl.css">
+  <link rel="stylesheet" href="./style.css">
+  <script defer src="https://unpkg.com/maplibre-gl@5.6.1/dist/maplibre-gl.js"></script>
+  <script defer src="./app.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#board-list">Skip to school board list</a>
+  <header class="masthead">
+    <a href="/" class="brand" aria-label="ReachAbove home">REACH<span>ABOVE</span><span class="brand-mark" aria-hidden="true"> / </span></a>
+    <div class="title"><h1>Williams Treaties & school boards</h1><p>Explore the school board service areas that overlap the mapped treaty area.</p></div>
+    <button id="about-button" class="quiet-button" aria-controls="about-dialog">About this map</button>
+  </header>
+  <main class="workspace">
+    <aside class="sidebar" aria-label="School board explorer">
+      <div class="sidebar-top">
+        <div class="eyebrow">Ontario · Williams Treaties (1923)</div>
+        <h2>Explore by school system</h2>
+        <p class="hint">Board service areas overlap across systems. Start with one system to see its boundaries clearly.</p>
+        <fieldset class="systems" id="systems"><legend class="sr-only">School system</legend>
+          <label><input type="radio" name="system" value="English Public" checked><span class="dot public-en"></span><span>English Public</span><span class="system-count" data-system="English Public">—</span></label>
+          <label><input type="radio" name="system" value="English Catholic"><span class="dot catholic-en"></span><span>English Catholic</span><span class="system-count" data-system="English Catholic">—</span></label>
+          <label><input type="radio" name="system" value="French Public"><span class="dot public-fr"></span><span>French Public</span><span class="system-count" data-system="French Public">—</span></label>
+          <label><input type="radio" name="system" value="French Catholic"><span class="dot catholic-fr"></span><span>French Catholic</span><span class="system-count" data-system="French Catholic">—</span></label>
+          <label class="all-systems"><input type="radio" name="system" value="all"><span>All four systems</span><span class="system-count" data-system="all">—</span></label>
+        </fieldset>
+        <label for="search" class="field-label">Find a school board</label>
+        <input id="search" type="search" placeholder="Search board names…" autocomplete="off">
+        <div class="results-heading"><h3>School boards</h3><span id="result-count" role="status" aria-live="polite">Loading…</span></div>
+      </div>
+      <ul id="board-list" class="board-list" tabindex="-1" aria-label="Matching school boards"></ul>
+      <section class="selection" id="selection" hidden aria-label="Selected board details" aria-live="polite">
+        <div class="selection-top"><span class="eyebrow">Selected school board</span><button id="clear-selection" class="icon-button" aria-label="Clear selected board">×</button></div>
+        <h3 id="selected-name"></h3><p id="selected-system"></p>
+        <dl class="metrics"><div><dt>Approx. overlap</dt><dd id="selected-area"></dd></div><div><dt>Of board service area</dt><dd id="selected-percent"></dd></div></dl>
+        <p id="selected-note" class="detail-note"></p>
+        <button class="quiet-button" id="zoom-board">Zoom to full board</button>
+      </section>
+      <footer class="sidebar-footer"><a href="./data/boards.csv" download>Download the 28-board list (CSV)</a><p>26 other intersections · 2 flagged for boundary review</p></footer>
+    </aside>
+    <section class="map-panel" aria-label="Interactive treaty and school board map">
+      <div id="map" aria-label="Map of Williams Treaties and school board service areas"></div>
+      <div class="map-toolbar"><button id="reset-view" class="map-button">Treaty overview</button><fieldset class="view-switch"><legend class="sr-only">Board display</legend><label><input type="radio" name="view" value="full" checked><span>Full board areas</span></label><label><input type="radio" name="view" value="clipped"><span>Overlaps only</span></label></fieldset></div>
+      <div class="map-legend"><span class="treaty-key"></span><span>Williams Treaties area</span><label><input id="show-treaty" type="checkbox" checked> Show</label></div>
+      <div id="map-status" class="map-status" role="status">Loading school board data…</div>
+      <div class="map-note">Mapped overlap is approximate. Board areas do not identify individual school locations.</div>
+    </section>
+  </main>
+  <dialog id="about-dialog" aria-labelledby="about-title">
+    <div class="dialog-heading"><h2 id="about-title">About this map</h2><button id="close-about" class="icon-button" aria-label="Close map information">×</button></div>
+    <p>This map identifies <strong>28 school board service areas</strong> with an area overlap in the generalized Williams Treaties (1923) polygon used for this analysis. It supports education and geographic exploration.</p>
+    <h3>How to read the map</h3>
+    <p>Choose a school system, then select a board in the list or on the map. <strong>Full board areas</strong> shows the whole service area; <strong>Overlaps only</strong> shows the portion inside the mapped treaty area. Counts and search apply to the selected system.</p>
+    <p>Board areas from different school systems cover the same places. When several boards overlap at a map click, choose one from the popup.</p>
+    <h3>Sources and limitations</h3>
+    <ul>
+      <li><strong>School boards:</strong> four Ontario school board boundary shapefiles supplied for this project, prepared/copied in May 2023. Names and boundaries are retained from those files; that date does not confirm that the boundaries are current. <a href="https://data.ontario.ca/dataset/school-board-boundaries" target="_blank" rel="noopener">Ontario boundary catalogue</a>.</li>
+      <li><strong>Treaty area:</strong> a generalized web copy derived from the Government of Canada Historic Treaties service. Its source processing rounded coordinates to two decimal places and generalized linework to 0.04 degrees. <a href="https://open.canada.ca/data/en/dataset/f281b150-0645-48e4-9c30-01f55f93f78e" target="_blank" rel="noopener">Federal dataset</a>.</li>
+      <li><strong>Boundary review:</strong> Rainbow District School Board and CSP du Grand Nord de l'Ontario are flagged because their overlap lies close to the generalized treaty edge.</li>
+      <li><strong>Overlap figures:</strong> approximate results from the supplied analysis, calculated before display. A small overlap does not mean every school in that board lies in the treaty area.</li>
+    </ul>
+    <p class="notice">Treaty boundaries are illustrative and estimated. This map does not establish legal boundaries, treaty rights, school attendance eligibility, or a land acknowledgement for any particular location.</p>
+    <p class="dialog-footer">Analysis prepared October 3, 2026 · Hosted by ReachAbove</p>
+    <a href="./data/analysis-notes.txt" target="_blank">Read the analysis notes</a>
+  </dialog>
+  <noscript><div class="noscript">Enable JavaScript to use the map. You can still <a href="./data/boards.csv">download the school board list</a>.</div></noscript>
+</body>
+</html>

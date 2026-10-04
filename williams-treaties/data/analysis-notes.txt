@@ -1,0 +1,64 @@
+Williams Treaties x Ontario School Boards
+===========================================
+
+Created: 2026-10-03
+
+Purpose
+-------
+Identify Ontario school board polygons that intersect the Williams Treaties (1923) area for use in Mapbox/MapLibre.
+
+Inputs
+------
+1. Four Ontario school board shapefiles supplied by the user:
+   - English Public
+   - English Catholic
+   - French Public
+   - French Catholic
+   These files use NAD83 / EPSG:4269 and were prepared/copied in May 2023 from the school board boundary source data.
+
+2. Williams Treaties (1923) geometry derived from the Government of Canada Historic Treaties ArcGIS service via a public GitHub mirror. The mirror script queried:
+   https://geo.sac-isc.gc.ca/geomatics/rest/services/Donnees_Ouvertes-Open_Data/Historic_Treaty_E/MapServer/0/query
+   and then rounded coordinates to two decimals and generalized linework to 0.04 degrees for web display.
+
+Important limitation
+--------------------
+The treaty geometry used in this analysis is generalized. This is appropriate for identifying likely board intersections and web mapping, but it should not be treated as a legal boundary. The Government of Canada also describes historic treaty boundaries as estimated/informational rather than surveyed legal descriptions.
+
+Result
+------
+28 school board polygons intersect the generalized Williams Treaties geometry.
+
+Two results are flagged EDGE CHECK because their overlap is concentrated close to the generalized treaty edge:
+- Rainbow District School Board
+- CSP du Grand Nord de l'Ontario
+
+Files
+-----
+- williams_intersecting_school_boards.geojson
+  Full polygons for the 28 intersecting boards, with intersection metrics. Best primary layer for MapLibre/Mapbox.
+
+- williams_school_board_intersections.geojson
+  Only the portions of each board polygon inside the treaty geometry. Useful for visual QA or a clipped display.
+
+- williams_treaties_simplified.geojson
+  Generalized Williams Treaties geometry used in this overlay.
+
+- williams_intersecting_school_boards.csv
+  Attribute-only list with overlap area and percentage.
+
+Fields
+------
+BOARD_NAME                School board name
+BOARD_NUM                 Board identifier
+TYPE                      Public or Catholic
+LANGUAGE                  English or French
+DISTRICT                  District/region field from source
+system                    LANGUAGE + TYPE
+intersects_williams       True for selected boards
+intersection_km2          Approximate overlap area
+pct_board_in_williams     Approximate percent of board polygon overlapping treaty
+review_flag               ROBUST INTERSECTION or EDGE CHECK
+
+Recommended publication approach
+--------------------------------
+Use the full intersecting-board GeoJSON as the selectable/clickable board layer and the treaty GeoJSON as a separate reference polygon. Do not use the clipped layer as the only board layer if users need to recognize the full jurisdiction of a board.
